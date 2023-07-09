@@ -7,7 +7,7 @@ import TimeSaving from "../Components/mainHome/TimeSaving"
 const Home = () => {
   
   return (
-    <div className="w-full overflow-hidden">
+    <div className="">
       <Banner />
       <OnBoard />
       <TimeSaving />
