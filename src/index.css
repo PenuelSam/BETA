@@ -357,19 +357,19 @@
     @apply w-[437px] h-[179px] sm:w-[298px] sm:h-[80px]  font-[300] sm:pr-[20%] xsm:pr-[22%] text-[18px] leading-[29px] sm:leading-[15px] sm:text-[12px]  text-[#363637] 
   }
   .startsm{
-    @apply  text-[15px] text-[#363637] font-[300]
+    @apply  text-[15px] text-[#363637] font-[300] mt-5
   }
   .care-approachH1{
-    @apply w-[435px] h-[85px] font-[700] sm:pr-[20%]  text-[27px] my-2 leading-[29px] text-[#021A71] lg:text-[20px] sm:w-[298px] sm:h-[28px] sm:leading-[15px] sm:text-[10px]
+    @apply w-[435px] h-[85px] font-[700] sm:pr-[20%]  text-[27px] my-2 leading-[29px] text-[#021A71]  sm:h-[28px] sm:leading-[15px] sm:text-[10px]
   }
   .startsmh1{
-    @apply text-[#021A71] font-[700] text-[18px]
+    @apply text-[#021A71] font-[700] text-[18px] my-3
   }
   .care-approachp{
-    @apply w-[437px] h-[150px] font-[300] sm:pr-[20%] xsm:pr-[22%] text-[18px] my-2 leading-[28px] text-[#363637] lg:text-[15px] sm:w-[290px] sm:h-[67px] sm:text-[10px] sm:leading-[15px]
+    @apply w-[437px] h-[150px] font-[300] sm:pr-[20%] xsm:pr-[22%] text-[18px] my-2 leading-[28px] text-[#363637] lg:text-[15px] sm:w-[290px] sm:h-[67px]
   }
   .startsmp{
-    @apply text-[15px] text-[#363637] font-[300]
+    @apply text-[15px] text-[#363637] font-[300] my-3
   }
   .care-approachp-s{
     @apply  font-[700]
@@ -382,6 +382,9 @@
   }
   .care-approachImg-p{
     @apply w-[397px] h-[210px]  font-[700] text-[69px] sm:text-[40px] leading-[66px] sm:leading-[50px] lg:text-left text-right z-[5] text-[#E4F3FB] absolute right-[-100px] lg:left-0 sm:left-[10px] lg:top-[30rem] sm:top-[20rem] top-[100px] 
+  }
+  .care-approachImg-p2{
+    @apply absolute font-[700] text-[40px] bottom-[5%] left-[7%] leading-[1]
   }
 
 

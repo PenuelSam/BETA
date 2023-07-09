@@ -33,7 +33,7 @@ const Body = () => {
                 <img src={image} alt="" className="care-approachImg" />
             </div>
             <div data-aos="zoom-in" className="care-approachImgContainer hidden lg:flex">
-                <p className="care-approachImg-p">THE BETA CARE APPROACH </p>
+                <p className="care-approachImg-p2">THE BETA CARE  <br /> APPROACH </p>
                 <img src={image} alt="" className="care-approachImg2" />
             </div>
         </div>
