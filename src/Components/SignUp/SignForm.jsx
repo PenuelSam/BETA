@@ -1,6 +1,6 @@
 import { ContactButtons } from "../../data"
 import OR  from '../../assets/Figma-Images/OR.png'
-import Facebook  from '../../assets/Figma-Images/FacebookBtn.png'
+import Facebook  from '../../assets/Figma-Images/facebookBtn.png'
 import Google  from '../../assets/Figma-Images/GoogleBtn.png'
 import { Link } from "react-router-dom"
 
