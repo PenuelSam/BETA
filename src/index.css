@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -372,10 +373,10 @@
     @apply  text-[15px] text-[#363637] font-[300] mt-5 w-[298px]
   }
   .care-approachH1{
-    @apply w-[435px] h-[85px] font-[700]   text-[27px] my-2 leading-[29px] text-[#021A71]
+    @apply w-[435px] h-[85px] font-[700]   text-[20px] my-2 leading-[29px] text-[#021A71]
   }
   .startsmh1{
-    @apply text-[#021A71] font-[700] text-[18px] w-[298px] my-3
+    @apply text-[#021A71] font-[700] text-[18px] w-[298px] my-5
   }
   .care-approachp{
     @apply w-[437px] h-[150px] font-[300]  text-[18px] my-2 leading-[28px] text-[#363637]
@@ -753,4 +754,78 @@
     @apply w-[400px] sm:w-[300px]
   }
 
+  /* Mobile footer Style*/
+
+  .f-top{
+    @apply my-[10%]
+  }
+
+  .footer-m-p{
+    @apply font-[300] text-[10px] text-[#363637] w-[303px] h-[27px]
+  }
+  .f-center{
+    @apply flex items-start gap-10 mb-[20%]
+  }
+  .social{
+    @apply flex flex-col justify-center gap-3 pb-5
+  }
+  .socialp{
+    @apply font-[700] text-[8px] text-[#04559E]
+  }
+  .socialIcons{
+    @apply flex gap-2
+  }
+  .linksP{
+    @apply font-[700] text-[10px] text-[#021A71]
+  }
+  .footerLi-m{
+    @apply font-[300] text-[8px] text-[#021A71]
+  }
+  .f-right{
+    @apply flex flex-col items-start justify-center w-[164px] gap-3
+  }
+  .f-sub{
+    @apply font-[700] text-[16px] text-[#021A71] uppercase
+  }
+  .f-subP{
+    @apply font-[300] text-[9px] text-[#363637]
+  }
+  .f-subPspan{
+    @apply font-[700] text-[#021A71]
+  }
+  .emailIcon{
+    @apply absolute top-[16%] left-[5%] z-[5]
+  }
+  .f-input{
+    @apply w-[146px] h-[24px] rounded-full pl-6 shadow-lg relative z-[2] text-[#363637]
+  }
+  .f-input::placeholder{
+    @apply  text-[8px]
+  }
+  .f-btn{
+    @apply w-[89px] h-[24px] bg-[#021A71] text-white shadow-lg text-[10px] rounded-full
+  }
+  .f-bottom{
+    @apply flex items-center justify-between mb-[10%]
+  }
+  .f-bottomL{
+    @apply flex items-center justify-center gap-3
+  }
+  .f-logo{
+    @apply w-[34px] h-[35px] object-cover
+  }
+  .f-b-text{
+    @apply flex flex-col items-start justify-center
+  }
+  .f-b-textp{
+    @apply font-[300] text-[7px] text-[#363637]
+  }
+  .f-b-textspan{
+    @apply font-[700] text-[7px] text-[#021A71] 
+  }
+  .f-arrow{
+    @apply w-[30.3px] h-[31px] relative right-[-350%]
+  }
 }
+
+

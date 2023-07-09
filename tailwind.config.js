@@ -13,6 +13,7 @@ export default {
       'sm' : {'max': '550px'},
       'xsm' : {'max': '375px'},
   },
+  
   },
   plugins: [],
 }

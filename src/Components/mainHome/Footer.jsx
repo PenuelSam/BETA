@@ -6,6 +6,8 @@ import Linkedin from "../../assets/Figma-Images/Linkedin.png";
 import Center from "../../assets/Figma-Images/footerCenter.png";
 import ArrowUp from "../../assets/Figma-Images/ArrowUp.png";
 import CloseIcon from "@mui/icons-material/Close";
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import logo2 from '../../assets/Figma-Images/aboutpng.png'
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 
@@ -24,7 +26,9 @@ const Footer = () => {
 
   return (
     <div className="footerBg">
-      <div className="maxcontainer2 flex flex-col justify-center">
+
+      {/*Desktop Footer */}
+      <div className="maxcontainer2 lg:hidden flex flex-col justify-center">
         {/* TOP */}
         <div className="flex lg:flex-col justify-between  w-[100%]">
           {/* TOP LEFT */}
@@ -62,7 +66,10 @@ const Footer = () => {
               {isOpen && (
                 <div className="modalMbg">
                   <div className="modalBg modalFlex">
-                    <CloseIcon className="modalClose" onClick={handleOpenModal}/>
+                    <CloseIcon
+                      className="modalClose"
+                      onClick={handleOpenModal}
+                    />
                     <h1 className="modalText">Thank You</h1>
                   </div>
                 </div>
@@ -98,6 +105,73 @@ const Footer = () => {
           <div className="lg:smStyle">
             <Link to={location.pathname} onClick={handleClick}>
               <img src={ArrowUp} alt="" className="cursor-pointer" />
+            </Link>
+          </div>
+        </div>
+      </div>
+
+
+      {/* Mobile Footer */}
+      <div className="hidden lg:flex items-start pl-[10%] flex-col justify-center">
+        <div className="f-top">
+          <h1 className="footerH1">betacare</h1>
+          <p className="footer-m-p">
+            BetaCare offers quality services to individuals in need of care. We
+            have services are in varying dimensions.
+          </p>
+        </div>
+        <div className="f-center">
+          <div className="f-left">
+            <div className="social">
+              <p className="socialp">Find Us On</p>
+              <div className="socialIcons">
+                <img src={Facebook} alt="" />
+                <img src={Twitter} alt="" />
+                <img src={Instagram} alt="" />
+                <img src={Linkedin} alt="" />
+              </div>
+            </div>
+            <div className="gap-2 py-5">
+              <p className="linksP">Quick Links</p>
+              <div className="flex items-center gap-5">
+                <ul>
+                  <li className="footerLi-m">Home</li>
+                  <li className="footerLi-m">About Us</li>
+                  <li className="footerLi-m">Contact Us</li>
+                  <li className="footerLi-m">Openings</li>
+                </ul>
+                <ul>
+                  <li className="footerLi-m">Home Care</li>
+                  <li className="footerLi-m">Careers</li>
+                  <li className="footerLi-m">Book Appointment</li>
+                  <li className="footerLi-m">Blog</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="f-right">
+                <h1 className="f-sub">Subscribe</h1>
+                <p className="f-subP">Stay up to date on new services, openings and oppotunities from BetaCare by <span className="f-subPspan">joining our mailing</span> list.</p>
+                <div className="flex flex-col gap-2 relative">
+                    <EmailOutlinedIcon sx={{fontSize: '10px', fill: 'gray'}}  className="emailIcon"/>
+                    <input type="text" placeholder="Email" className="f-input" />
+                    <button className="f-btn" onClick={handleOpenModal}>Subscribe</button>
+                </div>
+          </div>
+        </div>
+        <div className="f-bottom">
+          <div className="f-bottomL">
+            <div>
+            <img src={logo2} alt="" className="f-logo" />
+            </div>
+            <div className="f-b-text">
+              <p className="f-b-textp">© 2022 BetaCare. All rights reserved.</p>
+              <p className="f-b-textp"><span className="f-b-textspan">1,000,500</span> patiants served.</p>
+            </div>
+          </div>
+          <div>
+            <Link to={location.pathname} onClick={handleClick}>
+            <img src={ArrowUp} alt="" className="f-arrow"/>
             </Link>
           </div>
         </div>
