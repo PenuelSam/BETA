@@ -22,7 +22,7 @@ import Payment from "./Pages/Onboarding/Payment"
 import Reference from "./Pages/Onboarding/Reference"
 import Vaccination from "./Pages/Onboarding/Vaccination"
 import Work from "./Pages/Onboarding/Work"
-import Navbar from "./Components/Manufacturing/Navbar"
+
 import CustomCursor from "./Components/CustomCursor"
 import { useEffect, useState } from "react"
 import Preloader from "./Components/Preloader"
@@ -42,7 +42,7 @@ function App() {
         <Preloader />
       ) : (
         <BrowserRouter>
-      <Navbar />
+      
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about"  element={<About/>} />

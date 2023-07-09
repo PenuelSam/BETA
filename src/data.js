@@ -24,7 +24,7 @@ import Train9 from '../src/assets/Figma-Images/Manufacturing/Kin.png'
 import Train10 from '../src/assets/Figma-Images/Manufacturing/Declaration.png'
 import Train11 from '../src/assets/Figma-Images/Manufacturing/Vaccine-Train.png'
 
-
+import png1 from '../src/assets/Figma-Images/aboutpng.png'
 import png2 from '../src/assets/Figma-Images/servicespng.png'
 import png3 from '../src/assets/Figma-Images/operativepng.png'
 import png4 from '../src/assets/Figma-Images/companypng.png'
@@ -34,7 +34,12 @@ import Checked from '../src/assets/Figma-Images/Checked.png'
 
 
 export const NavLinks = [
-    
+    {
+        id: 1,
+        name: 'About Us',
+        path: '/about',
+        Png: png1
+    },
     {
         id: 2,
         name: 'Services',
