@@ -24,9 +24,9 @@ const Body = () => {
 
         <div className="care-bodyBelow maxcontainer2 lg:w-full">
             <div data-aos="zoom-in" className="care-approach">
-                <p className="care-approachP">Every individual is unique; we apply working theories in practice to understand the specific needs of our clients. Our certified and dependable team is trained to always study the progressive changes in patients and adjust the care strategies accordingly.</p>
-                <h1 className="care-approachH1">Did you know that the human body reacts positively to constructive care?</h1>
-                <p className="care-approachp">The <span className="care-approachp-s">Beta Care Approach</span> is built on such positivity, to align the condition of the body and mind to the external environment. With a friendly supportive approach from Beta Care, our client’s recover faster than envisaged.</p>
+                <p className=" startsm">Every individual is unique; we apply working theories in practice to understand the specific needs of our clients. Our certified and dependable team is trained to always study the progressive changes in patients and adjust the care strategies accordingly.</p>
+                <h1 className="startsmh1">Did you know that the human body reacts positively to constructive care?</h1>
+                <p className="startsmp">The <span className="care-approachp-s">Beta Care Approach</span> is built on such positivity, to align the condition of the body and mind to the external environment. With a friendly supportive approach from Beta Care, our client’s recover faster than envisaged.</p>
             </div>
             <div className="lg:hidden">
                 <p className="care-approachImg-p">THE BETA CARE APPROACH </p>
