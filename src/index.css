@@ -351,7 +351,7 @@
     @apply flex lg:flex-col-reverse lg:items-start items-center justify-between relative my-28 lg:my-20 lg:gap-10
   }
   .care-approach{
-    @apply flex flex-col lg:pl-[5%]
+    @apply flex flex-col  sm:ml-[20%]
   }
   .care-approachP{
     @apply w-[437px] h-[179px] sm:w-[298px] sm:h-[80px]  font-[300] sm:pr-[20%] xsm:pr-[22%] text-[18px] leading-[29px] sm:leading-[15px] sm:text-[10px]  text-[#363637] 
