@@ -353,7 +353,7 @@
     @apply w-[498px] h-[104px] font-[700] text-[18px] leading-[30px] text-right text-white
   }
   .care-h-Psm{
-    @apply font-[300] text-[15px] pl-[30%] pt-5  text-right text-white
+    @apply font-[300] text-[15px] pl-[35%] pt-5  text-right text-white
   }
 
   .care-bodyGrid{
@@ -369,19 +369,19 @@
     @apply w-[437px] h-[179px] font-[300] text-[18px] leading-[29px] text-[#363637] 
   }
   .startsm{
-    @apply  text-[15px] text-[#363637] font-[300] mt-5 pr-[30%]
+    @apply  text-[15px] text-[#363637] font-[300] mt-5 w-[298px]
   }
   .care-approachH1{
     @apply w-[435px] h-[85px] font-[700]   text-[27px] my-2 leading-[29px] text-[#021A71]
   }
   .startsmh1{
-    @apply text-[#021A71] font-[700] text-[18px] pr-[10%]
+    @apply text-[#021A71] font-[700] text-[18px] w-[298px] my-3
   }
   .care-approachp{
     @apply w-[437px] h-[150px] font-[300]  text-[18px] my-2 leading-[28px] text-[#363637]
   }
   .startsmp{
-    @apply text-[15px] text-[#363637] font-[300] pr-[30%]
+    @apply text-[15px] text-[#363637] font-[300] w-[290px] my-3
   }
   .care-approachp-s{
     @apply  font-[700]
