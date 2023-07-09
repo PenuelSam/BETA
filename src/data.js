@@ -3,7 +3,7 @@ import careImage2 from '../src/assets/Figma-Images/Care/Personal-care.png'
 import careImage3 from '../src/assets/Figma-Images/Care/Respite-Care.png'
 import careImage4 from '../src/assets/Figma-Images/Care/Post-Operative-Care.png'
 import careImage5 from '../src/assets/Figma-Images/Care/Palliative-Care.png'
-import careImage6 from '../src/assets/Figma-Images/Care/Alzheimer-care.png'
+import careImage6 from '../src/assets/Figma-Images/Care/Alzheimer-Care.png'
 
 import serviceImage1 from '../src/assets/Figma-Images/Care/Personal.png'
 import serviceImage2 from '../src/assets/Figma-Images/Care/Respite.png'
