@@ -353,7 +353,7 @@
     @apply w-[498px] h-[104px] font-[700] text-[18px] leading-[30px] text-right text-white
   }
   .care-h-Psm{
-    @apply font-[300] text-[15px] pl-32 pt-5  text-right text-white
+    @apply font-[300] text-[15px] pl-[40%] pt-5  text-right text-white
   }
 
   .care-bodyGrid{
@@ -363,25 +363,25 @@
     @apply flex lg:flex-col-reverse lg:items-start items-center justify-between relative my-28 lg:my-20 lg:gap-10
   }
   .care-approach{
-    @apply flex flex-col sm:gap-5 sm:mx-[10%] sm:pr-[10%]
+    @apply flex flex-col sm:gap-5 sm:mx-[10%] 
   }
   .care-approachP{
     @apply w-[437px] h-[179px] font-[300] text-[18px] leading-[29px] text-[#363637] 
   }
   .startsm{
-    @apply  text-[15px] text-[#363637] font-[300] mt-5
+    @apply  text-[15px] text-[#363637] font-[300] mt-5 pr-[10%]
   }
   .care-approachH1{
     @apply w-[435px] h-[85px] font-[700]   text-[27px] my-2 leading-[29px] text-[#021A71]
   }
   .startsmh1{
-    @apply text-[#021A71] font-[700] text-[18px] 
+    @apply text-[#021A71] font-[700] text-[18px] pr-[5%]
   }
   .care-approachp{
     @apply w-[437px] h-[150px] font-[300]  text-[18px] my-2 leading-[28px] text-[#363637]
   }
   .startsmp{
-    @apply text-[15px] text-[#363637] font-[300] 
+    @apply text-[15px] text-[#363637] font-[300] pr-[10%]
   }
   .care-approachp-s{
     @apply  font-[700]
