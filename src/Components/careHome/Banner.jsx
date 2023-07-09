@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const Banner = () => {
   return (
-    <div className="careBanner pt-[15%] lg:pt-[50%]  sm:pt-[60%]">
+    <div className="m-bannerbg pt-[15%] lg:pt-[50%]  sm:pt-[60%]">
         <div className="flex flex-col justify-center items-center">
           <h1 className="banner-c-H1">Welcome to Betacare</h1>
           <p className="banner-c-P">
