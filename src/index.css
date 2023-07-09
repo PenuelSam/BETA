@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 5px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #041E3E;
+    height: 5px;
+    border: none;
+  }
+
+
+  .custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: transparent;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    z-index: 9999;
+    animation: cursorAnim .5s infinite alternate;
+  }
+
+  .custom-cursor::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate; 
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+
+
+  @keyframes cursorAnim {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(.7);
+    }
+  }
+
+  @keyframes cursorAnim2 {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(.4);
+    }
+  }
+
+  .preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+  }
+  
+  .message {
+    margin-top: 16px;
+    font-weight: bold;
+  }
+
+
+  .maxcontainer{
+    @apply w-11/12 m-auto flex justify-between items-center text-white 
+  }
+  .maxcontainer2{
+    @apply w-10/12 m-auto flex justify-between items-center text-white 
+  }
+
+  .navbg{
+    @apply bg-[#021A71] opacity-[0.9]  w-full h-[87px] flex fixed top-0 left-0 right-0 z-[99]
+  }
+
+  .navmenu{
+   @apply bg-[#021A71] opacity-[1]  w-full h-[87px] flex fixed top-0 left-0 right-0 z-[99]
+  }
+
+  .active{
+    @apply text-[#A0C6FC]
+  }
+
+  .UL-Style{
+    @apply flex justify-center items-center gap-5 lg:hidden capitalize z-[100]
+  }
+
+  .menuOpen{
+    @apply flex flex-col  fixed justify-center items-center inset-0 capitalize cursor-pointer bg-[#A0C6FC]  backdrop-blur-lg text-[20px] w-full h-screen  gap-8
+  }
+  .menuClose{
+    @apply hidden
+  }
+
+  .bannerBg{
+    background-image: url('../src/assets/Figma-Images/ellipse.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 758px;
+    width: 100%;
+  }
+
+  .careBanner{
+    background-image: url('../src/assets/Figma-Images/Care/care-hero.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 758px;
+    width: 100%;
+  }
+
+  .modalBg{
+    background-image: url('../src/assets/Figma-Images/Care/care-hero.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .m-bannerBg{
+    background-image:linear-gradient(to left, rgba(10, 27, 51, 0.849), rgba(12, 51, 105, 0.733)), url('../src/assets/Figma-Images/Manufacturing/manufacture-hero.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 758px;
+    width: 100%;
+  }
+
+  .m-bannerbg{
+    background-image:linear-gradient(to left, rgba(10, 27, 51, 0.849), rgba(12, 51, 105, 0.733)), url('../src/assets/Figma-Images/Manufacturing/welcome-hero.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 758px;
+    width: 100%;
+  }
+
+  .TrainBanner{
+    background-image:linear-gradient(to left, rgba(10, 27, 51, 0.849), rgba(12, 51, 105, 0.733)), url('../src/assets/Figma-Images/Manufacturing/jointhetrain.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 399px;
+    width: 100%;
+  }
+  
+  .about-BannerBg{
+    background-image:linear-gradient(to left, rgba(10, 27, 51, 0.849), rgba(12, 51, 105, 0.733)), url('../src/assets/Figma-Images/Care/whoweare.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 486px;
+    width: 100%;
+  }
+
+  .service-BannerBg{
+    background-image:linear-gradient(to left, rgba(10, 27, 51, 0.849), rgba(12, 51, 105, 0.733)), url('../src/assets/Figma-Images/Care/whatweoffer.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 486px;
+    width: 100%;
+  }
+
+  .contact-BannerBg{
+    background-image:linear-gradient(to left, rgba(10, 27, 51, 0.849), rgba(12, 51, 105, 0.733)), url('../src/assets/Figma-Images/Care/weareheretoserve.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 486px;
+    width: 100%;
+  }
+
+  .account-BannerBg{
+    background-image:linear-gradient(to left, rgba(10, 27, 51, 0.849), rgba(12, 51, 105, 0.733)), url('../src/assets/Figma-Images/Care/joincareworker.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 486px;
+    width: 100%;
+  }
+
+  .logIn-BannerBg{
+    background-image:linear-gradient(to left, rgba(10, 27, 51, 0.849), rgba(12, 51, 105, 0.733)), url('../src/assets/Figma-Images/Care/welcomeback.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 486px;
+    width: 100%;
+  }
+
+
+
+
+  .bannerH1{
+    @apply font-[700] text-[40px]  lg:text-[35px] lg:tracking-[1px] lg:leading-[40px] leading-[50px] lg:w-[500px] sm:w-[400px] w-[500px] lg:h-[30px] h-[65px] sm:h-[60px] uppercase text-white text-center
+  }
+  
+
+  .banner-c-H1{
+    @apply font-[700] sm:w-[400px] sm:text-[30px] text-[50px] sm:h-[30px] lg:text-[45px] lg:h-[55px]  leading-[132px] sm:leading-[50px] w-[1116px] h-[65px] uppercase text-[#A0C6FC] text-center
+  }
+  .bannerP{
+    @apply w-[1050px] sm:w-[400px] xsm:w-[390px] px-[10px] lg:w-[600px] sm:h-[130px] h-[110px] font-[500] lg:text-[18px] text-[24px] lg:leading-[25px] sm:tracking-normal leading-[29px] text-center lg:mt-[70px] mt-10 text-white tracking-wide
+  }
+  .banner-c-P{
+    @apply w-[756px] sm:w-[400px] sm:h-[55px] h-[49px] lg:h-[20px] font-[500] text-[25px] lg:text-[25px] leading-[35px] text-center my-10 text-white
+  }
+  .bannerBtns{
+    @apply flex lg:flex-col justify-center items-center lg:gap-5 gap-10 lg:my-10 my-5
+  }
+  .banner-c-Btns{
+    @apply flex justify-center lg:flex-col items-center lg:gap-5 gap-10 my-5
+  }
+  .bannerBtnLeft{
+    @apply h-[59px] w-[322.23px] uppercase font-[700] bg-white text-black rounded-md border-none
+  }
+  .banner-c-BtnLeft{
+    @apply h-[59px] w-[322.23px] uppercase  font-[700] bg-white text-[#021A71] rounded-md border-none
+  }
+  .bannerBtnRight{
+    @apply h-[59px] w-[322.23px] uppercase bg-black font-[700] text-white rounded-md border-none
+  }
+  .banner-c-BtnRight{
+    @apply h-[59px] w-[322.23px] uppercase bg-[#021A71] font-[700] text-white rounded-md border-none
+  }
+
+
+  .m-bannerH1{
+    @apply font-[700] text-[60px] lg:text-[40px] lg:w-[700px]  sm:text-[30px] sm:w-[700px] leading-[132px] w-[1116px] h-[49px] uppercase text-[#D6E5FA] text-center sm:leading-[50px] sm:h-[30px]
+  }
+  .m-bannerP{
+    @apply w-[1044px] lg:w-[500px] lg:text-[25px]  sm:w-[400px] h-[49px] font-[500] text-[20px] sm:text-[20px] leading-[35px] text-center mt-10  text-white
+  }
+  .m-bannerp{
+    @apply w-[999px] lg:w-[500px] lg:text-[25px] lg:h-[30px] lg:leading-[35px] sm:w-[340px] h-[30px] sm:h-[50px] font-[500] text-[20px] sm:text-[20px] leading-[47px] sm:leading-[30px] text-center my-10  text-white
+  }
+  .m-bannerBtns{
+    @apply flex justify-center lg:flex-col items-center gap-10 lg:gap-5 my-10
+  }
+  .m-bannerBtnLeft{
+    @apply h-[47px] w-[256.69px] uppercase font-[700] bg-white text-black rounded-md border-none
+  }
+  .m-bannerBtnRight{
+    @apply h-[47px] w-[256.69px] uppercase bg-black font-[700] text-white rounded-md border-none
+  }
+
+  .m-bodyP{
+    @apply w-[803px] lg:w-[500px] sm:w-[340px] h-[74px] sm:h-[90px] font-[700] text-[20px] leading-[30px] sm:text-[18px] text-center my-10 text-[#434445]
+  }
+  .m-bodyH1{
+    @apply w-[1113px] lg:w-[500px]  sm:w-[340px] h-[74px] lg:h-[90px] font-[700] text-[27px] leading-[40.5px] text-center sm:text-[20px] text-[#021A71]
+  }
+
+  .m-OfferLinks{
+    @apply w-[427px] h-[152px] sm:pl-20
+  }
+  .m-OfferLi{
+    @apply font-[300] text-[25px] leading-[52.75px] tracking-[0.1px] text-[#363637] list-disc
+  }
+
+  .modalMbg{
+    @apply w-[100%] h-[100%] fixed top-0 right-0 left-0 bottom-0 bg-black/50 z-[999] flex items-center justify-center
+  }
+  .modalFlex{
+    @apply relative  w-[70%] flex items-center justify-center  h-[700px] lg:h-[50%] lg:w-[90%]
+  }
+  .modalText{
+    @apply font-[700] text-[60px] text-center text-white
+  }
+  .modalClose{
+    @apply absolute right-10 top-10 lg:right-5 lg:top-5 cursor-pointer
+  }
+
+
+
+  .care-h-BannerBg{
+    background-image: linear-gradient(to left, rgba(10, 27, 51, 0.849), rgba(12, 51, 105, 0.733)), url('../src/assets/Figma-Images/Care/BetaCare.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 758px;
+    width: 100%;
+  }
+  .care-h-container{
+    @apply flex flex-col justify-center items-end
+  }
+  .care-h-span{
+    @apply w-[235px] h-[56px] font-[300] text-[36px] leading-[47px] text-right text-[#A0C6FC]
+  }
+  .care-h-H1{
+    @apply w-[490px] h-[82px] sm:h-[70px] font-[700] text-[70px] sm:text-[50px] text-right text-[#A0C6FC]
+  }
+  .care-h-H2{
+    @apply w-[520px] h-[49px] sm:h-[40px] font-[700] text-[32px] sm:text-[20px] leading-[35px]  text-right text-white
+  }
+  .care-h-P{
+    @apply w-[498px] sm:w-[350px] h-[104px] font-[700] text-[18px] leading-[30px] text-right text-white
+  }
+
+  .care-bodyGrid{
+    @apply my-20 lg:my-10 grid grid-cols-3 sm:grid-cols-2 gap-10
+  }
+  .care-bodyBelow{
+    @apply flex lg:flex-col-reverse lg:items-start items-center justify-between relative my-28 lg:my-20 lg:gap-10
+  }
+  .care-approach{
+    @apply flex flex-col lg:pl-[5%]
+  }
+  .care-approachP{
+    @apply w-[437px] h-[179px] sm:h-[230px] font-[300] sm:pr-[20%] xsm:pr-[22%] text-[18px] leading-[29px] text-[#363637]
+  }
+  .care-approachH1{
+    @apply w-[435px] h-[85px] sm:h-[130px] font-[700] sm:pr-[20%]  text-[27px] my-2 leading-[29px] text-[#021A71]
+  }
+  .care-approachp{
+    @apply w-[437px] h-[150px] font-[300] sm:pr-[20%] xsm:pr-[22%] text-[18px] my-2 leading-[28px] text-[#363637]
+  }
+  .care-approachp-s{
+    @apply  font-[700]
+  }
+  .care-approachImg{
+    @apply  absolute right-[-150px] top-[-150px] z-[2]
+  }
+  .care-approachImg2Container{
+    @apply 
+  }
+  .care-approachImg-p{
+    @apply w-[397px] h-[210px]  font-[700] text-[69px] sm:text-[40px] leading-[66px] sm:leading-[50px] lg:text-left text-right z-[5] text-[#E4F3FB] absolute right-[-100px] lg:left-0 sm:left-[10px] lg:top-[30rem] sm:top-[20rem] top-[100px] 
+  }
+
+
+  .abouth1{
+    @apply w-[620px] h-[82px]  font-[700] text-[70px] sm:text-[40px] lg:text-[60px] uppercase leading-[138px] sm:leading-[70px] text-center text-[#A0C6FC]
+  }
+  .BetaCareBg{
+    @apply bg-[#E5F1F8] flex flex-col items-center justify-center pt-20
+  }
+  .BetaCareH1{
+    @apply w-[620px]  h-[82px] font-[700] text-[69px] sm:text-[40px] lg:text-[50px] leading-[103.5px] text-center text-[#021A71] my-5
+  }
+  /*.BetaCareP{
+    @apply w-[951px] sm:w-[500px] sm:px-[25%] h-[234px] sm:h-[550px]  lg:w-[900px] border border-black font-[300]  text-[20px] leading-[31px]  text-center sm:text-left text-[#363637] mt-5 mb-32 lg:text-start lg:pl-0
+  }*/
+
+  .BetaCareP{
+    @apply w-[951px] lg:w-[500px] h-[234px] sm:h-[650px] lg:h-[450px] font-[300] text-[20px] lg:text-[18px] text-center leading-[31px] mt-5 mb-32 sm:mb-20 lg:px-5 sm:px-[20%] text-[#363637]
+  }
+
+  .aboutBodyCard{
+    @apply flex lg:flex-col lg:items-start items-center justify-between relative pt-32 lg:gap-10
+  }
+  .aboutBodyH1{
+    @apply w-[437px] h-[176px] lg:h-[100px] sm:h-[176px] lg:w-[500px] font-[700] text-[25px] lg:text-[20px]  leading-[29px] text-[#021A71] sm:pr-[32%]
+  }
+  .aboutBodyP{
+    @apply w-[437px] h-[284px] sm:h-[400px]  font-[300] text-[18px] lg:text-[16px] leading-[28px] text-[#363637] my-5  pb-32 sm:pr-[30%]
+  }
+  .aboutBodyImg{
+    @apply absolute top-[-90px] left-[-150px] z-[2]
+  }
+  .aboutBodyImgP{
+    @apply w-[397px] h-[210px] font-[700] xsm:text-[35px] text-[69px] sm:text-[40px] leading-[66px] text-[#E4F3FB] z-[5] absolute top-[40%] lg:left-5 
+  }
+
+
+
+  .service-BannerBg{
+    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,26,113,0.6054796918767507) 35%, rgba(2,69,146,1) 50%, rgba(1,120,185,1) 68%, rgba(0,212,255,1) 100%) url('../src/assets/Figma-Images/Care/whatweoffer.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 758px;
+    width: 100%;
+  }
+
+  .servicesh1{
+    @apply w-[808px] h-[82px] lg:h-[70px] font-[700] sm:text-[40px] text-[70px] lg:text-[60px] uppercase leading-[138px] text-center text-[#A0C6FC] mt-5
+  }
+  .servicesp{
+    @apply w-[701px] sm:w-[300px] lg:w-[600px] h-[69px] font-[300] text-[26px] lg:text-[20px] leading-[31px] text-center text-white mt-10
+  }
+  .servicesBg{
+    @apply bg-[#E5F1F8] pt-32
+  }
+  .servicesBg2{
+    @apply bg-[#E5F1F8]
+  }
+  .servicesGrid{
+    @apply grid grid-cols-2 place-items-center gap-5 
+  }
+  .bodyCard1Left{
+    @apply flex flex-col lg:pl-5 xsm:pl-[15%]   sm:w-[400px]  w-[650px] h-[955px] lg:h-[800px] sm:h-[1000px]
+  }
+  .bodyCard2Left{
+    @apply flex flex-col items-end lg:items-start justify-center lg:justify-start lg:pl-[5%] w-[650px] h-[955px] lg:h-[400px] sm:h-[600px]
+  }
+  .bodyCard3Left{
+    @apply flex flex-col items-start justify-center sm:justify-start lg:pl-[10%] w-[650px] h-[955px] py-10 sm:h-[1250px]
+  }
+  .bodyCard1H1{
+      @apply w-[438px] sm:w-[350px] h-[202px] sm:h-[250px] font-[700] text-[25px] sm:text-[22px] lg:text-[20px] leading-[29px] text-[#021A71]
+  }
+  .bodyCard2H1{
+    @apply w-[415px] sm:w-[300px] sm:text-[22px] sm:h-[150px] h-[104px] font-[700] text-[25px] lg:text-[20px] leading-[29px] text-[#021A71]
+  }
+  .bodyCard3H1{
+    @apply w-[437px] sm:w-[300px] sm:text-[22px] h-[92px] sm:h-[150px] font-[700] text-[25px] lg:text-[20px] leading-[29px] text-[#021A71]
+  }
+  .bodyCard1P{
+    @apply w-[437px] sm:w-[300px] sm:h-[250px] h-[180px] font-[300] text-[18px] lg:text-[16px] leading-[28px] text-[#363637]
+  }
+  .bodyCard2P{
+    @apply w-[437px] sm:w-[300px] h-[301px]  font-[300] text-[18px] lg:text-[16px] leading-[28px] text-[#363637]
+  }
+  .bodyCard3P{
+    @apply w-[437px] sm:w-[300px] h-[198px] sm:h-[250px] font-[300] text-[18px] lg:text-[16px] leading-[28px] text-[#363637] mt-2
+  }
+  .bodyCard1Lists{
+    @apply w-[495px] h-[424px] sm:h-[700px]  font-[300] sm:pr-[50%] text-[18px] lg:text-[16px] leading-[30px] tracking-[0.1px] sm:tracking-normal list-disc text-[#363637] mt-5
+  }
+  .bodyCard1Right{
+    @apply w-[700px] h-[954px]  absolute right-[-150px]
+  }
+  .bodyCard2Right{
+    @apply w-[650px] h-[951px]  absolute left-[-142px]
+  }
+  .bodyCard2ImgP{
+    @apply w-[397px] h-[210px] font-[700] uppercase text-[69px] z-[5] leading-[66px] text-[#E4F3FB] absolute top-[40%] left-[10%] 
+  }
+  .bodyCard2ImgP2{
+    @apply w-[400px] h-[210px] font-[700] uppercase text-[69px] lg:text-[50px] z-[5] leading-[66px] text-[#E4F3FB] absolute top-[25%] right-10 text-right sm:text-left sm:left-5
+  }
+  .bodyCard1ImgP{
+    @apply w-[397px] h-[210px] font-[700] uppercase text-[69px] leading-[66px] text-right text-[#E4F3FB] z-[5] absolute bottom-[10%] right-[10%] 
+  }
+  .bodyCard1ImgP2{
+    @apply w-[400px] h-[210px] font-[700] uppercase text-[69px] sm:text-[40px] lg:text-[50px] z-[5] leading-[66px] sm:leading-[50px] text-[#E4F3FB] absolute top-[30%] sm:top-[25%] left-10 xsm:left-5
+  }
+  .bodyCard3ImgP2{
+    @apply w-[400px] sm:w-[350px] h-[210px] font-[700] uppercase text-[69px] lg:text-[50px] z-[5] leading-[66px] text-[#E4F3FB] absolute top-[40%] left-10 sm:top-[15%]
+  }
+
+  .s2-bodyCard1Left{
+    @apply flex flex-col sm:w-[400px] items-start lg:justify-start lg:pl-[5%] justify-center  w-[652px] h-[660px] lg:h-[400px]
+  }
+  .s2-bodyCard1H1{
+    @apply w-[437px] sm:w-[340px] h-[153px] sm:h-[200px]  font-[700] text-[25px] leading-[29px] text-[#021A71] lg:text-[20px]
+  }
+  .s2-bodyCard1P{
+    @apply w-[437px] sm:w-[340px] h-[146px] font-[300] text-[18px] leading-[28px] text-[#363637] lg:text-[16px]
+  }
+  .s2-bodyCard1Right{
+    @apply w-[700px] h-[650px]  absolute right-[-150px] top-0
+  }
+  .s2-bodyCard1ImgP{
+    @apply w-[397px] h-[210px] font-[700] text-[69px] uppercase leading-[66px] text-right text-[#E4F3FB] z-[5] absolute bottom-[40%] right-[10%] 
+  }
+  .s2-bodyCard1ImgP2{
+    @apply w-[600px] sm:w-[400px] h-[210px] font-[700] uppercase sm:text-[25px] text-[69px] lg:text-[50px] z-[5] sm:leading-[45px] leading-[66px] text-[#E4F3FB] absolute top-[30%] left-5 
+  }
+  
+  .s2-bodyCard2Left{
+    @apply flex flex-col items-end lg:items-start lg:justify-start justify-center lg:pl-[5%] w-[650px] sm:w-[400px] h-[955px] sm:h-[1100px] sm:pl-[10%]
+  }
+  .s2-bodyCard2H1{
+    @apply w-[437px] sm:w-[340px] h-[175px] sm:h-[220px] font-[700] text-[25px] lg:text-[20px] leading-[29px] text-[#021A71]  sm:pr-[20px]
+  }
+  .s2-bodyCard2P{
+    @apply w-[449px] sm:w-[340px] h-[225px] sm:h-[300px] font-[300] text-[18px] lg:text-[16px] leading-[28px] text-[#363637]  my-10 sm:pr-[20px]
+  }
+  .s2-bodyCard2Right{
+    @apply w-[650px] h-[951px]  absolute left-[-150px] top-0
+  }
+  .s2-bodyCard2ImgP{
+    @apply w-[397px] h-[210px] font-[700] text-[69px] uppercase leading-[66px] text-left text-[#E4F3FB] z-[5] absolute bottom-[20%] left-[10%] 
+  }
+  .s2-bodyCard2ImgP2{
+    @apply w-[600px] sm:w-[400px] h-[210px] font-[700] uppercase text-[69px] sm:text-[30px] sm:leading-[50px] lg:text-[50px] z-[5] leading-[66px] text-[#E4F3FB] absolute top-[40%] left-5 sm:top-[25%]
+  }
+  .s2-bodyCard2Lists{
+    @apply w-[477px] sm:w-[340px] h-[272px] sm:tracking-normal sm:pr-[20px] font-[300] text-[18px] lg:text-[16px] leading-[30px] list-disc tracking-[0.1px] text-[#363637]
+  }
+
+  .s2-bodyCard3Left{
+    @apply flex flex-col sm:w-[400px] lg:justify-start justify-center lg:pl-5 items-start  w-[650px] h-[1506px] sm:h-[1700px] xsm:pl-[15%] sm:pl-10
+  }
+  .s2-bodyCard3H1{
+    @apply w-[438px] sm:w-[340px] h-[186px] sm:h-[200px] sm:pr-[20px] font-[700] text-[25px] lg:text-[20px] leading-[29px] text-[#021A71] 
+  }
+  .s2-bodyCard3P{
+    @apply w-[437px] sm:w-[340px] h-[199px] sm:h-[200px] sm:pr-[20px] font-[300] text-[18px] lg:text-[16px] leading-[28px] text-[#363637]  my-10
+  }
+  .s2-bodyCard3Right{
+    @apply w-[700px] h-[1506px]  absolute right-[-150px] top-0
+  }
+  .s2-bodyCard3ImgP{
+    @apply w-[544px] h-[370px] font-[700] text-[69px] uppercase leading-[66px] text-right text-[#E4F3FB] z-[5] absolute bottom-[5%] right-[10%] 
+  }
+  /*.s2-bodyCard3ImgP2{
+    @apply w-[600px] sm:w-[300px]  h-[210px] font-[700] uppercase text-[69px] sm:text-[30px] lg:text-[50px] z-[5] sm:leading-[45px] leading-[66px] text-[#E4F3FB] absolute top-[40%] left-5 sm:top-[25%]
+  }*/
+  .s2-bodyCard3ImgP2{
+    @apply absolute z-[5] text-[50px] sm:text-[30px] font-[700] uppercase leading-[50px] sm:leading-[45px] text-[#E4F3FB] top-[60%] left-5 
+  }
+  .s2-bodyCard3Lists{
+    @apply w-[459px] sm:w-[340px] h-[845px] sm:h-[1100px] sm:pr-[20px] font-[300] text-[18px] lg:text-[16px] leading-[30px] list-disc tracking-[0.1px] text-[#363637]
+  }
+
+
+  .cardTitle{
+    @apply w-[803px] h-[87px] sm:h-[60px] font-[700] text-[50px] sm:text-[30px]  leading-[66px] sm:leading-[40px] text-center uppercase  text-[#041E3E]
+  }
+  .cardParagraph{
+    @apply font-[300]  w-[427px] sm:w-[400px] sm:px-5 xsm:pl-[35px] xsm:pr-[30px]  pl-[10px]  h-[371px] sm:text-[20px] text-[25px]  leading-[52.75px] sm:leading-[40px] tracking-[0.1px] sm:tracking-normal text-[#363637]
+  }
+  .card2Paragraph{
+    @apply font-[300] w-[427px] sm:w-[400px] sm:px-5 xsm:pr-[40px] sm:text-[20px] sm:leading-[40px] sm:tracking-normal h-[371px] text-[25px] leading-[52.75px] tracking-[0.1px] lg:text-left lg:pl-[10px] text-right text-[#363637]
+  }
+
+
+
+  .contacth1{
+    @apply w-[1214px] h-[82px] font-[700] text-[60px] sm:text-[50px] lg:text-[60px] leading-[138px] sm:leading-[60px] lg:leading-[70px] uppercase text-center text-[#A0C6FC]
+  }
+  .contactBody{
+    @apply flex justify-center items-center sm:px-5 py-20 bg-[#E5F1F8]
+  }
+  .contactBodyh1{
+    @apply w-[944px] lg:w-[600px] h-[208px] font-[300] text-[20px] lg:text-[20px] leading-[41px] sm:leading-[30px] text-center text-[#363637]
+  }
+
+  .inputStyle{
+    @apply w-[495.24px] sm:w-[350px] h-[74.32px] shadow-lg mb-10 pl-20 text-[#363637] border-none outline-none
+  }
+  .input2Style{
+    @apply w-[443.64px] sm:w-[350px] h-[64.27px] shadow-lg mb-10 pl-5 text-[#363637] border-none outline-none
+  }
+  .textareaStyle{
+    @apply w-[495.24px] sm:w-[350px] h-[212px] shadow-lg pt-5 mb-10 pl-20 text-[#363637] border-none outline-none
+  }
+  .formSubmit{
+    @apply w-[496px] sm:w-[200px] sm:h-[60px] h-[82px] shadow-lg  rounded-md mb-10 text-[#E4F3FB] bg-[#021A71]
+  }
+  .smFormStyle{
+    @apply lg:flex lg:flex-col lg:items-center lg:justify-center
+  }
+
+
+  .signUph1{
+    @apply w-[1076px] h-[210px] font-[700] text-[60px] sm:text-[40px] lg:text-[50px] sm:leading-[50px] lg:leading-[60px] leading-[113.16px] uppercase text-center text-[#A0C6FC]
+  }
+  .check{
+    @apply flex items-center lg:justify-center  w-[452.26px] h-[62.71px] gap-10 my-2 lg:gap-2 lg:w-[340px] lg:h-[80px]
+  }
+  .checkbox{
+    @apply w-[40px] h-[40px] border-none cursor-pointer
+  }
+  .inputP{
+    @apply text-[16px] font-[300] text-[#363637] sm:pr-[10%]
+  }
+  .inputPa{
+    @apply text-[#04559E] underline
+  }
+  .SignSubmit{
+    @apply w-[443.64px] sm:w-[340px] h-[64.27px] rounded-md uppercase font-[700] text-[18px] mt-10 text-[#E4F3FB] bg-[#021A71]
+
+  }
+  .signSpan{
+    @apply w-[452px] h-[38px] font-[300] text-[22px] leading-[33px] text-center text-[#041E3E]
+  }
+  .signlink{
+    @apply text-[#04559E] font-[400]
+  }
+
+  .trainFormContainer{
+    @apply w-[566px] h-[1464px]  lg:h-[1200px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center  pt-[10%]
+  }
+  .trainInput{
+    @apply w-[443.64px] sm:w-[340px] h-[64.27px] rounded-md mb-20 shadow-md text-[#434445]  pl-10 border-none outline-none
+  }
+  .trainInputI{
+    @apply w-[443.64px] sm:w-[340px] h-[64.27px] rounded-md mb-10 shadow-md text-[#434445]  pl-10 border-none outline-none
+  }
+  .trainInputBtn{
+    @apply w-[444px] sm:w-[340px] h-[82px] rounded-md bg-[#041E3E] font-[700] text-[18px] mb-20
+  }
+  .trainbtns{
+    @apply flex items-center sm:flex-col sm:gap-5 sm:mt-10 justify-center gap-10
+  }
+  .trainbtnsI{
+    @apply flex items-center justify-center sm:flex-col sm:gap-5 gap-10 
+  }
+  .trainInputBtnI{
+    @apply w-[188px] h-[82px] rounded-md bg-[#021A71] font-[700] text-[18px] mb-10 sm:mb-0
+  }
+  .trainInputBtnII{
+    @apply w-[188px] h-[82px] rounded-md bg-[#041E3E] font-[700] text-[18px] mb-10 
+  }
+  .inputDrop{
+    @apply w-[444px] sm:w-[340px] h-[183px] shadow-sm px-10 bg-white rounded-md  flex flex-col justify-end absolute top-0 lg:top-10 z-[2]
+  }
+  .inputDrop2{
+    @apply w-[444px] sm:w-[340px] h-[183px] shadow-sm px-10 bg-white rounded-md  flex flex-col justify-end absolute top-0  z-[2]
+  }
+  .inputDropText{
+    @apply text-[#bbbbbd] font-[300] border-b my-1 border-[#ebecec]
+  }
+
+
+  .TitleBg{
+    @apply bg-[#E5F1F8] flex justify-center items-center pt-10
+  }
+  .TitleH1{
+    @apply w-[992px] sm:w-[340px] h-[79px] font-[700] mt-5 mb-20 text-[50px] sm:text-[30px] lg:text-[40px] leading-[66px] sm:leading-[50px] text-center uppercase text-[#021A71]
+  }
+
+  .bodyBg{
+    @apply bg-[#E5F1F8]
+  }
+  .bodyH1{
+    @apply w-[1113px] sm:w-[400px] lg:w-[600px]  h-[74px] sm:h-[200px] lg:h-[150px] font-[700] text-[20px]  leading-[30px] sm:px-5 text-center text-[#434445]
+  }
+  .bodyP{
+    @apply w-[1113px] sm:w-[400px] lg:w-[600px] sm:px-5 sm:h-[200px] lg:h-[150px] h-[74px] font-[700] lg:text-[25px] text-[27px] leading-[40.5px] text-center text-[#021A71]
+  }
+  .bodyOffer{
+    @apply flex lg:flex-col  lg:items-start  items-center lg:gap-20 gap-36
+  }
+  .bodyOfferImg{
+    @apply w-[729px] sm:w-[420px] sm:h-[400px] h-[729px] relative 
+  }
+  .bodyOfferH2{
+    @apply w-[538px] h-[230px] font-[700] sm:pr-[40%] sm:text-[30px] lg:text-[60px] text-[69px] uppercase leading-[66px] sm:leading-[30px] text-[#E4F3FB] absolute left-[50px] sm:left-[20px] top-[50%] sm:top-[1600px] lg:hidden sm:hidden
+  }
+  .bodyOfferList{
+    @apply w-[427px] h-[526px] sm:h-[750px] leading-[37.98px] lg:pl-[5%] lg:mb-[10%] tracking-[0.1px] sm:tracking-normal sm:pr-[20%] sm:pl-[15%]
+  }
+  .bodyOfferLi{
+    @apply font-[300] text-[18px] text-[#363637]  list-disc
+  }
+
+
+  .footerBg{
+    @apply w-[100%] h-auto bg-[#EDF8FE]
+  }
+  .footerP{
+    @apply font-[300] my-3 text-[18px] leading-[17px] w-[358px] h-[56px] text-[#363637]
+  }
+  .footer-P{
+    @apply font-[300] w-[541px] sm:pr-10 sm:w-[340px] sm:h-[90px] h-[59px] lg:text-left text-[16px] leading-[25px] text-[#363637] text-right
+  }
+  .footerSpan{
+    @apply font-[700] text-[#021A71]
+  }
+  .footerH1{
+    @apply font-[700] text-[24px] text-[#021A71]
+  }
+  .footerH2{
+    @apply w-[541px] sm:w-[340px] mt-5 sm:h-[35px] h-[59px] text-right lg:text-left font-[700] text-[34px] sm:text-[25px] sm:leading-[30px] leading-[51px]  text-[#021A71]
+  }
+  .footerIcon{
+    @apply w-[24px] h-[24px] cursor-pointer
+  }
+  .footerInput{
+    @apply w-[344px] lg:w-[300px] h-[54px] bg-none text-black outline-none shadow-lg rounded-full lg:rounded-md px-5 shadow-[#6464643B]
+  }
+  .footerEmail{
+    @apply flex items-center lg:justify-start justify-between w-[541px] sm:w-[340px] lg:flex-col lg:items-start lg:gap-2 h-[59px]
+  }
+  .footerBtn{
+    @apply w-[146px] lg:w-[150px] h-[46px] bg-[#021A71] rounded-full lg:rounded-md
+  }
+  .footerBottom{
+    @apply  text-black flex lg:flex-col lg:items-start  justify-between w-full items-center my-5 lg:my-10 lg:relative lg:gap-10
+  }
+  .footerBottomP{
+    @apply font-[700] text-[18px] leading-[24px] text-[#021A71] 
+  }
+  .footerLi{
+    @apply font-[300] text-[18px] leading-[24px] text-[#021A71]
+  }
+  .smStyle{
+    @apply absolute right-0 bottom-10
+  }
+  .resized{
+    @apply w-[400px] sm:w-[300px]
+  }
+
+}
