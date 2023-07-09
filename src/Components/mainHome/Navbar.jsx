@@ -4,7 +4,7 @@ import { NavLinks1 } from '../../data'
 const Navbar = () => {
   return (
     <div className="navbg">
-      <nav className="maxcontainer">
+      <nav className="maxcontainer lg:w-full">
         {/* Logo */}
         <Link to='/'>
           <img src={logo} alt="logo" />
