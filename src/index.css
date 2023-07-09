@@ -773,7 +773,7 @@
     @apply font-[700] text-[8px] text-[#04559E]
   }
   .socialIcons{
-    @apply flex gap-4
+    @apply flex gap-2
   }
   .linksP{
     @apply font-[700] text-[10px] text-[#021A71]

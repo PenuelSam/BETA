@@ -152,7 +152,7 @@ const Footer = () => {
           <div className="f-right">
                 <h1 className="f-sub">Subscribe</h1>
                 <p className="f-subP">Stay up to date on new services, openings and oppotunities from BetaCare by <span className="f-subPspan">joining our mailing</span> list.</p>
-                <div className="flex flex-col gap-5 mt-2 relative">
+                <div className="flex flex-col gap-3 mt-2 relative">
                     <EmailOutlinedIcon sx={{fontSize: '10px', fill: 'gray'}}  className="emailIcon"/>
                     <input type="text" placeholder="Email" className="f-input" />
                     <button className="f-btn" onClick={handleOpenModal}>Subscribe</button>
