@@ -773,13 +773,13 @@
     @apply font-[700] text-[8px] text-[#04559E]
   }
   .socialIcons{
-    @apply flex gap-3
+    @apply flex gap-4
   }
   .linksP{
     @apply font-[700] text-[10px] text-[#021A71]
   }
   .footerLi-m{
-    @apply font-[300] text-[8px] text-[#021A71]
+    @apply font-[300] text-[7px] text-[#021A71]
   }
   .f-right{
     @apply flex flex-col items-start justify-center w-[164px] gap-3
