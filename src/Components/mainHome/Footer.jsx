@@ -125,10 +125,10 @@ const Footer = () => {
             <div className="social">
               <p className="socialp">Find Us On</p>
               <div className="socialIcons">
-                <img src={Facebook} alt="" />
-                <img src={Twitter} alt="" />
-                <img src={Instagram} alt="" />
-                <img src={Linkedin} alt="" />
+                <img src={Facebook} alt="" className="w-[12.54px] h-[12.54px]"/>
+                <img src={Twitter} alt="" className="w-[12.54px] h-[12.54px]"/>
+                <img src={Instagram} alt="" className="w-[12.54px] h-[12.54px]"/>
+                <img src={Linkedin} alt="" className="w-[12.54px] h-[12.54px]"/>
               </div>
             </div>
             <div className="gap-2 py-5">
@@ -152,7 +152,7 @@ const Footer = () => {
           <div className="f-right">
                 <h1 className="f-sub">Subscribe</h1>
                 <p className="f-subP">Stay up to date on new services, openings and oppotunities from BetaCare by <span className="f-subPspan">joining our mailing</span> list.</p>
-                <div className="flex flex-col gap-2 relative">
+                <div className="flex flex-col gap-3 mt-2 relative">
                     <EmailOutlinedIcon sx={{fontSize: '10px', fill: 'gray'}}  className="emailIcon"/>
                     <input type="text" placeholder="Email" className="f-input" />
                     <button className="f-btn" onClick={handleOpenModal}>Subscribe</button>
