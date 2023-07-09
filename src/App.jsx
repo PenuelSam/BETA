@@ -37,7 +37,7 @@ function App() {
   }, []);
 
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-x-hidden">
       {isLoading ? (
         <Preloader />
       ) : (
