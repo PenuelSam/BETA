@@ -843,7 +843,7 @@
     @apply font-[700] text-[16px] text-[#021A71] uppercase
   }
   .f-subP{
-    @apply font-[300] text-[11.5px] text-red-500 text-[#363637] pr-5
+    @apply font-[300] text-[11.5px] text-red-500 pr-5
   }
   .f-subPspan{
     @apply font-[700] text-[#021A71]
