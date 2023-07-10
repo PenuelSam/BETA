@@ -514,7 +514,7 @@
     @apply grid grid-cols-2  place-items-center gap-5 
   }
   .bodyCard1Left{
-    @apply flex flex-col lg:pl-10 xsm:pl-[10%] sm:w-[400px]  w-[650px] h-[955px] lg:h-[800px] sm:h-[1100px] xsm:pr-[20%]
+    @apply flex flex-col lg:pl-[10%]  sm:w-[400px]  w-[650px] h-[955px] lg:h-[800px] sm:h-[1100px]  sm:justify-start mb-20
   }
   .bodyCard2Left{
     @apply flex flex-col items-end lg:items-start justify-center lg:justify-start lg:pl-[5%] w-[650px] h-[955px]  sm:h-[700px]
@@ -526,7 +526,7 @@
       @apply w-[438px] sm:w-[350px] h-[202px] sm:h-[220px] font-[700] text-[20px] sm:text-[18px] leading-[29px] text-[#021A71]
   }*/
   .bodyCard1H1{
-   @apply w-[437px] h-[176px] lg:h-[100px] sm:h-[160px] lg:w-[500px] font-[700] text-[20px] lg:text-[15px]  sm:leading-[40px] leading-[35px] text-[#021A71] sm:pr-[50%] sm:tracking-[0.1px]
+   @apply w-[437px] h-[176px] sm:w-[300px] sm:h-[200px] font-[700] text-[20px] sm:text-[17px]  sm:leading-[40px] leading-[30px] text-[#021A71]  sm:tracking-[0.1px]
   }
   .bodyCard2H1{
     @apply w-[415px] sm:w-[300px] sm:text-[18px] sm:h-[120px] h-[104px] font-[700] text-[20px] sm:leading-[40px]  leading-[30px] text-[#021A71]
@@ -547,7 +547,7 @@
     @apply w-[437px] sm:w-[300px] h-[198px] sm:h-[320px] font-[300] text-[17px] sm:text-[15px] sm:leading-[40px] leading-[30px] text-[#363637] my-10
   }
   .bodyCard1Lists{
-    @apply w-[495px] h-[424px] sm:h-[900px]  font-[300] sm:pr-[50%] text-[17px] lg:text-[15px] leading-[30px] sm:leading-[40px] tracking-[0.6px]  list-disc text-[#363637] mt-5
+    @apply w-[495px] h-[424px] sm:h-[1200px]  font-[300] sm:pr-[30%] text-[17px] lg:text-[15px] leading-[30px] sm:leading-[40px] tracking-[0.6px]  list-disc text-[#363637] mt-5
   }
   .bodyCard1Right{
     @apply w-[700px] h-[954px]  absolute right-[-150px]
