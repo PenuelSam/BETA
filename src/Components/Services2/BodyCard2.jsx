@@ -34,7 +34,7 @@ const BodyCard2 = () => {
           </div>
           <div data-aos="zoom-in" className="hidden lg:flex">
             <p className="s2-bodyCard2ImgP2">Beta Palliative Care and End of Life Care </p>
-            <img src={image} alt="" className="w-[100%] px-[2%] z-[2] h-[100%] object-cover" />
+            <img src={image} alt="" className="w-[100%] px-[3%] z-[2] h-[100%] object-cover" />
           </div>
       </div>
     </div>

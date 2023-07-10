@@ -16,7 +16,7 @@ const BodyCard1 = () => {
 
   return (
     <div className="servicesBg">
-      <div className="maxcontainer2 lg:gap-10 lg:w-full flex lg:flex-col-reverse items-center relative">
+      <div className="maxcontainer2  lg:w-full flex lg:flex-col-reverse items-center  lg:items-start  relative">
           <div data-aos="zoom-in" className="bodyCard1Left">
             <div>
               <h1 className="bodyCard1H1">Building on the Beta Constructive Approach, we make sure to tailor ‘Beta Care Services’ to explicit requirements of our clients with the best private hygiene and practices. </h1>
@@ -34,7 +34,7 @@ const BodyCard1 = () => {
           </div>
           <div data-aos="zoom-in" className="hidden lg:flex">
             <p className="bodyCard1ImgP2">Beta Personal Care </p>
-            <img src={image} alt=""  className="w-[100%] px-[2%]"/>
+            <img src={image} alt=""  className="w-[100%] px-[3%]"/>
           </div>
       </div>
     </div>
