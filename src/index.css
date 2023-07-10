@@ -816,7 +816,7 @@
   }
 
   .footer-m-p{
-    @apply font-[300] font-Poppins text-[13px] text-[#363637] w-[303px] h-[27px]
+    @apply font-[300] font-Poppins text-[12px] text-[#363637] w-[303px] h-[27px]
   }
   .f-center{
     @apply flex items-start gap-3 xsm:gap-2 mb-[20%]
@@ -837,13 +837,13 @@
     @apply font-[300] text-[11px] font-Raleway text-[#021A71]
   }
   .f-right{
-    @apply flex flex-col items-start justify-center w-[170px] gap-2
+    @apply flex flex-col items-start justify-center w-[200px] gap-2
   }
   .f-sub{
     @apply font-[700] text-[16px] text-[#021A71] uppercase
   }
   .f-subP{
-    @apply font-[300] text-[12px] text-[#363637]
+    @apply font-[300] text-[11.5px] text-[#363637]
   }
   .f-subPspan{
     @apply font-[700] text-[#021A71]
