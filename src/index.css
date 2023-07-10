@@ -568,7 +568,7 @@
     @apply w-[397px] h-[210px] font-[700] uppercase text-[40px] leading-[66px] text-right text-[#E4F3FB] z-[5] absolute bottom-[10%] right-[10%] 
   }
   .bodyCard1ImgP2{
-    @apply w-[400px] h-[210px] font-[700] uppercase text-[69px] sm:text-[30px] lg:text-[30px] z-[5] leading-[66px] sm:leading-[50px] text-[#E4F3FB] absolute top-[30%] sm:top-[50%] left-10 sm:left-[10%]
+    @apply w-[300px] h-[210px] font-[700] uppercase text-[69px] sm:text-[30px] lg:text-[30px] z-[5] leading-[66px] sm:leading-[50px] text-[#E4F3FB] absolute top-[30%] sm:top-[50%] left-10 sm:left-[10%] 
   }
   .bodyCard3ImgP2{
     @apply w-[400px] sm:w-[350px] h-[210px] font-[700] uppercase text-[50px] lg:text-[30px] z-[5] leading-[66px] text-[#E4F3FB] absolute top-[40%] left-10 sm:top-[50%] sm:left-[10%]
