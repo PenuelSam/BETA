@@ -34,7 +34,7 @@ const BodyCard1 = () => {
           </div>
           <div data-aos="zoom-in" className="hidden lg:flex">
             <p className="bodyCard1ImgP2">Beta Personal Care </p>
-            <img src={image} alt="" />
+            <img src={image} alt=""  className="w-[100%] px-[2%]"/>
           </div>
       </div>
     </div>

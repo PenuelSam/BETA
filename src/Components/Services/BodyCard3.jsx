@@ -39,7 +39,7 @@ const BodyCard3 = () => {
           </div>
           <div data-aos="zoom-in" className=" hidden lg:flex">
             <p className="bodyCard3ImgP2">Beta Personal Nursing Care </p>
-            <img src={image} alt="" className="w-[100%] z-[2] h-[100%] object-cover" />
+            <img src={image} alt="" className="w-[100%] px-[2%] z-[2] h-[100%] object-cover" />
           </div>
       </div>
     </div>
