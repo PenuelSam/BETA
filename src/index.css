@@ -642,7 +642,7 @@
 
 
   .contacth1{
-    @apply w-[1214px] h-[82px] font-[700] text-[40px] sm:text-[20px] leading-[138px] sm:leading-[60px] lg:leading-[70px] uppercase text-center text-[#A0C6FC]
+    @apply w-[1214px] h-[82px] font-[700] text-[40px] sm:text-[30px] leading-[138px] sm:leading-[60px] lg:leading-[70px] uppercase text-center text-[#A0C6FC]
   }
   .contactBody{
     @apply flex justify-center items-center sm:px-5 py-20 bg-[#E5F1F8]
@@ -658,13 +658,13 @@
   }
 
   .inputStyle{
-    @apply w-[495.24px] sm:w-[300px] sm:h-[50px] h-[74.32px] shadow-lg mb-10 pl-20 text-[#363637] border-none outline-none
+    @apply w-[495.24px] sm:w-[300px] sm:h-[50px] h-[74.32px] shadow-lg mb-10 pl-10 sm:pl-[3rem] text-[#363637] border-none outline-none
   }
   .input2Style{
     @apply w-[443.64px] sm:w-[350px] h-[64.27px] shadow-lg mb-10 pl-5 text-[#363637] border-none outline-none
   }
   .textareaStyle{
-    @apply w-[495.24px] sm:w-[300px] sm:h-[150px] h-[212px] shadow-lg pt-5 mb-10 pl-20 text-[#363637] border-none outline-none
+    @apply w-[495.24px] sm:w-[300px] sm:h-[150px] h-[212px] shadow-lg pt-5 mb-10 pl-20 sm:pl-[3rem] text-[#363637] border-none outline-none
   }
   .formSubmit{
     @apply w-[496px]  sm:w-[200px] sm:h-[40px] h-[82px] shadow-lg  rounded-md mb-10 text-[#E4F3FB] bg-[#021A71]
