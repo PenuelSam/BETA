@@ -33,7 +33,7 @@ const Form = () => {
         </div>
 
         <div className="relative">
-            <AddOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload Picture*" className="trainInputI" />
           </div>
 

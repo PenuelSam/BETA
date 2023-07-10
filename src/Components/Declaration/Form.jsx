@@ -21,7 +21,7 @@ const Form = () => {
         </div>
 
         <div className="relative">
-            <KeyboardArrowDownOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Date*" className="trainInputI" />
           </div>
 

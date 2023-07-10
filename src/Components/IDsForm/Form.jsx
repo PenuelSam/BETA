@@ -23,7 +23,7 @@ const Form = () => {
 
           <div className="relative">
             <div className="relative z-[10] mb-[50px]">
-            <KeyboardArrowDownOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Level of Badge*" className="trainInput shadow-lg " />
             </div>
             <div className="inputDrop2">
@@ -34,17 +34,17 @@ const Form = () => {
           </div>
 
           <div className="relative">
-            <AddOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Badge Image Front*" className="trainInputI" />
           </div>
 
           <div className="relative">
-            <AddOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Badge Image Back*" className="trainInputI" />
           </div>
 
           <div className="relative">
-            <KeyboardArrowDownOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Expiry Date*" className="trainInputI" />
           </div>
 

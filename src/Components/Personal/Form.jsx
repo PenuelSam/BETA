@@ -24,7 +24,7 @@ const Form = () => {
             <input type="text" placeholder="Last Name*" className="trainInput" />
           </div>
           <div className="relative">
-            <KeyboardArrowDownOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}}/>
+            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}}/>
             <input type="text" placeholder="Gender*" className="trainInput" />
           </div>
           <div>
@@ -34,15 +34,15 @@ const Form = () => {
             <input type="email" placeholder="Email*" className="trainInput" />
           </div>
           <div className="relative">
-            <KeyboardArrowDownOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Country" className="trainInput" />
           </div>
           <div className="relative">
-            <KeyboardArrowDownOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="State" className="trainInput" />
           </div>
           <div className="relative">
-            <KeyboardArrowDownOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}}/>
+            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}}/>
             <input type="text" placeholder="Marital Status" className="trainInput" />
           </div>
           <Link to='/train'>

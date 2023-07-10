@@ -701,22 +701,22 @@
   }
 
   .trainFormContainer{
-    @apply w-[566px] h-[1464px]  lg:h-[1100px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center sm:items-start  pt-[10%]
+    @apply w-[566px] h-[1464px]  lg:h-[1200px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%]  sm:mx-[5%]
   }
   .trainFormContainerBG{
-    @apply w-[566px] h-[1464px]  lg:h-[800px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center sm:items-start  pt-[10%]
+    @apply w-[566px] h-[1464px]  lg:h-[800px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%]  sm:mx-[5%]
   }
   .trainFormContainerID{
-    @apply w-[566px] h-[1464px]  lg:h-[900px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center sm:items-start  pt-[10%]
+    @apply w-[566px] h-[1464px]  lg:h-[900px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center sm:items-start  pt-[10%] sm:mx-[5%]
   }
   .trainFormContainerPay{
-    @apply w-[566px] h-[1464px]  lg:h-[1200px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center sm:items-start  pt-[10%]
+    @apply w-[566px] h-[1464px]  lg:h-[1200px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
   }
   .trainFormContainerCv{
-    @apply w-[566px] h-[1464px]  lg:h-[400px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center   pt-[10%]
+    @apply w-[566px] h-[1464px]  lg:h-[600px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
   }
   .trainFormContainerKin{
-    @apply w-[566px] h-[1464px]  lg:h-[700px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center   pt-[10%]
+    @apply w-[566px] h-[1464px]  lg:h-[700px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
   }
   
 
@@ -750,6 +750,9 @@
   }
   .inputDropText{
     @apply text-[#bbbbbd] font-[300] border-b my-1 border-[#ebecec]
+  }
+  .KeyDown{
+    @apply absolute right-[10%] top-[15%] cursor-pointer sm:top-[10%]
   }
 
 

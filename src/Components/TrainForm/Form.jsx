@@ -19,7 +19,7 @@ const Form = () => {
         <form action="" className="smFormStyle">
           <div className="relative">
             <div className="relative z-[10] my-[50px]">
-            <KeyboardArrowDownOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Level of Training*" className="trainInput shadow-lg " />
             </div>
             <div className="inputDrop">
@@ -41,11 +41,11 @@ const Form = () => {
             <input type="text" placeholder="Qualification Obtained*" className="trainInputI" />
           </div>
           <div className="relative">
-            <KeyboardArrowDownOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Year*" className="trainInputI" />
           </div>
           <div className="relative">
-            <AddOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload Certification*" className="trainInputI" />
           </div>
           <div className="trainbtns">

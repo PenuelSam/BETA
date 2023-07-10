@@ -17,12 +17,12 @@ const Form = () => {
         <form action="" className="smFormStyle">
 
         <div className="relative">
-            <AddOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload CV*" className="trainInputI" />
           </div>
 
         <div className="relative">
-            <AddOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload Cover Letter*" className="trainInputI" />
           </div>
 

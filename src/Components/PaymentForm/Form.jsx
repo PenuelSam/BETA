@@ -17,7 +17,7 @@ const Form = () => {
 
         <div className="relative">
             <div className="relative z-[10] mb-[50px]">
-            <KeyboardArrowDownOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Payment Method*" className="trainInput shadow-lg " />
             </div>
             <div className="inputDrop2">
@@ -41,7 +41,7 @@ const Form = () => {
 
           <div className="relative">
             <div className="relative z-[10] mb-[50px]">
-            <KeyboardArrowDownOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Account Type*" className="trainInput shadow-lg " />
             </div>
             <div className="inputDrop2">
