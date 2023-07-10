@@ -476,7 +476,7 @@
     @apply w-[437px] h-[176px] lg:h-[100px] sm:h-[130px] lg:w-[500px] font-[700] text-[20px] lg:text-[15px]  sm:leading-[40px] leading-[29px] text-[#021A71] sm:pr-[32%] sm:tracking-[0.1px]
   }
   .aboutBodyP{
-    @apply w-[437px] h-[284px] sm:h-[500px]  sm:leading-[40px] font-[300] text-[17px] lg:text-[15px] leading-[28px] sm:tracking-[0.1px] text-[#363637] my-10  pb-32 sm:pr-[30%]
+    @apply w-[437px] h-[284px] sm:h-[500px]  sm:leading-[40px] font-[300] text-[17px] lg:text-[15px] leading-[28px] sm:tracking-[0.1px] text-[#363637] my-20  pb-32 sm:pr-[30%]
   }
   .aboutBodyImg{
     @apply absolute top-[-90px] left-[-150px] z-[2]
