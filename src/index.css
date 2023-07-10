@@ -819,7 +819,7 @@
     @apply font-[300] font-Poppins text-[12px] text-[#363637] w-[303px] h-[27px]
   }
   .f-center{
-    @apply flex items-start gap-3 xsm:gap-2 mb-[20%]
+    @apply flex items-start  mb-[20%]
   }
   .social{
     @apply flex flex-col justify-center gap-3 py-5
@@ -843,7 +843,7 @@
     @apply font-[700] text-[16px] text-[#021A71] uppercase
   }
   .f-subP{
-    @apply font-[300] text-[11.5px] text-[#363637]
+    @apply font-[300] text-[11.5px] text-[#363637] pr-5
   }
   .f-subPspan{
     @apply font-[700] text-[#021A71]
