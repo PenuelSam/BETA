@@ -547,7 +547,10 @@
     @apply w-[437px] sm:w-[300px] h-[198px] sm:h-[320px] font-[300] text-[17px] sm:text-[15px] sm:leading-[40px] leading-[30px] text-[#363637] my-10
   }
   .bodyCard1Lists{
-    @apply w-[495px] h-[424px] sm:h-[1200px]  font-[300] sm:pr-[30%] text-[17px] lg:text-[15px] leading-[30px] sm:leading-[40px] tracking-[0.6px]  list-disc text-[#363637] mt-5
+    @apply w-[495px] h-[424px] sm:h-[1200px]  font-[300] sm:pr-[40%] text-[17px] lg:text-[15px] leading-[30px] sm:leading-[40px] tracking-[0.1px]  list-disc text-[#363637] mt-5 sm:tracking-normal
+  }
+  .bodyCard3Lists{
+    @apply w-[495px] h-[424px] sm:h-[1200px]  font-[300] sm:pr-[20%] text-[17px] lg:text-[15px] leading-[30px] sm:leading-[40px] tracking-[0.1px]  list-disc text-[#363637] mt-5 sm:tracking-normal
   }
   .bodyCard1Right{
     @apply w-[700px] h-[954px]  absolute right-[-150px]

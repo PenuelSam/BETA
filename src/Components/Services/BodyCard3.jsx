@@ -24,7 +24,7 @@ const BodyCard3 = () => {
               <h1 className="bodyCard3H1">The family caregiver has a lot to do, but sometimes medical needs may require more attention. </h1>
               <p className="bodyCard3P">The purpose of the Beta Personal Nursing Care is to complement and supplement the family caregivers for specific medical care. We provide nurses for the medical care of clients with the aim of achieving a positive outcome in line with the Beta Care Approach. Beta nurses take responsibility for:</p>
             </div>
-            <ul className="bodyCard1Lists">
+            <ul className="bodyCard3Lists">
               {NursingList.map((care, i) => (
                 <li key={i}>{care.title}</li>
               ))}
