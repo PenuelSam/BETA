@@ -459,14 +459,14 @@
     @apply bg-[#E5F1F8] flex flex-col items-center justify-center pt-20
   }
   .BetaCareH1{
-    @apply w-[620px]  h-[82px] font-[700] text-[50px] sm:text-[30px] lg:text-[50px] leading-[103.5px] text-center text-[#021A71] my-5
+    @apply w-[620px]  h-[82px] font-[700] text-[50px] sm:text-[30px] lg:text-[50px] leading-[70.5px] text-center text-[#021A71] mb-5
   }
   /*.BetaCareP{
     @apply w-[951px] sm:w-[500px] sm:px-[25%] h-[234px] sm:h-[550px]  lg:w-[900px] border border-black font-[300]  text-[20px] leading-[31px]  text-center sm:text-left text-[#363637] mt-5 mb-32 lg:text-start lg:pl-0
   }*/
 
   .BetaCareP{
-    @apply w-[951px] lg:w-[500px] h-[234px] sm:h-[510px] lg:h-[650px] font-[300] text-[18px] lg:text-[15px] text-center sm:text-start leading-[31px] mt-5 mb-32 sm:mb-20  sm:px-[25%] text-[#363637] sm:leading-[40px] sm:tracking-[0.1px]
+    @apply w-[951px] lg:w-[500px] h-[234px] sm:h-[550px] lg:h-[650px] font-[300] text-[18px] lg:text-[15px] text-center  leading-[31px] mt-5 mb-32 sm:mb-20  sm:px-[25%] text-[#363637] sm:leading-[40px] sm:tracking-[0.1px]
   }
 
   .aboutBodyCard{
@@ -481,8 +481,11 @@
   .aboutBodyImg{
     @apply absolute top-[-90px] left-[-150px] z-[2]
   }
+  .aboutBodyImg2{
+    @apply w-[100%] px-[2%] object-cover 
+  }
   .aboutBodyImgP{
-    @apply w-[397px] h-[210px] font-[700] xsm:text-[35px] text-[69px] sm:text-[40px] leading-[66px] text-[#E4F3FB] z-[5] absolute sm:top-[30%] top-[40%] lg:left-5 
+    @apply w-[397px] h-[210px] font-[700] xsm:text-[35px] text-[69px] sm:text-[40px] sm:pr-[20%] leading-[66px] text-[#E4F3FB] z-[5] absolute sm:top-[30%] top-[40%] lg:left-5 
   }
 
 
