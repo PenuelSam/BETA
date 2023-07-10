@@ -466,23 +466,23 @@
   }*/
 
   .BetaCareP{
-    @apply w-[951px] lg:w-[500px] h-[234px] sm:h-[510px] lg:h-[650px] font-[300] text-[18px] lg:text-[15px] text-center sm:text-start leading-[31px] mt-5 mb-32 sm:mb-20 lg:px-5 sm:px-[20%] text-[#363637] sm:leading-[40px] sm:tracking-[0.1px]
+    @apply w-[951px] lg:w-[500px] h-[234px] sm:h-[510px] lg:h-[650px] font-[300] text-[18px] lg:text-[15px] text-center sm:text-start leading-[31px] mt-5 mb-32 sm:mb-20  sm:px-[25%] text-[#363637] sm:leading-[40px] sm:tracking-[0.1px]
   }
 
   .aboutBodyCard{
     @apply flex lg:flex-col lg:items-start items-center justify-between relative pt-32 lg:gap-10
   }
   .aboutBodyH1{
-    @apply w-[437px] h-[176px] lg:h-[100px] sm:h-[130px] lg:w-[500px] font-[700] text-[20px] lg:text-[15px]  sm:leading-[30px] leading-[29px] text-[#021A71] sm:pr-[32%] sm:tracking-[0.1px]
+    @apply w-[437px] h-[176px] lg:h-[100px] sm:h-[130px] lg:w-[500px] font-[700] text-[20px] lg:text-[15px]  sm:leading-[40px] leading-[29px] text-[#021A71] sm:pr-[32%] sm:tracking-[0.1px]
   }
   .aboutBodyP{
-    @apply w-[437px] h-[284px] sm:h-[400px]  sm:leading-[30px] font-[300] text-[17px] lg:text-[15px] leading-[28px] sm:tracking-[0.1px] text-[#363637] my-5  pb-32 sm:pr-[30%]
+    @apply w-[437px] h-[284px] sm:h-[500px]  sm:leading-[40px] font-[300] text-[17px] lg:text-[15px] leading-[28px] sm:tracking-[0.1px] text-[#363637] my-10  pb-32 sm:pr-[30%]
   }
   .aboutBodyImg{
     @apply absolute top-[-90px] left-[-150px] z-[2]
   }
   .aboutBodyImgP{
-    @apply w-[397px] h-[210px] font-[700] xsm:text-[35px] text-[69px] sm:text-[40px] leading-[66px] text-[#E4F3FB] z-[5] absolute top-[40%] lg:left-5 
+    @apply w-[397px] h-[210px] font-[700] xsm:text-[35px] text-[69px] sm:text-[40px] leading-[66px] text-[#E4F3FB] z-[5] absolute sm:top-[30%] top-[40%] lg:left-5 
   }
 
 
