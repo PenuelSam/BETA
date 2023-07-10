@@ -18,7 +18,7 @@ const CustomCursor = () => {
   
   return (
     <div
-      className='custom-cursor'
+      className='custom-cursor sm:hidden'
       style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
     />
   );

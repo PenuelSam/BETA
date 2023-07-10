@@ -57,7 +57,7 @@ const Navbar = () => {
               onClick={() => setToggleMenu(false)}
             />
             <div className="ml-[10%] mt-[10%]">
-              <img src={logo2} alt="" />
+              <img src={logo2} alt="" className="w-[150px]" />
             </div>
             <ul className="navbar-smallscreen_links">
             {NavLinks.map((nav) => (
@@ -69,7 +69,7 @@ const Navbar = () => {
                       className="flex items-center gap-5 px-5"
                     >
                       <img src={nav.Png} alt="" />
-                      <li key={nav.id} className={`text-[#434445] text-[13px] font-[700]`}>
+                      <li key={nav.id} className={`text-[#434445]  text-[15px] font-[500]`}>
                         {nav.name}
                       </li>
                     </div>

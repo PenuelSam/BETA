@@ -13,6 +13,10 @@ export default {
       'sm' : {'max': '550px'},
       'xsm' : {'max': '375px'},
   },
+  fontFamily: {
+    'Poppins': ['Poppins', '"sans-serif"'],
+    'Raleway': ['Raleway', '"sans-serif"'],
+  },
   
   },
   plugins: [],
