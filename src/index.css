@@ -32,7 +32,7 @@
     height: 5px;
     border: none;
   }
-  
+
 
   @keyframes slideInFromRight {
     0% {
@@ -287,22 +287,22 @@
   }
   
   .banner-c-H1{
-    @apply font-[700] sm:w-[400px] sm:text-[30px] text-[50px] sm:h-[30px] lg:text-[45px] lg:h-[55px]  leading-[132px] sm:leading-[50px] w-[1116px] h-[65px] uppercase text-[#A0C6FC] text-center
+    @apply font-[700] sm:w-[400px] sm:text-[25px] text-[50px] sm:h-[10px] lg:text-[45px] lg:h-[55px]  leading-[132px] sm:leading-[50px] w-[1116px] h-[65px] uppercase text-[#A0C6FC] text-center 
   }
   .bannerP{
-    @apply w-[1050px] px-[10px] h-[110px] font-[500] text-[24px] leading-[29px] text-center mt-10 text-white tracking-wide
+    @apply w-[1050px] px-[10px] h-[110px] font-[500] text-[24px] leading-[29px] text-center mt-10 text-white tracking-wide 
   }
   .bannerPsm{
     @apply w-full text-[15px] mt-5
   }
   .banner-c-P{
-    @apply w-[756px] sm:w-[400px] sm:h-[55px] h-[49px] lg:h-[20px] font-[500] text-[25px] lg:text-[25px] leading-[35px] text-center my-10 text-white
+    @apply w-[756px] sm:w-[400px] sm:h-[20px] h-[49px] font-[500] text-[25px] lg:text-[18px] leading-[35px] text-center my-10 text-white 
   }
   .bannerBtns{
     @apply flex lg:flex-col justify-center items-center lg:gap-5 gap-10 lg:my-[3rem] my-5
   }
   .banner-c-Btns{
-    @apply flex justify-center lg:flex-col items-center lg:gap-5 gap-10 my-5
+    @apply flex justify-center lg:flex-col items-center lg:gap-5 gap-10 
   }
   .bannerBtnLeft{
     @apply h-[59px] w-[322.23px] uppercase font-[700] bg-white text-black rounded-md border-none
@@ -409,7 +409,7 @@
   }
 
   .care-bodyGrid{
-    @apply my-20 lg:my-10 grid grid-cols-3 sm:grid-cols-2  gap-10
+    @apply my-20 lg:my-10 grid grid-cols-3   gap-10
   }
   .care-bodyBelow{
     @apply flex lg:flex-col-reverse lg:items-start items-center justify-between relative my-28 lg:my-20 lg:gap-10
@@ -505,7 +505,7 @@
     @apply bg-[#E5F1F8]
   }
   .servicesGrid{
-    @apply grid grid-cols-2 place-items-center gap-5 
+    @apply grid grid-cols-2 sm:grid-cols-1 place-items-center gap-5 
   }
   .bodyCard1Left{
     @apply flex flex-col lg:pl-5 xsm:pl-[15%]   sm:w-[400px]  w-[650px] h-[955px] lg:h-[800px] sm:h-[1000px]
@@ -547,7 +547,7 @@
     @apply w-[397px] h-[210px] font-[700] uppercase text-[40px] z-[5] leading-[66px] text-[#E4F3FB] absolute top-[40%] left-[10%] 
   }
   .bodyCard2ImgP2{
-    @apply w-[400px] h-[210px] font-[700] uppercase text-[69px] lg:text-[40px] z-[5] leading-[66px] text-[#E4F3FB] absolute top-[25%] right-10 text-right sm:text-left sm:left-5 sm:top-[50%]
+    @apply w-[300px] h-[210px] font-[700] uppercase text-[69px] lg:text-[40px] z-[5] leading-[66px] text-[#E4F3FB] absolute top-[25%] right-10 text-right sm:text-left sm:left-5 sm:top-[50%]
   }
   .bodyCard1ImgP{
     @apply w-[397px] h-[210px] font-[700] uppercase text-[40px] leading-[66px] text-right text-[#E4F3FB] z-[5] absolute bottom-[10%] right-[10%] 

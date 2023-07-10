@@ -8,7 +8,7 @@ const Despatch = () => {
         <div className="w-[700px] sm:w-[100%] sm:h-[400px] h-[1117px]">
           <img src={despatch} alt="" className="w-[100%] h-[100%] object-cover"/>
         </div>
-        <div className="w-[581px] sm:w-[340px] lg:h-[700px] sm:h-[1300px] lg:justify-start lg:pl-10 h-[1101px] flex flex-col justify-center ">
+        <div className="w-[581px] sm:w-[340px] lg:h-[700px] sm:h-[1000px] lg:justify-start lg:pl-10 h-[1101px] flex flex-col justify-center ">
           <p className="font-[300] text-[18px] lg:text-[15px] leading-[35px] sm:leading-[35px] tracking-[0.1px] lg:tracking-normal text-[#363637]">
           Despatch operatives, also known as picking and packing workers, form an integral part of the supply chain in any business. They are responsible for ensuring that customer orders are picked, packed, and shipped in a timely manner. 
           </p>
