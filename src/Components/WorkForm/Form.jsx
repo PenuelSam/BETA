@@ -14,7 +14,7 @@ const Form = () => {
         <img src={line} alt="" className="absolute left-[20%] z-[2] lg:hidden" />
         <TrainBtns />
         
-        <div className="trainFormContainer">
+        <div className="trainFormContainerPay">
         <form action="" className="smFormStyle">
 
         <div className="relative">
@@ -39,7 +39,7 @@ const Form = () => {
 
           <div className="w-[423px] sm:w-[370px] h-[29px] flex  items-center justify-between sm:justify-center sm:pl-[10%] sm:gap-10 ">
             <input type="checkbox" className="w-[25px] h-[29px] rounded-md outline-none cursor-pointer"/>
-            <p className="font-[300] text-[15px]  leading-[25.83px] text-[#3E3C38]">Upload additional documentations</p>
+            <p className="font-[300] text-[18px]  leading-[25.83px] text-[#3E3C38]">Upload additional documentations</p>
           </div>
 
           <div className="w-[383.29px] sm:w-[370px] h-[21.95px] mx-auto my-20">

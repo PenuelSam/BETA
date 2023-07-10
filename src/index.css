@@ -658,13 +658,13 @@
   }
 
   .inputStyle{
-    @apply w-[495.24px] sm:w-[300px] sm:h-[50px] h-[74.32px] shadow-lg mb-10 pl-10 sm:pl-[3rem] text-[#363637] border-none outline-none
+    @apply w-[495.24px] sm:w-[300px] sm:h-[50px] h-[74.32px] shadow-lg mb-10 pl-10 sm:pl-[3rem] text-[#363637] border-none outline-none sm:rounded-md
   }
   .input2Style{
-    @apply w-[443.64px] sm:w-[350px] h-[64.27px] shadow-lg mb-10 pl-5 text-[#363637] border-none outline-none
+    @apply w-[443.64px] sm:w-[350px] h-[64.27px] shadow-lg mb-10 pl-5 text-[#363637] border-none outline-none sm:rounded-md
   }
   .textareaStyle{
-    @apply w-[495.24px] sm:w-[300px] sm:h-[150px] h-[212px] shadow-lg pt-5 mb-10 pl-20 sm:pl-[3rem] text-[#363637] border-none outline-none
+    @apply w-[495.24px] sm:w-[300px] sm:h-[150px] h-[212px] shadow-lg pt-5 mb-10 pl-20 sm:pl-[3rem] text-[#363637] border-none outline-none rounded-md
   }
   .formSubmit{
     @apply w-[496px]  sm:w-[200px] sm:h-[40px] h-[82px] shadow-lg  rounded-md mb-10 text-[#E4F3FB] bg-[#021A71]
@@ -701,16 +701,34 @@
   }
 
   .trainFormContainer{
-    @apply w-[566px] h-[1464px]  lg:h-[1200px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center  pt-[10%]
+    @apply w-[566px] h-[1464px]  lg:h-[1100px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center sm:items-start  pt-[10%]
   }
+  .trainFormContainerBG{
+    @apply w-[566px] h-[1464px]  lg:h-[800px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center sm:items-start  pt-[10%]
+  }
+  .trainFormContainerID{
+    @apply w-[566px] h-[1464px]  lg:h-[900px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center sm:items-start  pt-[10%]
+  }
+  .trainFormContainerPay{
+    @apply w-[566px] h-[1464px]  lg:h-[1200px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center sm:items-start  pt-[10%]
+  }
+  .trainFormContainerCv{
+    @apply w-[566px] h-[1464px]  lg:h-[400px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center   pt-[10%]
+  }
+  .trainFormContainerKin{
+    @apply w-[566px] h-[1464px]  lg:h-[700px]  bg-[#E5F1F8] lg:bg-white rounded-2xl flex  justify-center   pt-[10%]
+  }
+  
+
+
   .trainInput{
-    @apply w-[443.64px] sm:w-[340px] h-[64.27px] rounded-md mb-20 shadow-md text-[#434445]  pl-10 border-none outline-none
+    @apply w-[443.64px] sm:w-[300px] sm:h-[50px]  h-[64.27px] rounded-md mb-20 shadow-md text-[#434445]  pl-10 sm:pl-5 border-none outline-none
   }
   .trainInputI{
-    @apply w-[443.64px] sm:w-[340px] h-[64.27px] rounded-md mb-10 shadow-md text-[#434445]  pl-10 border-none outline-none
+    @apply w-[443.64px]  sm:w-[300px] sm:h-[50px]  h-[64.27px] rounded-md mb-10 shadow-md text-[#434445]  pl-10 border-none outline-none sm:pl-5
   }
   .trainInputBtn{
-    @apply w-[444px] sm:w-[340px] h-[82px] rounded-md bg-[#041E3E] font-[700] text-[18px] mb-20
+    @apply w-[444px]  sm:w-[200px] sm:h-[40px] h-[82px] rounded-md bg-[#041E3E] font-[700] text-[18px] mb-20
   }
   .trainbtns{
     @apply flex items-center sm:flex-col sm:gap-5 sm:mt-10 justify-center gap-10
@@ -719,16 +737,16 @@
     @apply flex items-center justify-center sm:flex-col sm:gap-5 gap-10 
   }
   .trainInputBtnI{
-    @apply w-[188px] h-[82px] rounded-md bg-[#021A71] font-[700] text-[18px] mb-10 sm:mb-0
+    @apply w-[188px] sm:w-[200px] sm:h-[40px] h-[82px] rounded-md bg-[#021A71] font-[700] text-[18px] mb-10 sm:mb-0
   }
   .trainInputBtnII{
-    @apply w-[188px] h-[82px] rounded-md bg-[#041E3E] font-[700] text-[18px] mb-10 
+    @apply w-[188px] sm:w-[200px] sm:h-[40px] h-[82px] rounded-md bg-[#041E3E] font-[700] text-[18px] mb-10 
   }
   .inputDrop{
-    @apply w-[444px] sm:w-[340px] h-[183px] shadow-sm px-10 bg-white rounded-md  flex flex-col justify-end absolute top-0 lg:top-10 z-[2]
+    @apply w-[444px] sm:w-[300px] sm:h-[170px] h-[183px] shadow-sm px-10 bg-white rounded-md  flex flex-col justify-end absolute top-0 lg:top-10 z-[2]
   }
   .inputDrop2{
-    @apply w-[444px] sm:w-[340px] h-[183px] shadow-sm px-10 bg-white rounded-md  flex flex-col justify-end absolute top-0  z-[2]
+    @apply w-[444px] sm:w-[300px] sm:h-[170px] h-[183px] shadow-sm px-10 bg-white rounded-md  flex flex-col justify-end absolute top-0  z-[2]
   }
   .inputDropText{
     @apply text-[#bbbbbd] font-[300] border-b my-1 border-[#ebecec]

@@ -13,7 +13,7 @@ const Form = () => {
         <img src={line} alt="" className="absolute left-[20%] z-[2] lg:hidden" />
         <TrainBtns />
         
-        <div className="trainFormContainer">
+        <div className="trainFormContainerBG">
         <form action="" className="smFormStyle">
 
         <div>
@@ -25,7 +25,7 @@ const Form = () => {
             <input type="text" placeholder="Date*" className="trainInputI" />
           </div>
 
-          <div className="w-[444px] sm:w-[340px] sm:h-[350px] h-[267px] flex  items-start p-5 shadow-md mb-10 bg-white justify-between sm:gap-5 ">
+          <div className="w-[444px] sm:w-[300px] sm:h-[300px] h-[267px] flex  items-start p-5 shadow-md mb-10 bg-white justify-between sm:gap-5 ">
             <input type="checkbox" className="w-[27.43px] h-[29px] rounded-md outline-none cursor-pointer"/>
             <p className="font-[300] text-[13px] leading-[30px]  text-[#3E3C38] w-[335px] ">I declare that the information provided is true and accurate to the best of my knowledge. I take full responsibility for its authenticity and understand the consequences of providing false or misleading information.</p>
           </div>

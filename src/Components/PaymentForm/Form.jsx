@@ -12,7 +12,7 @@ const Form = () => {
         <img src={line} alt="" className="absolute left-[20%] z-[2] lg:hidden" />
         <TrainBtns />
         
-        <div className="trainFormContainer">
+        <div className="trainFormContainerPay">
         <form action="" className="smFormStyle">
 
         <div className="relative">
