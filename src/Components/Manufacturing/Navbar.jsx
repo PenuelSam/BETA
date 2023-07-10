@@ -57,7 +57,7 @@ const Navbar = () => {
               onClick={() => setToggleMenu(false)}
             />
             <div className="ml-[10%] mt-[10%]">
-              <img src={logo2} alt="" className="w-[150px] xsm:w-[100px]" />
+              <img src={logo2} alt="" className="w-[100px] xsm:w-[100px]" />
             </div>
             <ul className="navbar-smallscreen_links">
             {NavLinks.map((nav) => (
