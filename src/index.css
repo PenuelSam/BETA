@@ -772,7 +772,7 @@
     @apply bg-[#E5F1F8] flex justify-center items-center pt-10
   }
   .TitleH1{
-    @apply w-[992px] sm:w-[340px] h-[79px] border border-black font-[700] mt-5 mb-10 sm:mb-0 text-[30px] sm:text-[25px] lg:text-[40px] leading-[66px] sm:leading-[50px] text-center uppercase text-[#021A71] sm:pt-5
+    @apply w-[992px] sm:w-[340px] h-[79px]  font-[700] mt-5 mb-10 sm:mb-0 text-[30px] sm:text-[25px] lg:text-[40px] leading-[66px] sm:leading-[50px] text-center uppercase text-[#021A71] sm:pt-5
   }
 
   .bodyBg{
