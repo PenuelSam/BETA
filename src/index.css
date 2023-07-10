@@ -520,7 +520,7 @@
     @apply flex flex-col items-end lg:items-start justify-center lg:justify-start lg:pl-[5%] w-[650px] h-[955px]  sm:h-[700px]
   }
   .bodyCard3Left{
-    @apply flex flex-col items-start justify-center sm:justify-start lg:pl-[10%] w-[650px] h-[955px] py-10 sm:h-[1500px]
+    @apply flex flex-col items-start justify-center sm:justify-start lg:pl-[10%] w-[650px] h-[955px] py-10 sm:h-[1150px]
   }
   /*.bodyCard1H1{
       @apply w-[438px] sm:w-[350px] h-[202px] sm:h-[220px] font-[700] text-[20px] sm:text-[18px] leading-[29px] text-[#021A71]
