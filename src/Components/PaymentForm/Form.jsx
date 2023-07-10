@@ -18,7 +18,7 @@ const Form = () => {
         <div className="relative">
             <div className="relative z-[10] mb-[50px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
-            <input type="text" placeholder="Payment Method*" className="trainInput shadow-lg " />
+            <input type="text"  placeholder="Payment Method*" className="trainInput shadow-lg " />
             </div>
             <div className="inputDrop2">
             <p className="inputDropText">Paypal</p>
