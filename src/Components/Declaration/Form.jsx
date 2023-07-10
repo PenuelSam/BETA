@@ -27,7 +27,7 @@ const Form = () => {
 
           <div className="w-[444px] sm:w-[340px] sm:h-[350px] h-[267px] flex  items-start p-5 shadow-md mb-10 bg-white justify-between sm:gap-5 ">
             <input type="checkbox" className="w-[27.43px] h-[29px] rounded-md outline-none cursor-pointer"/>
-            <p className="font-[300] text-[20px] leading-[30px]  text-[#3E3C38] w-[335px] h-[214px]">I declare that the information provided is true and accurate to the best of my knowledge. I take full responsibility for its authenticity and understand the consequences of providing false or misleading information.</p>
+            <p className="font-[300] text-[13px] leading-[30px]  text-[#3E3C38] w-[335px] ">I declare that the information provided is true and accurate to the best of my knowledge. I take full responsibility for its authenticity and understand the consequences of providing false or misleading information.</p>
           </div>
 
           <Link to='/vaccination'>

@@ -30,7 +30,7 @@ const BodyCard3 = () => {
               ))}
             </ul>
             <Link to='/services'>
-              <img src={Back} alt="" />
+              <img src={Back} alt="" className='sm:w-[100px] object-cover'/>
             </Link>
           </div>
           <div data-aos="zoom-in" className="s2-bodyCard3Right lg:hidden">

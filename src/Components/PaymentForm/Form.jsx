@@ -28,7 +28,7 @@ const Form = () => {
           </div>
 
           <div className="w-[383.29px] h-[21.95px] my-20">
-            <h1 className="font-[700] text-[25px] leading-[37.5px] text-center text-[#515151]">Wire Transfer</h1>
+            <h1 className="font-[700] text-[20px] leading-[37.5px] text-center text-[#515151]">Wire Transfer</h1>
           </div>
 
         <div>

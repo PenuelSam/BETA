@@ -27,7 +27,7 @@ const Form = () => {
 
           <div className="w-[444px] sm:w-[340px] sm:h-[200px] h-[140px] flex  items-start p-5 shadow-md mb-10 bg-white justify-between sm:gap-5 ">
             <input type="checkbox" className="w-[27.43px] h-[29px] rounded-md outline-none cursor-pointer"/>
-            <p className="font-[300] text-[20px] leading-[30px] text-[#041E3E] w-[335px] h-[93px]">I confirm receiving the flu vaccine to prioritize health and community well-being. </p>
+            <p className="font-[300] text-[15px] leading-[30px] text-[#041E3E] w-[335px] h-[93px]">I confirm receiving the flu vaccine to prioritize health and community well-being. </p>
           </div>
 
           <Link to='/manufacturing'>

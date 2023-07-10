@@ -4,7 +4,6 @@ import logo2 from "../../assets/Figma-Images/menuLogo.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
-import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import { NavLinks } from "../../data";
 import { useState } from "react";
 const Navbar = () => {
@@ -27,7 +26,7 @@ const Navbar = () => {
         {/* Links */}
         <ul className="UL-Style">
           {NavLinks.map((nav) => (
-            <li key={nav.id} className="text-[18px] font-[700] ">
+            <li key={nav.id} className="text-[15px] font-[700] ">
               <Link
                 to={nav.path}
                 className={
@@ -47,16 +46,17 @@ const Navbar = () => {
         <div className="hidden lg:flex">
         <MenuIcon
           onClick={() => setToggleMenu(true)}
+          className="cursor-pointer"
         />
 
         {toggleMenu && (
-          <div className="smallscreen_overlay flex__center slide-bottom">
+          <div className={`smallscreen_overlay flex__center slide-bottom ${toggleMenu ? 'navbar-open' : 'navbar-close'}`}>
             <CloseIcon
               sx={{fill: '#000'}}
               className="overlay__close"
               onClick={() => setToggleMenu(false)}
             />
-            <div className="ml-[20%] mt-[10%]">
+            <div className="ml-[10%] mt-[10%]">
               <img src={logo2} alt="" />
             </div>
             <ul className="navbar-smallscreen_links">
@@ -79,10 +79,6 @@ const Navbar = () => {
                 </>
               ))}
             </ul>
-            <div className="flex items-center justify-center absolute bottom-10 right-5">
-              <KeyboardDoubleArrowLeftIcon sx={{fill: '#021A71'}} />
-              <p className="text-[#021A71] uppercase text-[13px]">back to home</p>
-            </div>
           </div>
         )}
         

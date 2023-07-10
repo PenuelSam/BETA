@@ -37,13 +37,13 @@ const Form = () => {
             <button className="trainInputBtn" type="submit">Next</button>
           </Link>
 
-          <div className="w-[423px] sm:w-[340px] h-[29px] flex  items-center justify-between sm:justify-center sm:pl-[10%] sm:gap-10 ">
-            <input type="checkbox" className="w-[27.43px] h-[29px] rounded-md outline-none cursor-pointer"/>
-            <p className="font-[300] text-[20px]  leading-[25.83px] text-[#3E3C38]">Upload additional documentations</p>
+          <div className="w-[423px] sm:w-[370px] h-[29px] flex  items-center justify-between sm:justify-center sm:pl-[10%] sm:gap-10 ">
+            <input type="checkbox" className="w-[25px] h-[29px] rounded-md outline-none cursor-pointer"/>
+            <p className="font-[300] text-[15px]  leading-[25.83px] text-[#3E3C38]">Upload additional documentations</p>
           </div>
 
-          <div className="w-[383.29px] sm:w-[340px] h-[21.95px] mx-auto my-20">
-            <h1 className="font-[700] text-[25px] leading-[37.5px] text-center text-[#515151]">Additional Documentations</h1>
+          <div className="w-[383.29px] sm:w-[370px] h-[21.95px] mx-auto my-20">
+            <h1 className="font-[700] text-[18px] leading-[37.5px] text-center text-[#515151]">Additional Documentations</h1>
           </div>
 
         <div>

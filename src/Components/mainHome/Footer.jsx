@@ -98,11 +98,11 @@ const Footer = () => {
             </div>
           </div>
           {/*Bottom CENTER */}
-          <div className="lg:resized">
+          <div className="w-[300px]">
             <img src={Center} alt="" />
           </div>
           {/*Bottom Right */}
-          <div className="lg:smStyle">
+          <div className="">
             <Link to={location.pathname} onClick={handleClick}>
               <img src={ArrowUp} alt="" className="cursor-pointer" />
             </Link>
