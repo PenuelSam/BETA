@@ -18,7 +18,7 @@ const Card = ({Title, Paragraph, Image}) => {
   return (
     <div  className="w-[100%]">
         <div data-aos="zoom-in" className="flex justify-center sm:my-5 my-10"><h1 className="cardTitle" >{Title}</h1></div>
-        <div className="flex lg:flex-col lg:items-start   items-center gap-[11rem] sm:gap-28">
+        <div className="flex lg:flex-col lg:items-start   items-center gap-[11rem] sm:gap-5">
             <div data-aos="zoom-in"  className="w-[729px] sm:w-[100%] sm:h-[400px] h-[729px] z-[10] sm:px-5"><img src={Image} alt="" /></div>
             <div data-aos="zoom-in"><p className="cardParagraph">{Paragraph}</p></div>
         </div>
