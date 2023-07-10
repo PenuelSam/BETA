@@ -21,23 +21,23 @@ const ContactForm = () => {
               
           <form action="" className="sm:flex sm:flex-col sm:items-center sm:justify-center">
             <div className="relative">
-              <Person2OutlinedIcon sx={{fill: 'black', position: 'absolute', top: '20%', left: '5%' }}/>
+              <Person2OutlinedIcon className="contactIcon" sx={{fill: 'black' }}/>
               <input type="text" placeholder="Name" className="inputStyle"/>
             </div>
             <div className="relative">
-              <EmailOutlinedIcon sx={{fill: 'black', position: 'absolute', top: '20%', left: '5%' }} />
+              <EmailOutlinedIcon className="contactIcon" sx={{fill: 'black' }} />
               <input type="email" placeholder="Email" className="inputStyle"/>
             </div>
             <div className="relative">
-              <PhoneOutlinedIcon sx={{fill: 'black', position: 'absolute', top: '20%', left: '5%' }} />
+              <PhoneOutlinedIcon className="contactIcon" sx={{fill: 'black' }} />
               <input type="text" placeholder="Number" className="inputStyle" />
             </div>
             <div className="relative">
-              <LocationOnOutlinedIcon sx={{fill: 'black', position: 'absolute', top: '20%', left: '5%' }} />
+              <LocationOnOutlinedIcon className="contactIcon" sx={{fill: 'black' }} />
               <input type="text" placeholder="Location" className="inputStyle" />
             </div>
             <div className="relative">
-              <ContactSupportOutlinedIcon sx={{fill: 'black', position: 'absolute', top: '7%', left: '5%' }} />
+              <ContactSupportOutlinedIcon className="contactIconarea" sx={{fill: 'black'}} />
               <textarea name="" id="" cols="30" rows="10" placeholder="message" className="textareaStyle" />
             </div>
             <button type="submit" className="formSubmit">Submit</button>
