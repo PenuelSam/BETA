@@ -19,25 +19,25 @@ const ContactForm = () => {
           </div>
           </div>
               
-          <form action="" className="sm:flex sm:flex-col sm:items-center sm:justify-center">
-            <div className="relative">
-              <Person2OutlinedIcon className="contactIcon" sx={{fill: 'black' }}/>
+          <form action="" className="sm:flex sm:flex-col sm:items-center sm:justify-center ">
+            <div className="relative sm:h-[60px]">
+              <Person2OutlinedIcon className="contactIcon" sx={{fill: 'gray', fontSize: '12px' }}/>
               <input type="text" placeholder="Name" className="inputStyle"/>
             </div>
-            <div className="relative">
-              <EmailOutlinedIcon className="contactIcon" sx={{fill: 'black' }} />
+            <div className="relative sm:h-[60px]">
+              <EmailOutlinedIcon className="contactIcon" sx={{fill: 'gray', fontSize: '12px' }} />
               <input type="email" placeholder="Email" className="inputStyle"/>
             </div>
-            <div className="relative">
-              <PhoneOutlinedIcon className="contactIcon" sx={{fill: 'black' }} />
+            <div className="relative sm:h-[60px]">
+              <PhoneOutlinedIcon className="contactIcon" sx={{fill: 'gray', fontSize: '12px' }} />
               <input type="text" placeholder="Number" className="inputStyle" />
             </div>
-            <div className="relative">
-              <LocationOnOutlinedIcon className="contactIcon" sx={{fill: 'black' }} />
+            <div className="relative sm:h-[60px]">
+              <LocationOnOutlinedIcon className="contactIcon" sx={{fill: 'gray', fontSize: '12px' }} />
               <input type="text" placeholder="Location" className="inputStyle" />
             </div>
-            <div className="relative">
-              <ContactSupportOutlinedIcon className="contactIconarea" sx={{fill: 'black'}} />
+            <div className="relative sm:h-[150px]">
+              <ContactSupportOutlinedIcon className="contactIconarea" sx={{fill: 'gray', fontSize: '12px'}} />
               <textarea name="" id="" cols="30" rows="10" placeholder="message" className="textareaStyle" />
             </div>
             <button type="submit" className="formSubmit">Submit</button>
