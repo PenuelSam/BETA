@@ -15,9 +15,9 @@ const Buttons = () => {
 
   return (
     <div className="servicesBg">
-      <div data-aos="zoom-in" className="maxcontainer2  servicesGrid">
+      <div data-aos="zoom-in" className="maxcontainer2 sm:w-full   servicesGrid">
         {WhatweOfferBtn.map((offer,i)=>(
-        <img key={i} src={offer.button} alt="" className="cursor-pointer sm:h-[40px] sm:w-[150px]" />
+        <img key={i} src={offer.button} alt="" className="cursor-pointer sm:h-[60px] sm:w-[170px]" />
       ))}
 
     </div>
