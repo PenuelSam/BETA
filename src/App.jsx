@@ -23,24 +23,11 @@ import Reference from "./Pages/Onboarding/Reference"
 import Vaccination from "./Pages/Onboarding/Vaccination"
 import Work from "./Pages/Onboarding/Work"
 import Navbar from "./Components/Manufacturing/Navbar"
-import CustomCursor from "./Components/CustomCursor"
-import { useEffect, useState } from "react"
-import Preloader from "./Components/Preloader"
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, []);
 
   return (
     <div className="w-full overflow-x-hidden">
-      {isLoading ? (
-        <Preloader />
-      ) : (
         <BrowserRouter>
       <Navbar />
       <Routes>
@@ -68,9 +55,7 @@ function App() {
         <Route path="/work" element={<Work />}/>
       </Routes>
       <Footer />
-      <CustomCursor />
       </BrowserRouter>
-      )}
     </div>
   )
 }
