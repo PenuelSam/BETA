@@ -19,17 +19,17 @@ const LogInForm = () => {
               
           <div>
           <form className="smFormStyle">
-            <div>
+            <div className="sm:h-[60px]">
               <input type="text" placeholder="Username" className="input2Style"/>
             </div>
-            <div>
+            <div className="sm:h-[60px]">
               <input type="password" placeholder="Password" className="input2Style" />
             </div>
             <Link to='/personal'><button className="SignSubmit">Sign In</button></Link>
           </form>
             <div className="smFormStyle">
-                <img src={OR} alt="" className="py-10 w-[200px]"/>
-                <div className="flex flex-col sm:w-[340px]">
+                <img src={OR} alt="" className="py-10 sm:py-5 w-[200px]"/>
+                <div className="flex flex-col sm:w-[300px]">
                     <img src={Facebook} alt="" />
                     <img src={Google} alt="" />
                 </div>

@@ -1,10 +1,9 @@
 import { ContactButtons } from "../../data"
-
-import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
-import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
-import ContactSupportOutlinedIcon from '@mui/icons-material/ContactSupportOutlined';
+import person from "../../assets/Figma-Images/person.png"
+import call from "../../assets/Figma-Images/call.png"
+import mail from "../../assets/Figma-Images/mail.png"
+import Wechat from "../../assets/Figma-Images/Wechat.png"
+import maps from "../../assets/Figma-Images/maps.png"
 
 const ContactForm = () => {
   
@@ -21,23 +20,23 @@ const ContactForm = () => {
               
           <form action="" className="sm:flex sm:flex-col sm:items-center sm:justify-center ">
             <div className="relative sm:h-[60px]">
-              <Person2OutlinedIcon className="contactIcon" sx={{fill: 'gray', fontSize: '12px' }}/>
+              <img src={person} alt="" className="contactIcon" />
               <input type="text" placeholder="Name" className="inputStyle"/>
             </div>
             <div className="relative sm:h-[60px]">
-              <EmailOutlinedIcon className="contactIcon" sx={{fill: 'gray', fontSize: '12px' }} />
+              <img src={mail} alt="" className="contactIcon" />
               <input type="email" placeholder="Email" className="inputStyle"/>
             </div>
             <div className="relative sm:h-[60px]">
-              <PhoneOutlinedIcon className="contactIcon" sx={{fill: 'gray', fontSize: '12px' }} />
+              <img src={call} alt="" className="contactIcon" />
               <input type="text" placeholder="Number" className="inputStyle" />
             </div>
             <div className="relative sm:h-[60px]">
-              <LocationOnOutlinedIcon className="contactIcon" sx={{fill: 'gray', fontSize: '12px' }} />
+              <img src={maps} alt="" className="contactIcon" />
               <input type="text" placeholder="Location" className="inputStyle" />
             </div>
             <div className="relative sm:h-[150px]">
-              <ContactSupportOutlinedIcon className="contactIconarea" sx={{fill: 'gray', fontSize: '12px'}} />
+              <img src={Wechat} alt="" className="contactIconarea" />
               <textarea name="" id="" cols="30" rows="10" placeholder="message" className="textareaStyle" />
             </div>
             <button type="submit" className="formSubmit">Submit</button>

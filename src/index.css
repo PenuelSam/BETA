@@ -328,10 +328,10 @@
 
 
   .m-bannerH1{
-    @apply font-[700] text-[60px] lg:w-[500px]  sm:text-[30px] sm:w-[700px] leading-[132px] w-[1116px] h-[49px] uppercase text-[#D6E5FA] text-center sm:leading-[50px] sm:h-[30px] sm:px-[10%]
+    @apply font-[700] text-[60px] lg:w-[400px]  sm:text-[25px] leading-[132px] w-[1116px] h-[49px] uppercase text-[#D6E5FA] text-center sm:leading-[50px] sm:h-[20px] sm:px-[10%]
   }
   .m-bannerP{
-    @apply w-[1044px] lg:w-[500px] lg:text-[25px]  sm:w-[400px] h-[49px] font-[500] text-[20px] sm:text-[20px] leading-[35px] text-center mt-10  text-white
+    @apply w-[1044px] lg:w-[500px] sm:w-[400px] h-[49px] font-[500] text-[20px] sm:text-[20px] leading-[35px] text-center mt-10  text-white
   }
   .m-bannerp{
     @apply w-[999px] lg:w-[500px] lg:text-[25px] lg:h-[30px] lg:leading-[35px] sm:w-[340px] h-[30px] sm:h-[50px] font-[500] text-[20px] sm:text-[20px] leading-[47px] sm:leading-[30px] text-center my-10  text-white
@@ -578,10 +578,10 @@
     @apply flex flex-col sm:w-[400px] items-start lg:justify-start lg:pl-[10%] justify-center  w-[652px] h-[660px] lg:h-[500px] sm:leading-[40px]
   }
   .s2-bodyCard1H1{
-    @apply w-[437px] sm:w-[340px] h-[153px] sm:h-[180px]  font-[700] text-[20px] leading-[30px] sm:leading-[40px] text-[#021A71] lg:text-[18px]
+    @apply w-[437px] sm:w-[340px] h-[175px] sm:h-[200px] font-[700] text-[20px] lg:text-[18px] leading-[30px] sm:leading-[40px] text-[#021A71]  sm:pr-[20px]
   }
   .s2-bodyCard1P{
-    @apply w-[437px] sm:w-[340px] h-[146px] font-[300] text-[17px] leading-[30px] sm:leading-[40px] text-[#363637] lg:text-[15px] my-5
+    @apply w-[449px] sm:w-[340px] h-[225px] sm:h-[400px] font-[300] text-[17px] lg:text-[15px] leading-[30px] sm:leading-[40px] text-[#363637]  my-10 sm:pr-[20px]
   }
   .s2-bodyCard1Right{
     @apply w-[700px] h-[650px]  absolute right-[-150px] top-0
@@ -670,13 +670,13 @@
   }
 
   .inputStyle{
-    @apply w-[495.24px] sm:w-[300px] sm:h-[40px] h-[74.32px] shadow-lg mb-10 pl-10 sm:pl-[2rem] text-[#363637] border-none outline-none sm:rounded-md
+    @apply w-[495.24px] sm:w-[300px] sm:h-[40px] h-[74.32px] shadow-lg mb-10 pl-10 sm:pl-[3rem] text-[#363637] border-none outline-none sm:rounded-md
   }
   .input2Style{
-    @apply w-[443.64px] sm:w-[350px] h-[64.27px] shadow-lg mb-10 pl-5 text-[#363637] border-none outline-none sm:rounded-md
+    @apply w-[443.64px] sm:w-[300px] sm:h-[40px] h-[64.27px] shadow-lg mb-10 pl-5 text-[#363637] border-none outline-none sm:rounded-md
   }
   .textareaStyle{
-    @apply w-[495.24px] sm:w-[300px] sm:h-[120px] h-[212px] shadow-lg pt-5 mb-10 pl-20 sm:pl-[2rem] text-[#363637] border-none outline-none rounded-md
+    @apply w-[495.24px] sm:w-[300px] sm:h-[120px] h-[212px] shadow-lg pt-5 mb-10 pl-20 sm:pl-[3rem] text-[#363637] border-none outline-none rounded-md
   }
   .formSubmit{
     @apply w-[496px]  sm:w-[200px] sm:h-[40px] h-[82px] shadow-lg  rounded-md mb-10 text-[#E4F3FB] bg-[#021A71]
@@ -687,22 +687,22 @@
 
 
   .signUph1{
-    @apply w-[1076px] h-[210px] font-[700] text-[60px] sm:text-[40px] lg:text-[50px] sm:leading-[50px] lg:leading-[60px] leading-[113.16px] uppercase text-center text-[#A0C6FC]
+    @apply w-[1076px] h-[210px] font-[700] text-[60px] sm:text-[30px] lg:text-[50px] sm:leading-[50px] lg:leading-[60px] leading-[113.16px] uppercase text-center text-[#A0C6FC]
   }
   .check{
-    @apply flex items-center lg:justify-center  w-[452.26px] h-[62.71px] gap-10 my-2 lg:gap-2 lg:w-[340px] lg:h-[80px]
+    @apply flex items-center lg:justify-center sm:items-start  w-[452.26px] h-[62.71px] gap-10 my-2 lg:gap-3 lg:w-[300px]
   }
   .checkbox{
     @apply w-[30px] h-[30px] border-none cursor-pointer
   }
   .inputP{
-    @apply text-[10px] font-[300] text-[#363637] sm:pr-[10%]
+    @apply text-[12px] font-[300] text-[#363637] sm:pr-[10%]
   }
   .inputPa{
     @apply text-[#04559E] underline
   }
   .SignSubmit{
-    @apply w-[443.64px] sm:w-[340px] h-[64.27px] rounded-md uppercase font-[700] text-[18px] mt-10 text-[#E4F3FB] bg-[#021A71]
+    @apply w-[443.64px] sm:w-[300px] sm:h-[40px] h-[64.27px] rounded-md uppercase font-[700] text-[15px] mt-10 text-[#E4F3FB] bg-[#021A71]
 
   }
   .signSpan{
