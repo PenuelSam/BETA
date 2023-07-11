@@ -505,7 +505,7 @@
     @apply w-[701px] sm:w-[300px] lg:w-[600px] h-[69px] font-[300] text-[26px] lg:text-[20px] leading-[31px] text-center text-white mt-10
   }
   .servicesBg{
-    @apply bg-[#E5F1F8] pt-32
+    @apply bg-[#E5F1F8] pt-10
   }
   .servicesBg2{
     @apply bg-[#E5F1F8]
