@@ -22,7 +22,7 @@ const Production = () => {
           <img src={production} alt="" className="w-[100%] sm:px-[2%] h-[100%] object-cover"/>
         </div>
         <div data-aos="zoom-in" className="w-[581px]  sm:w-[340px] sm:h-[900px] h-[800px] flex flex-col justify-center  lg:justify-start  lg:pl-[5%] ">
-          <p className="font-[300]   text-[18px] lg:text-[15px] leading-[40px] sm:leading-[35px] tracking-[0.1px] lg:tracking-normal text-[#363637]">
+          <p className="font-[300] pr-10 sm:pr-0  text-[18px] lg:text-[15px] leading-[40px] sm:leading-[35px] tracking-[0.1px] lg:tracking-normal text-[#363637]">
             Production operatives play an essential role in the manufacturing
             industry, providing the manual labour necessary to create and
             produce goods. We will provide you with operatives that are

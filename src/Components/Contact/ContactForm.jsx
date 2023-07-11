@@ -37,7 +37,7 @@ const ContactForm = () => {
             </div>
             <div className="relative sm:h-[150px]">
               <img src={Wechat} alt="" className="contactIconarea" />
-              <textarea name="" id="" cols="30" rows="10" placeholder="message" className="textareaStyle" />
+              <textarea name="" id="" cols="30" rows="10" placeholder="Message" className="textareaStyle" />
             </div>
             <button type="submit" className="formSubmit">Submit</button>
           </form>

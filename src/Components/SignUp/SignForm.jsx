@@ -43,7 +43,7 @@ const SignForm = () => {
             <button className="SignSubmit">Create Account</button>
           </form>
             <div className="smFormStyle">
-                <img src={OR} alt="" className="py-10 sm:py-5 w-[200px]"/>
+                <img src={OR} alt="" className="py-10 sm:py-5 sm:w-[200px]"/>
                 <div className="flex flex-col sm:w-[300px]">
                     <img src={Facebook} alt="" />
                     <img src={Google} alt="" />

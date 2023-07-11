@@ -328,7 +328,7 @@
 
 
   .m-bannerH1{
-    @apply font-[700] text-[60px] lg:w-[400px]  sm:text-[25px] leading-[132px] w-[1116px] h-[49px] uppercase text-[#D6E5FA] text-center sm:leading-[50px] sm:h-[20px] sm:px-[10%]
+    @apply font-[700] text-[60px] lg:w-[400px]  sm:text-[25px] leading-[132px] w-[1116px] h-[55px] uppercase text-[#D6E5FA] text-center sm:leading-[50px] sm:h-[20px] sm:px-[10%]
   }
   .m-bannerP{
     @apply w-[1044px] lg:w-[500px] sm:w-[400px] h-[49px] font-[500] text-[20px] sm:text-[20px] leading-[35px] text-center mt-10  text-white
@@ -350,7 +350,7 @@
     @apply w-[803px] lg:w-[500px] sm:w-[340px] h-[74px] sm:h-[90px] font-[700] text-[20px] leading-[30px] sm:text-[13px] text-center my-10 sm:my-5 text-[#434445]
   }
   .m-bodyH1{
-    @apply w-[1113px] lg:w-[500px]  sm:w-[340px] h-[74px] lg:h-[90px] font-[700] text-[27px] leading-[40.5px] text-center sm:text-[15px] text-[#021A71]
+    @apply w-[1113px] lg:w-[500px]  sm:w-[340px] h-[74px] lg:h-[90px] font-[700] text-[25px] leading-[40.5px] text-center sm:text-[15px] text-[#021A71]
   }
 
   .m-OfferLinks{
@@ -663,14 +663,14 @@
     @apply w-[944px] lg:w-[301px] sm:h-[150px] h-[208px] font-[300] text-[20px] lg:text-[15px] leading-[41px] lg:leading-[30px] text-center text-[#363637]
   }
   .contactIcon{
-    @apply absolute top-[20%] left-[5%] sm:top-[22.5%]
+    @apply absolute top-[26%] left-[5%] sm:top-[22.5%]
   }
   .contactIconarea{
-    @apply absolute top-[7%] left-[5%] sm:top-[17.5%]
+    @apply absolute top-[10%] left-[5%] sm:top-[17.5%]
   }
 
   .inputStyle{
-    @apply w-[495.24px] sm:w-[300px] sm:h-[40px] h-[74.32px] shadow-lg mb-10 pl-10 sm:pl-[3rem] text-[#363637] border-none outline-none sm:rounded-md
+    @apply w-[495.24px] sm:w-[300px] sm:h-[40px] h-[74.32px] shadow-lg mb-10 pl-20 sm:pl-[3rem] text-[#363637] border-none outline-none sm:rounded-md
   }
   .input2Style{
     @apply w-[443.64px] sm:w-[300px] sm:h-[40px] h-[64.27px] shadow-lg mb-10 pl-5 text-[#363637] border-none outline-none sm:rounded-md
@@ -690,13 +690,13 @@
     @apply w-[1076px] h-[210px] font-[700] text-[60px] sm:text-[30px] lg:text-[50px] sm:leading-[50px] lg:leading-[60px] leading-[113.16px] uppercase text-center text-[#A0C6FC]
   }
   .check{
-    @apply flex items-center lg:justify-center sm:items-start  w-[452.26px] h-[62.71px] gap-10 my-2 lg:gap-3 lg:w-[300px]
+    @apply flex items-center  lg:justify-center sm:items-start  w-[452.26px] h-[62.71px] gap-10 my-2 lg:gap-3 lg:w-[300px]
   }
   .checkbox{
     @apply w-[30px] h-[30px] border-none cursor-pointer
   }
   .inputP{
-    @apply text-[12px] font-[300] text-[#363637] sm:pr-[10%]
+    @apply sm:text-[12px] text-[14px] font-[300] text-[#363637] sm:pr-[10%]
   }
   .inputPa{
     @apply text-[#04559E] underline
