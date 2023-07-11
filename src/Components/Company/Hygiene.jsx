@@ -15,10 +15,10 @@ const Hygiene = () => {
   },[])
 
   return (
-    <div className="mb-20">
+    <div className="mb-10">
       <Title2 title="HYGIENE OPERATIVE" />
       <div className="flex items-start justify-end sm:justify-start lg:items-start lg:flex-col-reverse lg:gap-10 gap-40 ">
-        <div data-aos="zoom-in" className="w-[581px] sm:w-[340px] pl-20 lg:pl-10 sm:h-[1300px] h-[700px] flex flex-col items-center mt-10 lg:justify-start ">
+        <div data-aos="zoom-in" className="w-[581px] sm:w-[340px] pl-20 lg:pl-[5%] sm:h-[1300px] h-[700px] flex flex-col items-center mt-10 lg:justify-start ">
           <p className="font-[300]  lg:text-left text-[18px] lg:text-[15px] leading-[35px] sm:leading-[35px] lg:tracking-normal tracking-[0.1px] text-[#363637]">
             Our hygiene operatives play an important role for the food and other
             allied companies in which they are employed. They work across all of
@@ -54,7 +54,7 @@ const Hygiene = () => {
           <img
             src={hygiene}
             alt=""
-            className="w-[100%] h-[100%] object-cover"
+            className="w-[100%] sm:px-[2%] h-[100%] object-cover"
           />
         </div>
       </div>
