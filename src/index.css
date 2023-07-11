@@ -511,7 +511,7 @@
     @apply bg-[#E5F1F8]
   }
   .servicesGrid{
-    @apply grid grid-cols-2  place-items-center gap-5 
+    @apply grid grid-cols-2  place-items-center gap-5
   }
   .bodyCard1Left{
     @apply flex flex-col items-start justify-center sm:justify-start lg:items-start lg:pl-[10%] w-[650px] h-[955px] py-10  sm:h-[1150px]  mb-20 
@@ -666,7 +666,7 @@
     @apply absolute top-[20%] left-[5%] sm:top-[22.5%]
   }
   .contactIconarea{
-    @apply absolute top-[7%] left-[5%] sm:top-[15%]
+    @apply absolute top-[7%] left-[5%] sm:top-[17.5%]
   }
 
   .inputStyle{

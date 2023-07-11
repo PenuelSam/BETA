@@ -29,8 +29,55 @@ import png2 from '../src/assets/Figma-Images/servicespng.png'
 import png3 from '../src/assets/Figma-Images/operativepng.png'
 import png4 from '../src/assets/Figma-Images/companypng.png'
 import png5 from '../src/assets/Figma-Images/contactpng.png'
-
+import offerlogo from '../src/assets/Figma-Images/Offerlogo.png'
+import offerlogo2 from '../src/assets/Figma-Images/Offerlogo2.png'
 import Checked from '../src/assets/Figma-Images/Checked.png'
+
+export const OfferBtns = [
+    {
+        title:'Beta Personal Care',
+        logo: offerlogo,
+        logoBg: '#A6DBF8',
+        textBg: '#021A71',
+        textcolor:'#FFFFFF',
+    },
+    {
+        title:'Beta Respite Care',
+        logo: offerlogo2,
+        logoBg: '#021A71',
+        textBg: '#A6DBF8',
+        textcolor: '#021A71'
+    },
+    {
+        title:'Beta Personal Nursing Care',
+        logo: offerlogo2,
+        logoBg: '#021A71',
+        textBg: '#A6DBF8',
+        textcolor: '#021A71'
+    },
+    {
+        title:'Beta afte hospital and post-operative care',
+        logo: offerlogo,
+        logoBg: '#A6DBF8',
+        textBg: '#021A71',
+        textcolor:'#FFFFFF',
+    },
+    {
+        title:'Beta palliative care and end of life care',
+        logo: offerlogo,
+        logoBg: '#A6DBF8',
+        textBg: '#021A71',
+        textcolor:'#FFFFFF',
+    },
+    {
+        title:"Beta alzheimer's and dementia care",
+        logo: offerlogo2,
+        logoBg: '#021A71',
+        textBg: '#A6DBF8',
+        textcolor: '#021A71'
+    },
+
+]
 
 
 export const NavLinks = [
