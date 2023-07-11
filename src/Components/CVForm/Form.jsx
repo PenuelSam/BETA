@@ -16,13 +16,13 @@ const Form = () => {
         <div className="trainFormContainerCv">
         <form action="" className="smFormStyle">
 
-        <div className="relative">
+        <div className="relative sm:h-[60px]">
             <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload CV*" className="trainInputI" />
           </div>
 
-        <div className="relative">
-            <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
+        <div className="relative ">
+            <AddOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload Cover Letter*" className="trainInputI" />
           </div>
 

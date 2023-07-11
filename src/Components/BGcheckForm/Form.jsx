@@ -16,14 +16,14 @@ const Form = () => {
         <div className="trainFormContainerBG">
         <form action="" className="smFormStyle">
 
-          <div className="relative">
+          <div className="relative sm:h-[60px]">
             <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload Passport*" className="trainInputI" />
           </div>
 
           <div className="relative">
             <div className="relative z-[10] mb-[50px]">
-            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Means of ID*" className="trainInput shadow-lg " />
             </div>
             <div className="inputDrop2">
@@ -33,16 +33,16 @@ const Form = () => {
             </div>
           </div>
 
-          <div>
+          <div className=" sm:h-[60px]">
             <input type="text" placeholder="Detailed Address*" className="trainInputI" />
           </div>
 
-          <div className="relative">
+          <div className="relative sm:h-[60px]">
             <AddOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
             <input type="text" placeholder="Recent Utility Bill*" className="trainInputI" />
           </div>
 
-          <div className="relative">
+          <div className="relative sm:h-[60px]">
             <KeyboardArrowDownOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
             <input type="text" placeholder="Race*" className="trainInputI" />
           </div>

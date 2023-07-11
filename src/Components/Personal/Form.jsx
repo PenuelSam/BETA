@@ -17,32 +17,32 @@ const Form = () => {
         
         <div className="trainFormContainer">
         <form action="" className="smFormStyle">
-          <div>
+          <div className=" sm:h-[60px]">
             <input type="text" placeholder="First Name*" className="trainInput" />
           </div>
-          <div>
+          <div className=" sm:h-[60px]">
             <input type="text" placeholder="Last Name*" className="trainInput" />
           </div>
-          <div className="relative">
+          <div className="relative sm:h-[60px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}}/>
             <input type="text" placeholder="Gender*" className="trainInput" />
           </div>
-          <div>
+          <div className="sm:h-[60px]">
             <input type="text" placeholder="Phone Number" className="trainInput" />
           </div>
-          <div>
+          <div className="sm:h-[60px]">
             <input type="email" placeholder="Email*" className="trainInput" />
           </div>
-          <div className="relative">
+          <div className="relative sm:h-[60px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Country" className="trainInput" />
           </div>
-          <div className="relative">
+          <div className="relative sm:h-[60px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="State" className="trainInput" />
           </div>
           <div className="relative">
-            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}}/>
+            <KeyboardArrowDownOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}}/>
             <input type="text" placeholder="Marital Status" className="trainInput" />
           </div>
           <Link to='/train'>

@@ -17,19 +17,19 @@ const Form = () => {
         <div className="trainFormContainerPay">
         <form action="" className="smFormStyle">
 
-        <div className="relative">
+        <div className="relative sm:h-[60px]">
             <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload Right to work ID*" className="trainInputI" />
           </div>
 
-        <div className="relative">
+        <div className="relative sm:h-[60px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Year Obtained*" className="trainInputI" />
           </div>
 
         
-        <div className="relative">
-            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
+        <div className="relative sm:h-[90px]">
+            <KeyboardArrowDownOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Country of Validity*" className="trainInputI" />
           </div>
 
@@ -37,30 +37,30 @@ const Form = () => {
             <button className="trainInputBtn" type="submit">Next</button>
           </Link>
 
-          <div className="w-[423px] sm:w-[370px] h-[29px] flex  items-center justify-between sm:justify-center sm:pl-[10%] sm:gap-10 ">
+          <div className="w-[423px] sm:w-[300px] sm:h-[1px] h-[29px] flex  items-center justify-between sm:justify-center sm:pl-[10%] sm:gap-5 ">
             <input type="checkbox" className="w-[25px] h-[29px] rounded-md outline-none cursor-pointer"/>
-            <p className="font-[300] text-[18px]  leading-[25.83px] text-[#3E3C38]">Upload additional documentations</p>
+            <p className="font-[300] text-[16px]  leading-[25.83px] text-[#3E3C38]">Upload additional documentations</p>
           </div>
 
-          <div className="w-[383.29px] sm:w-[370px] h-[21.95px] mx-auto my-20">
+          <div className="w-[383.29px] sm:w-[370px] h-[21.95px] sm:h-[10px] mx-auto my-10">
             <h1 className="font-[700] text-[18px] leading-[37.5px] text-center text-[#515151]">Additional Documentations</h1>
           </div>
 
-        <div>
+        <div className="sm:h-[60px]">
             <input type="text" placeholder="Document Name*" className="trainInputI" />
         </div>
 
-        <div>
+        <div className="sm:h-[60px]">
             <input type="text" placeholder="Document Description*" className="trainInputI" />
         </div>
 
-        <div className="relative">
+        <div className="relative sm:h-[60px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Country of Validity*" className="trainInputI" />
           </div>
 
         <div className="relative">
-            <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
+            <AddOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload Document*" className="trainInputI" />
           </div>
 

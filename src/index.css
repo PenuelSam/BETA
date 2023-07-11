@@ -328,7 +328,7 @@
 
 
   .m-bannerH1{
-    @apply font-[700] text-[60px] lg:w-[700px]  sm:text-[30px] sm:w-[700px] leading-[132px] w-[1116px] h-[49px] uppercase text-[#D6E5FA] text-center sm:leading-[50px] sm:h-[30px] sm:px-[10%]
+    @apply font-[700] text-[60px] lg:w-[500px]  sm:text-[30px] sm:w-[700px] leading-[132px] w-[1116px] h-[49px] uppercase text-[#D6E5FA] text-center sm:leading-[50px] sm:h-[30px] sm:px-[10%]
   }
   .m-bannerP{
     @apply w-[1044px] lg:w-[500px] lg:text-[25px]  sm:w-[400px] h-[49px] font-[500] text-[20px] sm:text-[20px] leading-[35px] text-center mt-10  text-white
@@ -347,14 +347,14 @@
   }
 
   .m-bodyP{
-    @apply w-[803px] lg:w-[500px] sm:w-[340px] h-[74px] sm:h-[90px] font-[700] text-[20px] leading-[30px] sm:text-[13px] text-center my-10 text-[#434445]
+    @apply w-[803px] lg:w-[500px] sm:w-[340px] h-[74px] sm:h-[90px] font-[700] text-[20px] leading-[30px] sm:text-[13px] text-center my-10 sm:my-5 text-[#434445]
   }
   .m-bodyH1{
     @apply w-[1113px] lg:w-[500px]  sm:w-[340px] h-[74px] lg:h-[90px] font-[700] text-[27px] leading-[40.5px] text-center sm:text-[15px] text-[#021A71]
   }
 
   .m-OfferLinks{
-    @apply w-[427px] h-[152px] sm:pl-20
+    @apply w-[427px] h-[152px] sm:pl-[15%]
   }
   .m-OfferLi{
     @apply font-[300] text-[20px] sm:text-[18px] leading-[52.75px] tracking-[0.1px] text-[#363637] list-disc
@@ -713,31 +713,34 @@
   }
 
   .trainFormContainer{
-    @apply w-[566px] h-[1464px]  lg:h-[1200px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%]  sm:mx-[5%]
+    @apply w-[566px] h-[1464px]  lg:h-[800px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%]  sm:mx-[5%]
   }
   .trainFormContainerBG{
     @apply w-[566px] h-[1464px]  lg:h-[800px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%]  sm:mx-[5%]
   }
+  .trainFormContainerDEC{
+    @apply w-[566px] h-[1464px]  lg:h-[500px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%]  sm:mx-[5%]
+  }
   .trainFormContainerID{
-    @apply w-[566px] h-[1464px]  lg:h-[900px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center sm:items-start  pt-[10%] sm:mx-[5%]
+    @apply w-[566px] h-[1464px]  lg:h-[700px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center sm:items-start  pt-[10%] sm:mx-[5%]
   }
   .trainFormContainerPay{
-    @apply w-[566px] h-[1464px]  lg:h-[1200px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
+    @apply w-[566px] h-[1464px]  lg:h-[900px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
   }
   .trainFormContainerCv{
-    @apply w-[566px] h-[1464px]  lg:h-[600px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
+    @apply w-[566px] h-[1464px]  lg:h-[400px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
   }
   .trainFormContainerKin{
-    @apply w-[566px] h-[1464px]  lg:h-[700px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
+    @apply w-[566px] h-[1464px]  lg:h-[500px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
   }
   
 
 
   .trainInput{
-    @apply w-[443.64px] sm:w-[300px] sm:h-[50px]  h-[64.27px] rounded-md mb-20 shadow-md text-[#434445]  pl-10 sm:pl-5 border-none outline-none
+    @apply w-[443.64px] sm:w-[300px] sm:h-[50px]   h-[64.27px] rounded-md mb-20 shadow-md text-[#434445]  pl-10 sm:pl-5 border-none outline-none
   }
   .trainInputI{
-    @apply w-[443.64px]  sm:w-[300px] sm:h-[50px]  h-[64.27px] rounded-md mb-10 shadow-md text-[#434445]  pl-10 border-none outline-none sm:pl-5
+    @apply w-[443.64px]  sm:w-[300px] sm:h-[40px]  h-[64.27px] rounded-md mb-10 shadow-md text-[#434445]  pl-10 border-none outline-none sm:pl-5
   }
   .trainInputBtn{
     @apply w-[444px]  sm:w-[200px] sm:h-[40px] h-[82px] rounded-md bg-[#041E3E] font-[700] text-[18px] mb-20
@@ -764,6 +767,9 @@
     @apply text-[#bbbbbd] font-[300] border-b my-1 border-[#ebecec]
   }
   .KeyDown{
+    @apply absolute right-[10%] top-[15%] cursor-pointer sm:top-[20%]
+  }
+  .KeyDownI{
     @apply absolute right-[10%] top-[15%] cursor-pointer sm:top-[10%]
   }
 

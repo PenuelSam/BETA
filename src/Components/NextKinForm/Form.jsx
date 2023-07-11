@@ -16,24 +16,24 @@ const Form = () => {
         <div className="trainFormContainerKin">
         <form action="" className="smFormStyle">
 
-        <div>
+        <div className="sm:h-[60px]">
             <input type="text" placeholder="Name*" className="trainInputI" />
         </div>
 
-        <div>
+        <div className="sm:h-[60px]">
             <input type="text" placeholder="Phone Number*" className="trainInputI" />
         </div>
 
-        <div>
+        <div className="sm:h-[60px]">
             <input type="email" placeholder="Email*" className="trainInputI" />
         </div>
 
-        <div>
+        <div className="sm:h-[60px]">
             <input type="text" placeholder="Relationship*" className="trainInputI" />
         </div>
 
         <div className="relative">
-            <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
+            <AddOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload Picture*" className="trainInputI" />
           </div>
 

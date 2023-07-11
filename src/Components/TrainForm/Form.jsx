@@ -19,7 +19,7 @@ const Form = () => {
         <form action="" className="smFormStyle">
           <div className="relative">
             <div className="relative z-[10] my-[50px]">
-            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Level of Training*" className="trainInput shadow-lg " />
             </div>
             <div className="inputDrop">
@@ -28,24 +28,24 @@ const Form = () => {
               <p className="inputDropText">Advanced</p>
             </div>
           </div>
-          <div>
+          <div className=" sm:h-[60px]">
             <input type="text" placeholder="Institution Name*" className="trainInputI" />
           </div>
-          <div>
+          <div className=" sm:h-[60px]">
             <input type="text" placeholder="Course Title*" className="trainInputI" />
           </div>
-          <div>
+          <div className=" sm:h-[60px]">
             <input type="text" placeholder="Program Duration*" className="trainInputI" />
           </div>
-          <div>
+          <div className=" sm:h-[60px]">
             <input type="text" placeholder="Qualification Obtained*" className="trainInputI" />
           </div>
-          <div className="relative">
+          <div className="relative sm:h-[60px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Year*" className="trainInputI" />
           </div>
-          <div className="relative">
-            <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
+          <div className="relative sm:h-[60px]">
+            <AddOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload Certification*" className="trainInputI" />
           </div>
           <div className="trainbtns">

@@ -16,13 +16,13 @@ const Form = () => {
         <div className="trainFormContainer">
         <form action="" className="smFormStyle">
 
-        <div>
+        <div className=" sm:h-[60px]">
             <input type="text" placeholder="Referent's Name*" className="trainInputI" />
         </div>
 
           <div className="relative">
             <div className="relative z-[10] mb-[50px]">
-            <KeyboardArrowDownOutlinedIcon sx={{fill: 'gray', position: 'absolute', right: '10%', top: '15%', cursor: 'pointer'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Referent's Level*" className="trainInput shadow-lg " />
             </div>
             <div className="inputDrop2">
@@ -32,23 +32,23 @@ const Form = () => {
             </div>
           </div>
 
-          <div>
+          <div className=" sm:h-[60px]">
             <input type="text" placeholder="Referent's Job Title*" className="trainInputI" />
         </div>
 
-        <div>
+        <div className=" sm:h-[60px]">
             <input type="text" placeholder="Referent's Phone*" className="trainInputI" />
         </div>
 
-        <div>
+        <div className=" sm:h-[60px]">
             <input type="email" placeholder="Referent's Email*" className="trainInputI" />
         </div>
 
-        <div>
+        <div className=" sm:h-[60px]">
             <input type="text" placeholder="Referent's Office Address*" className="trainInputI" />
         </div>
 
-        <div>
+        <div className="">
             <input type="text" placeholder="Relationship Referent*" className="trainInputI" />
         </div>
 

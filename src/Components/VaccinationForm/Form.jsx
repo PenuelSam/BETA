@@ -16,11 +16,11 @@ const Form = () => {
         <div className="trainFormContainerCv">
         <form action="" className="smFormStyle">
 
-        <div>
+        <div className=" sm:h-[60px] sm:mt-[5%]">
             <input type="text" placeholder="Name*" className="trainInputI" />
         </div>
 
-        <div className="relative">
+        <div className="relative sm:h-[60px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Date*" className="trainInputI" />
           </div>

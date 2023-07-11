@@ -1,4 +1,4 @@
-import { OfferBtns, WhatweOfferBtn } from "../../data"
+import {WhatweOfferBtn } from "../../data"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react"

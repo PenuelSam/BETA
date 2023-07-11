@@ -14,7 +14,7 @@ const TrainTitle = () => {
 
   return (
     <div data-aos="zoom-in" className="flex items-center justify-center py-[10%] lg:py-[15%]">
-        <div className="w-[992px] lg:h-[90px] sm:h-[79px] h-[79px]">
+        <div className="w-[992px] lg:h-[90px] sm:h-[20px] h-[79px]">
         <h1 className="font-[700] sm:text-[20px] sm:leading-[40px] lg:leading-[55px] lg:text-[50px] text-[40px]  leading-[99px] text-[#021A71] text-center uppercase">Register as an Operative</h1>
     </div>
     </div>

@@ -17,7 +17,7 @@ const Form = () => {
 
         <div className="relative">
             <div className="relative z-[10] mb-[50px]">
-            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
             <input type="text"  placeholder="Payment Method*" className="trainInput shadow-lg " />
             </div>
             <div className="inputDrop2">
@@ -27,21 +27,21 @@ const Form = () => {
             </div>
           </div>
 
-          <div className="w-[383.29px] h-[21.95px] my-20">
+          <div className="w-[383.29px] h-[21.95px] my-20 sm:my-10">
             <h1 className="font-[700] text-[20px] leading-[37.5px] text-center text-[#515151]">Wire Transfer</h1>
           </div>
 
-        <div>
+        <div className="sm:h-[60px]">
             <input type="text" placeholder="Bank Name*" className="trainInputI" />
         </div>
 
-        <div>
+        <div className="sm:h-[60px]">
             <input type="text" placeholder="Account Name*" className="trainInputI" />
         </div>
 
           <div className="relative">
             <div className="relative z-[10] mb-[50px]">
-            <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
+            <KeyboardArrowDownOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Account Type*" className="trainInput shadow-lg " />
             </div>
             <div className="inputDrop2">
@@ -51,15 +51,15 @@ const Form = () => {
             </div>
           </div>
 
-          <div>
+          <div className="sm:h-[60px]">
             <input type="text" placeholder="Account Number*" className="trainInputI" />
         </div>
 
-        <div>
+        <div className="sm:h-[60px]">
             <input type="text" placeholder="Swift Number*" className="trainInputI" />
         </div>
 
-        <div>
+        <div className="">
             <input type="text" placeholder="Billing Address*" className="trainInputI" />
         </div>
 
