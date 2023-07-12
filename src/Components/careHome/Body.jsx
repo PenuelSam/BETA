@@ -21,7 +21,7 @@ const Body = () => {
         <p className="bodyP">Our carers are games friendly and can play at least two different types of games which can help in keeping our clients busy, social and active.</p>
         </div>
         <div data-aos="zoom-in" className="bodyOffer">
-            <div className="bodyOfferImg"><img src={image} alt="" /></div>
+            <div className="bodyOfferImg"><img src={image} alt="" className="sm:px-[2%]" /></div>
             <h2 className="bodyOfferH2">What we offer our care workers</h2>
             <ul className="bodyOfferList">
                 {WhatweOffer.map((offer, i) => (

@@ -16,9 +16,9 @@ const Body = () => {
     
   return (
     <div className="flex flex-col bodyBg">
-        <div data-aos="zoom-in" className="maxcontainer2 care-bodyGrid">
+        <div data-aos="zoom-in" className="maxcontainer2 sm:w-full sm:gap-2 care-bodyGrid">
                 {CareHomeButtons.map((btn, i)=>(
-                    <img key={i} src={btn.button} alt="" className="cursor-pointer" />
+                    <img key={i} src={btn.button} alt="" className="cursor-pointer sm:h-[60px] sm:w-[170px]" />
                 ))}
         </div>
 
@@ -34,7 +34,7 @@ const Body = () => {
             </div>
             <div data-aos="zoom-in" className="care-approachImgContainer hidden lg:flex">
                 <p className="care-approachImg-p2">THE BETA CARE  <br /> APPROACH </p>
-                <img src={image} alt="" className="care-approachImg2" />
+                <img src={image} alt="" className="care-approachImg2 px-[2%]" />
             </div>
         </div>
     </div>

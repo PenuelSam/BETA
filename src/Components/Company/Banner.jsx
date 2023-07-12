@@ -9,8 +9,11 @@ const Banner = () => {
           <p className="m-bannerp">
           The go-to agency for manufacturing companies in need of temporary staff.
           </p>
-          <div className="m-bannerBtns">
+          <div className="m-bannerBtns lg:hidden">
           <Link to='/personal'><button className="m-bannerBtnLeft">Register as an Operative</button></Link>
+          </div>
+          <div className="m-bannerBtnsm hidden lg:flex">
+          <Link to='/personal'><button className="m-bannerBtnLeftsm">Register as an Operative</button></Link>
           </div>
         </div>
       </div>

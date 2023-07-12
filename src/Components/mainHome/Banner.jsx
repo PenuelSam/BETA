@@ -12,9 +12,13 @@ const Banner = () => {
             and healthcare providers in need of temporary staff. Our mission is
             to provide the best quality of candidates for your business needs.
           </p>
-        <div className="bannerBtns sm:bannerBtnsm">
-          <Link to='/carecentre'  ><button className="bannerBtnLeft sm:bannerBtnLeftsm">Proceed to care centre</button></Link>
-          <Link to='/manufacturing'><button className="bannerBtnRight sm:bannerBtnRightsm">Proceed to manufacturing</button></Link>
+        <div className="bannerBtns lg:hidden">
+          <Link to='/carecentre'  ><button className="bannerBtnLeft">Proceed to care centre</button></Link>
+          <Link to='/manufacturing'><button className="bannerBtnRight">Proceed to manufacturing</button></Link>
+        </div>
+        <div className=" hidden lg:flex bannerBtnsm">
+          <Link to='/carecentre'  ><button className="bannerBtnLeftsm">Proceed to care centre</button></Link>
+          <Link to='/manufacturing'><button className="bannerBtnRightsm">Proceed to manufacturing</button></Link>
         </div>
         </div>
       </div>
