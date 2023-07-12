@@ -16,19 +16,19 @@ const Form = () => {
         <div className="trainFormContainerKin">
         <form action="" className="smFormStyle">
 
-        <div className="sm:h-[60px]">
+        <div className="sm:h-[70px]">
             <input type="text" placeholder="Name*" className="trainInputI" />
         </div>
 
-        <div className="sm:h-[60px]">
+        <div className="sm:h-[70px]">
             <input type="text" placeholder="Phone Number*" className="trainInputI" />
         </div>
 
-        <div className="sm:h-[60px]">
+        <div className="sm:h-[70px]">
             <input type="email" placeholder="Email*" className="trainInputI" />
         </div>
 
-        <div className="sm:h-[60px]">
+        <div className="sm:h-[70px]">
             <input type="text" placeholder="Relationship*" className="trainInputI" />
         </div>
 

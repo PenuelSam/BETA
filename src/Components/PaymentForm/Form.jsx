@@ -31,11 +31,11 @@ const Form = () => {
             <h1 className="font-[700] text-[20px] leading-[37.5px] text-center text-[#515151]">Wire Transfer</h1>
           </div>
 
-        <div className="sm:h-[60px]">
+        <div className="sm:h-[70px]">
             <input type="text" placeholder="Bank Name*" className="trainInputI" />
         </div>
 
-        <div className="sm:h-[60px]">
+        <div className="sm:h-[70px]">
             <input type="text" placeholder="Account Name*" className="trainInputI" />
         </div>
 
@@ -51,11 +51,11 @@ const Form = () => {
             </div>
           </div>
 
-          <div className="sm:h-[60px]">
+          <div className="sm:h-[70px]">
             <input type="text" placeholder="Account Number*" className="trainInputI" />
         </div>
 
-        <div className="sm:h-[60px]">
+        <div className="sm:h-[70px]">
             <input type="text" placeholder="Swift Number*" className="trainInputI" />
         </div>
 

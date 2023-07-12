@@ -17,12 +17,12 @@ const Form = () => {
         <div className="trainFormContainerPay">
         <form action="" className="smFormStyle">
 
-        <div className="relative sm:h-[60px]">
+        <div className="relative sm:h-[70px]">
             <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload Right to work ID*" className="trainInputI" />
           </div>
 
-        <div className="relative sm:h-[60px]">
+        <div className="relative sm:h-[70px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Year Obtained*" className="trainInputI" />
           </div>
@@ -46,15 +46,15 @@ const Form = () => {
             <h1 className="font-[700] text-[18px] leading-[37.5px] text-center text-[#515151]">Additional Documentations</h1>
           </div>
 
-        <div className="sm:h-[60px]">
+        <div className="sm:h-[70px]">
             <input type="text" placeholder="Document Name*" className="trainInputI" />
         </div>
 
-        <div className="sm:h-[60px]">
+        <div className="sm:h-[70px]">
             <input type="text" placeholder="Document Description*" className="trainInputI" />
         </div>
 
-        <div className="relative sm:h-[60px]">
+        <div className="relative sm:h-[70px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Country of Validity*" className="trainInputI" />
           </div>

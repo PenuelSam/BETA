@@ -17,27 +17,27 @@ const Form = () => {
         
         <div className="trainFormContainer">
         <form action="" className="smFormStyle">
-          <div className=" sm:h-[60px]">
+          <div className=" sm:h-[70px]">
             <input type="text" placeholder="First Name*" className="trainInput" />
           </div>
-          <div className=" sm:h-[60px]">
+          <div className=" sm:h-[70px]">
             <input type="text" placeholder="Last Name*" className="trainInput" />
           </div>
-          <div className="relative sm:h-[60px]">
+          <div className="relative sm:h-[70px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}}/>
             <input type="text" placeholder="Gender*" className="trainInput" />
           </div>
-          <div className="sm:h-[60px]">
+          <div className="sm:h-[70px]">
             <input type="text" placeholder="Phone Number" className="trainInput" />
           </div>
-          <div className="sm:h-[60px]">
+          <div className="sm:h-[70px]">
             <input type="email" placeholder="Email*" className="trainInput" />
           </div>
-          <div className="relative sm:h-[60px]">
+          <div className="relative sm:h-[70px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Country" className="trainInput" />
           </div>
-          <div className="relative sm:h-[60px]">
+          <div className="relative sm:h-[70px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="State" className="trainInput" />
           </div>

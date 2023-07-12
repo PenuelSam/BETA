@@ -28,23 +28,23 @@ const Form = () => {
               <p className="inputDropText">Advanced</p>
             </div>
           </div>
-          <div className=" sm:h-[60px]">
+          <div className=" sm:h-[70px]">
             <input type="text" placeholder="Institution Name*" className="trainInputI" />
           </div>
-          <div className=" sm:h-[60px]">
+          <div className=" sm:h-[70px]">
             <input type="text" placeholder="Course Title*" className="trainInputI" />
           </div>
-          <div className=" sm:h-[60px]">
+          <div className=" sm:h-[70px]">
             <input type="text" placeholder="Program Duration*" className="trainInputI" />
           </div>
-          <div className=" sm:h-[60px]">
+          <div className=" sm:h-[70px]">
             <input type="text" placeholder="Qualification Obtained*" className="trainInputI" />
           </div>
-          <div className="relative sm:h-[60px]">
+          <div className="relative sm:h-[70px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Year*" className="trainInputI" />
           </div>
-          <div className="relative sm:h-[60px]">
+          <div className="relative sm:h-[70px]">
             <AddOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload Certification*" className="trainInputI" />
           </div>

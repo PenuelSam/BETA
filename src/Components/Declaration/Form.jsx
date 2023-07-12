@@ -20,7 +20,7 @@ const Form = () => {
             <input type="text" placeholder="Name*" className="trainInputI" />
         </div>
 
-        <div className="relative sm:h-[60px]">
+        <div className="relative sm:h-[70px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Date*" className="trainInputI" />
           </div>

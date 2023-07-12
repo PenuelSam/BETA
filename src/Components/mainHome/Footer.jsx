@@ -7,7 +7,6 @@ import Center from "../../assets/Figma-Images/footerCenter.png";
 import ArrowUp from "../../assets/Figma-Images/ArrowUp.png";
 import CloseIcon from "@mui/icons-material/Close";
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import logo2 from '../../assets/Figma-Images/aboutpng.png'
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 
@@ -28,7 +27,7 @@ const Footer = () => {
     <div className="footerBg">
 
       {/*Desktop Footer */}
-      <div className="maxcontainer2 lg:hidden flex flex-col justify-center">
+      <div className="maxcontainer lg:hidden flex flex-col justify-center">
         {/* TOP */}
         <div className="flex lg:flex-col justify-between  w-[100%]">
           {/* TOP LEFT */}
@@ -41,7 +40,7 @@ const Footer = () => {
               BetaCare offers quality services to individuals in need of care.
               We have services are in varying dimensions.
             </p>
-            <div className="flex gap-2 mb-5">
+            <div className="flex gap-2 my-5">
               <img src={Facebook} alt="" className="footerIcon" />
               <img src={Twitter} alt="" className="footerIcon" />
               <img src={Instagram} alt="" className="footerIcon" />
@@ -112,7 +111,7 @@ const Footer = () => {
 
 
       {/* Mobile Footer */}
-      <div className="hidden lg:flex items-start pl-[10%] flex-col justify-center">
+      <div className="hidden lg:flex items-start pl-[5%] flex-col justify-center">
         <div className="f-top">
           <h1 className="footerH1">betacare</h1>
           <p className="footer-m-p">
@@ -125,10 +124,10 @@ const Footer = () => {
             <div className="social">
               <p className="socialp">Find Us On</p>
               <div className="socialIcons">
-                <img src={Facebook} alt="" className="w-[12.54px] h-[12.54px]"/>
-                <img src={Twitter} alt="" className="w-[12.54px] h-[12.54px]"/>
-                <img src={Instagram} alt="" className="w-[12.54px] h-[12.54px]"/>
-                <img src={Linkedin} alt="" className="w-[12.54px] h-[12.54px]"/>
+                <img src={Facebook} alt="" className="w-[20px] h-[20px]"/>
+                <img src={Twitter} alt="" className="w-[20px] h-[20px]"/>
+                <img src={Instagram} alt="" className="w-[20px] h-[20px]"/>
+                <img src={Linkedin} alt="" className="w-[20px] h-[20px]"/>
               </div>
             </div>
             <div className="gap-2 py-5">
@@ -162,7 +161,7 @@ const Footer = () => {
         <div className="f-bottom">
           <div className="f-bottomL">
             <div>
-            <img src={logo2} alt="" className="f-logo" />
+            <img src={logo} alt="" className="w-12" />
             </div>
             <div className="f-b-text">
               <p className="f-b-textp">© 2022 BetaCare. All rights reserved.</p>

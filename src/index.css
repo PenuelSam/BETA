@@ -713,13 +713,13 @@
   }
 
   .trainFormContainer{
-    @apply w-[566px] h-[1464px]  lg:h-[800px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%]  sm:mx-[5%]
+    @apply w-[566px] h-[1464px]  lg:h-[900px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%]  sm:mx-[5%]
   }
   .trainFormContainerBG{
     @apply w-[566px] h-[1464px]  lg:h-[800px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%]  sm:mx-[5%]
   }
   .trainFormContainerDEC{
-    @apply w-[566px] h-[1464px]  lg:h-[500px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%]  sm:mx-[5%]
+    @apply w-[566px] h-[1464px]  lg:h-[600px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%]  sm:mx-[5%]
   }
   .trainFormContainerID{
     @apply w-[566px] h-[1464px]  lg:h-[700px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center sm:items-start  pt-[10%] sm:mx-[5%]
@@ -728,7 +728,7 @@
     @apply w-[566px] h-[1464px]  lg:h-[900px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
   }
   .trainFormContainerCv{
-    @apply w-[566px] h-[1464px]  lg:h-[400px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
+    @apply w-[566px] h-[1464px]  lg:h-[450px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
   }
   .trainFormContainerKin{
     @apply w-[566px] h-[1464px]  lg:h-[500px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
@@ -812,10 +812,10 @@
     @apply w-[100%] h-auto bg-white
   }
   .footerP{
-    @apply font-[300]  text-[13px] leading-[17px] w-[358px] h-[56px] text-[#363637]
+    @apply font-[300]  text-[15px] leading-[17px] w-[358px] h-[56px] text-[#363637]
   }
   .footer-P{
-    @apply font-[300] w-[541px] sm:pr-10 sm:w-[340px] sm:h-[90px] h-[59px] lg:text-left text-[13px] leading-[25px] text-[#363637] text-right
+    @apply font-[300] w-[541px] sm:pr-10 sm:w-[340px] sm:h-[90px] h-[59px] lg:text-left text-[15px] leading-[25px] text-[#363637] text-right
   }
   .footerSpan{
     @apply font-[700] text-[#021A71]
@@ -845,7 +845,7 @@
     @apply font-[700] text-[15px] leading-[24px] text-[#021A71] 
   }
   .footerLi{
-    @apply font-[300] text-[13px] leading-[24px] text-[#021A71]
+    @apply font-[300] text-[14px] leading-[24px] text-[#021A71]
   }
   .smStyle{
     @apply absolute right-0 bottom-10
@@ -861,34 +861,34 @@
   }
 
   .footer-m-p{
-    @apply font-[300] font-Poppins text-[12px] text-[#363637] w-[303px] h-[27px]
+    @apply font-[300]  text-[13px] text-[#363637] w-[303px] h-[27px]
   }
   .f-center{
-    @apply flex items-start gap-2 mb-[20%]
+    @apply flex items-start sm:gap-2  lg:gap-5 mb-[10%]
   }
   .social{
     @apply flex flex-col justify-center gap-3 py-5
   }
   .socialp{
-    @apply font-[700] text-[13px] text-[#04559E]
+    @apply font-[700] text-[15px] text-[#04559E]
   }
   .socialIcons{
     @apply flex gap-2
   }
   .linksP{
-    @apply font-[700] text-[13px] font-Raleway text-[#021A71]
+    @apply font-[700] text-[15px] font-Raleway text-[#021A71]
   }
   .footerLi-m{
-    @apply font-[300] text-[11px] font-Raleway text-[#021A71]
+    @apply font-[300] text-[12px] font-Raleway text-[#021A71]
   }
   .f-right{
-    @apply flex flex-col items-start justify-center w-[200px] gap-2
+    @apply flex flex-col mt-5 items-start justify-center w-[200px] gap-2
   }
   .f-sub{
     @apply font-[700] text-[16px] text-[#021A71] uppercase
   }
   .f-subP{
-    @apply font-[300] text-[11.5px] text-[#363637] pr-5
+    @apply font-[300] text-[13px]  text-[#363637] pr-5
   }
   .f-subPspan{
     @apply font-[700] text-[#021A71]
@@ -897,13 +897,13 @@
     @apply absolute top-[14.5%] left-[5%] z-[5]
   }
   .f-input{
-    @apply w-[146px] h-[24px] rounded-full pl-6 shadow-lg relative z-[2] text-[#363637] outline-none border-none
+    @apply w-[146px] h-[24px] rounded-md pl-6  relative z-[2] text-[#363637] outline-none border-none shadow-gray-400 shadow-md
   }
   .f-input::placeholder{
-    @apply  text-[10px]
+    @apply  text-[12px]
   }
   .f-btn{
-    @apply w-[89px] h-[24px] bg-[#021A71] text-white shadow-lg text-[12px] rounded-full
+    @apply w-[89px] h-[24px] bg-[#021A71] text-white shadow-lg text-[12px] rounded-md
   }
   .f-bottom{
     @apply flex items-center justify-between mb-[10%]
@@ -912,19 +912,19 @@
     @apply flex items-center justify-center gap-3
   }
   .f-logo{
-    @apply w-[34px] h-[35px] object-cover
+    @apply w-[40px]  object-cover
   }
   .f-b-text{
     @apply flex flex-col items-start justify-center
   }
   .f-b-textp{
-    @apply font-[300] text-[11px] text-[#363637]
+    @apply font-[300] text-[13px] text-[#363637]
   }
   .f-b-textspan{
-    @apply font-[700] text-[11px] text-[#021A71] 
+    @apply font-[700] text-[13px] text-[#021A71] 
   }
   .f-arrow{
-    @apply w-[30.3px] h-[31px] relative right-[-350%]
+    @apply w-[40px] h-[40px] relative right-[-30%]
   }
 }
 

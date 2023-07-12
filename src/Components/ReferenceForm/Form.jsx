@@ -16,7 +16,7 @@ const Form = () => {
         <div className="trainFormContainer">
         <form action="" className="smFormStyle">
 
-        <div className=" sm:h-[60px]">
+        <div className=" sm:h-[70px]">
             <input type="text" placeholder="Referent's Name*" className="trainInputI" />
         </div>
 
@@ -32,19 +32,19 @@ const Form = () => {
             </div>
           </div>
 
-          <div className=" sm:h-[60px]">
+          <div className=" sm:h-[70px]">
             <input type="text" placeholder="Referent's Job Title*" className="trainInputI" />
         </div>
 
-        <div className=" sm:h-[60px]">
+        <div className=" sm:h-[70px]">
             <input type="text" placeholder="Referent's Phone*" className="trainInputI" />
         </div>
 
-        <div className=" sm:h-[60px]">
+        <div className=" sm:h-[70px]">
             <input type="email" placeholder="Referent's Email*" className="trainInputI" />
         </div>
 
-        <div className=" sm:h-[60px]">
+        <div className=" sm:h-[70px]">
             <input type="text" placeholder="Referent's Office Address*" className="trainInputI" />
         </div>
 

@@ -17,7 +17,7 @@ const Form = () => {
         <div className="trainFormContainerID">
         <form action="" className="smFormStyle">
 
-        <div className=" sm:h-[60px]">
+        <div className=" sm:h-[70px]">
             <input type="text" placeholder="Badge Title*" className="trainInputI" />
         </div>
 
@@ -33,17 +33,17 @@ const Form = () => {
             </div>
           </div>
 
-          <div className="relative sm:h-[60px]">
+          <div className="relative sm:h-[70px]">
             <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Badge Image Front*" className="trainInputI" />
           </div>
 
-          <div className="relative sm:h-[60px]">
+          <div className="relative sm:h-[70px]">
             <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Badge Image Back*" className="trainInputI" />
           </div>
 
-          <div className="relative sm:h-[60px]">
+          <div className="relative sm:h-[70px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Expiry Date*" className="trainInputI" />
           </div>

@@ -16,7 +16,7 @@ const Form = () => {
         <div className="trainFormContainerCv">
         <form action="" className="smFormStyle">
 
-        <div className="relative sm:h-[60px]">
+        <div className="relative sm:h-[70px]">
             <AddOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Upload CV*" className="trainInputI" />
           </div>
