@@ -6,7 +6,7 @@ import Linkedin from "../../assets/Figma-Images/Linkedin.png";
 import Center from "../../assets/Figma-Images/footerCenter.png";
 import ArrowUp from "../../assets/Figma-Images/ArrowUp.png";
 import CloseIcon from "@mui/icons-material/Close";
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import mail from "../../assets/Figma-Images/Mail.png"
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 
@@ -152,7 +152,7 @@ const Footer = () => {
                 <h1 className="f-sub">Subscribe</h1>
                 <p className="f-subP">Stay up to date on new services, openings and oppotunities from BetaCare by <span className="f-subPspan">joining our mailing</span> list.</p>
                 <div className="flex  gap-3 my-3 relative">
-                    <EmailOutlinedIcon sx={{fontSize: '15px', fill: 'gray'}}  className="emailIcon"/>
+                    <img src={mail} alt=""  className="emailIcon"/>
                     <input type="text" placeholder="Email" className="f-input" />
                     <button className="f-btn" onClick={handleOpenModal}>Subscribe</button>
                 </div>

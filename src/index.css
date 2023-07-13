@@ -909,16 +909,16 @@
     @apply font-[700] text-[#021A71]
   }
   .emailIcon{
-    @apply absolute top-[25%] left-[5%] z-[5]
+    @apply absolute top-[35%] left-[5%] z-[5]
   }
   .f-input{
-    @apply w-[200px] h-[30px] rounded-md pl-10  relative z-[2] text-[#363637] outline-none border-none shadow-gray-400 shadow-md
+    @apply w-[200px] h-[40px] rounded-full pl-10  relative z-[2] text-[#363637] outline-none border-none  shadow-lg bg-[#E5F1F8]
   }
   .f-input::placeholder{
     @apply  text-[15px]
   }
   .f-btn{
-    @apply w-[89px] h-[30px] bg-[#021A71] text-white shadow-lg text-[15px] rounded-md
+    @apply w-[95px] h-[40px] bg-[#021A71] text-white shadow-lg text-[15px] rounded-full
   }
   .f-bottom{
     @apply flex items-center justify-between my-[10%]
