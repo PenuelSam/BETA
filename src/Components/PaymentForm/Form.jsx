@@ -15,7 +15,7 @@ const Form = () => {
         <div className="trainFormContainerPay">
         <form action="" className="smFormStyle">
 
-        <div className="relative">
+        <div className="relative mt-[10%]">
             <div className="relative z-[10] mb-[50px] sm:mb-[5px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
             <input type="text"  placeholder="Payment Method*" className="trainInput shadow-lg " />
@@ -27,7 +27,7 @@ const Form = () => {
             </div>
           </div>
 
-          <div className="w-[383.29px] h-[21.95px] my-20 sm:my-10">
+          <div className="w-[383.29px] h-[21.95px] my-20 sm:mt-20">
             <h1 className="font-[700] text-[20px] leading-[37.5px] text-center text-[#515151]">Wire Transfer</h1>
           </div>
 

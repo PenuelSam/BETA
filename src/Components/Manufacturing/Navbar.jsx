@@ -1,10 +1,10 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "../../assets/Figma-Images/logo.png";
-import logo2 from "../../assets/Figma-Images/menuLogo.png";
+import logo2 from '../../assets/Figma-Images/betacare-logo.jpg'
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import { NavLinks } from "../../data";
+import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import { useState } from "react";
 const Navbar = () => {
   const navigate = useNavigate();
@@ -59,30 +59,32 @@ const Navbar = () => {
         {toggleMenu && (
           <div className={`smallscreen_overlay flex__center slide-bottom ${toggleMenu ? 'navbar-open' : 'navbar-close'}`}>
             <CloseIcon
-              sx={{fill: '#000'}}
+              sx={{fill: '#333'}}
               className="overlay__close"
               onClick={() => setToggleMenu(false)}
             />
-            <div className="ml-[10%] mt-[10%]">
+            <Link to="/" onClick={() => handleClick('/')}>
               <img src={logo2} alt="" className="w-[150px] xsm:w-[100px]" />
-            </div>
+            </Link>
             <ul className="navbar-smallscreen_links">
             {NavLinks.map((nav) => (
                 <>
                   <Link to={nav.path} onClick={() => handleClick(`${nav.path}`)} >
-                    <div className="flex items-center justify-between">
-                    <div
-                      key={nav.id}
-                      className="flex items-center gap-5 px-5"
-                    >
-                      <img src={nav.Png} alt="" />
-                      <li key={nav.id} className={`text-[#434445]  text-[15px] font-[500]`}>
+                    <div className="flex  items-center justify-between">
+                    <div key={nav.id} className="flex items-center   px-5">
+                      <div className="flex items-center gap-3">
+                      <div>
+                      <img src={nav.Png} alt="" className="w-[15px]" />
+                      </div>
+                      <li key={nav.id} className={`text-black font-Raleway text-[14px] font-[500]`}>
                         {nav.name}
                       </li>
+                      </div>
+                      <ArrowRightOutlinedIcon sx={{fill: '#434445'}} className="absolute right-5" />,
                     </div>
-                    <ArrowRightOutlinedIcon sx={{fill: '#434445'}} className="absolute right-5" />
-                    </div>
+                    </div>                  
                   </Link>
+                  <div className=" ml-[8%] w-[230px] h-[0.1px] bg-[#d0d0d1]"></div> 
                 </>
               ))}
             </ul>

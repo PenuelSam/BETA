@@ -17,7 +17,7 @@ const Offer = () => {
     <div className=''>
         <div className='flex items-center lg:flex-col lg:gap-10 lg:mb-20 gap-40'>
             <div data-aos="zoom-in">
-                <img src={image} alt="" className="sm:px-[2%]" />
+                <img src={image} alt="" className="sm:px-[3%]" />
             </div>
             <ul data-aos="zoom-in" className='m-OfferLinks'>
                 <li className='m-OfferLi'>Production Operatives</li>
