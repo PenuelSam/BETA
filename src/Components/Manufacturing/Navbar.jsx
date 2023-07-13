@@ -63,7 +63,9 @@ const Navbar = () => {
               className="overlay__close"
               onClick={() => setToggleMenu(false)}
             />
-        
+            <Link to="/" onClick={() => handleClick('/')}>
+              <img src={logo2} alt="" className="w-[200px] relative top-[-30%]" />
+            </Link>
             <ul className="navbar-smallscreen_links">
             {NavLinks.map((nav) => (
                 <>
@@ -78,7 +80,7 @@ const Navbar = () => {
                         {nav.name}
                       </li>
                       </div>
-                      <ArrowRightOutlinedIcon sx={{fill: '#434445'}} className="absolute right-5" />
+                      <ArrowRightOutlinedIcon sx={{fill: '#434445'}} className="absolute right-0" />
                     </div>
                     </div>                  
                   </Link>
