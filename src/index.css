@@ -894,7 +894,7 @@
     @apply font-[700] text-[18px]  text-[#021A71]
   }
   .footerLi-m{
-    @apply font-[300] text-[15px] font-Raleway text-[#021A71]
+    @apply font-[300] text-[15px] mb-3 font-Raleway text-[#021A71]
   }
   .f-right{
     @apply flex flex-col mt-5 items-start justify-center w-[200px] gap-2
@@ -918,7 +918,7 @@
     @apply  text-[15px]
   }
   .f-btn{
-    @apply w-[95px] h-[40px] bg-[#021A71] text-white shadow-lg text-[15px] rounded-full
+    @apply w-[110px] h-[40px] bg-[#021A71] text-white shadow-lg text-[15px] rounded-full
   }
   .f-bottom{
     @apply flex items-center justify-between my-[10%]
