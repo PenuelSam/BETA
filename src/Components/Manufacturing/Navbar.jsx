@@ -81,7 +81,7 @@ const Navbar = () => {
                     </div>
                     </div>                  
                   </Link>
-                  <div className=" ml-[8%] w-[230px] h-[0.1px] bg-[#dddcdc]"></div> 
+                  <div className=" ml-[8%] w-[230px] h-[0.1px] bg-[#f0eeee]"></div> 
                 </>
               ))}
             </ul>
