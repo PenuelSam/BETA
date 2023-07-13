@@ -76,7 +76,7 @@ const Navbar = () => {
                       <div>
                       <img src={nav.Png} alt="" className="w-[15px]" />
                       </div>
-                      <li key={nav.id} className={`text-black font-Raleway text-[14px] font-[500]`}>
+                      <li key={nav.id} className={`text-red-500 font-Raleway text-[14px] font-[500]`}>
                         {nav.name}
                       </li>
                       </div>
