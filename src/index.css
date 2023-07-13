@@ -161,7 +161,7 @@
     @apply absolute right-5 top-5 cursor-pointer
   }
   .navbar-smallscreen_links{
-    @apply flex flex-col gap-5 mt-[45%]
+    @apply flex flex-col gap-5 mt-[35%]
   }
 
   .active{
