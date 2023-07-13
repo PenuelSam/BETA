@@ -64,7 +64,7 @@ const Navbar = () => {
               onClick={() => setToggleMenu(false)}
             />
             <Link to="/" onClick={() => handleClick('/')}>
-              <img src={logo2} alt="" className="w-[200px] " />
+              <img src={logo2} alt="" className="w-[150px] " />
             </Link>
             <ul className="navbar-smallscreen_links">
             {NavLinks.map((nav) => (
