@@ -77,11 +77,11 @@ const Navbar = () => {
                         {nav.name}
                       </li>
                       </div>
-                      <ArrowRightOutlinedIcon sx={{fill: '#434445'}} className="absolute right-5" />
+                      <ArrowRightOutlinedIcon sx={{fill: '#333'}} className="absolute right-5" />
                     </div>
                     </div>                  
                   </Link>
-                  <div className=" ml-[8%] w-[230px] h-[0.1px] bg-[#d0d0d1]"></div> 
+                  <div className=" ml-[8%] w-[230px] h-[0.1px] bg-[#686868]"></div> 
                 </>
               ))}
             </ul>
