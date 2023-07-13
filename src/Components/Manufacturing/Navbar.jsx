@@ -1,6 +1,5 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo from "../../assets/Figma-Images/logo.png";
-import logo2 from '../../assets/Figma-Images/betacare-logo.jpg'
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { NavLinks } from "../../data";
@@ -63,9 +62,7 @@ const Navbar = () => {
               className="overlay__close"
               onClick={() => setToggleMenu(false)}
             />
-            <Link to="/" onClick={() => handleClick('/')}>
-              <img src={logo2} alt="" className="w-[220px] relative top-[-32%]" />
-            </Link>
+    
             <ul className="navbar-smallscreen_links">
             {NavLinks.map((nav) => (
                 <>
@@ -80,7 +77,7 @@ const Navbar = () => {
                         {nav.name}
                       </li>
                       </div>
-                      <ArrowRightOutlinedIcon sx={{fill: '#434445'}} className="absolute right-[-5%]" />
+                      <ArrowRightOutlinedIcon sx={{fill: '#434445'}} className="absolute right-5" />
                     </div>
                     </div>                  
                   </Link>
