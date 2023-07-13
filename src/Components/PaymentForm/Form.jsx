@@ -16,7 +16,7 @@ const Form = () => {
         <form action="" className="smFormStyle">
 
         <div className="relative">
-            <div className="relative z-[10] mb-[50px]">
+            <div className="relative z-[10] mb-[50px] sm:mb-[5px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
             <input type="text"  placeholder="Payment Method*" className="trainInput shadow-lg " />
             </div>

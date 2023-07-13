@@ -737,7 +737,7 @@
     @apply w-[566px] h-[1464px]  lg:h-[600px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%]  sm:mx-[5%]
   }
   .trainFormContainerID{
-    @apply w-[566px] h-[1464px]  lg:h-[700px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center sm:items-start  pt-[10%] sm:mx-[5%]
+    @apply w-[566px] h-[1464px]  lg:h-[750px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center sm:items-start  pt-[10%] sm:mx-[5%]
   }
   .trainFormContainerPay{
     @apply w-[566px] h-[1464px]  lg:h-[900px]  bg-[#E5F1F8]  rounded-2xl flex  justify-center   pt-[10%] sm:mx-[5%]
