@@ -7,6 +7,11 @@ import "aos/dist/aos.css"
 import { useEffect } from "react"
 
 const BodyCard3 = () => {
+
+    const handleClick = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
   useEffect(() => {
     Aos.init({
       duration: 800,
@@ -29,7 +34,7 @@ const BodyCard3 = () => {
                 <li key={i}>{care.title}</li>
               ))}
             </ul>
-            <Link to='/services2'>
+            <Link to='/services2' onClick={() => handleClick()}>
               <img src={Next} alt="" className='sm:w-[100px] object-cover' />
             </Link>
           </div>

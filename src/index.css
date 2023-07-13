@@ -812,10 +812,10 @@
     @apply w-[729px] sm:w-[100%] sm:h-[400px] h-[729px] relative 
   }
   .bodyOfferH2{
-    @apply w-[538px] h-[230px] font-[700] sm:pr-[40%] sm:text-[30px] text-[40px] uppercase leading-[66px] sm:leading-[30px] text-[#E4F3FB] absolute left-[50px] top-[50%] sm:top-[20%]
+    @apply w-[538px] h-[230px] font-[700]  sm:w-[350px] sm:ml-[-1rem] sm:text-[30px] text-[40px] uppercase leading-[66px] sm:leading-[40px] text-[#E4F3FB] absolute left-[50px] top-[50%] sm:top-[20%]
   }
   .bodyOfferList{
-    @apply w-[427px] h-[526px] sm:h-[750px] leading-[37.98px] lg:pl-[5%] lg:mb-[10%] tracking-[0.1px] sm:tracking-normal sm:pr-[10%] sm:pl-[15%]
+    @apply w-[427px] h-[526px] sm:h-[550px] leading-[37.98px] lg:pl-[5%] lg:mb-[10%] tracking-[0.1px] sm:tracking-normal sm:pr-[15%] sm:pl-[15%]
   }
   .bodyOfferLi{
     @apply font-[300] text-[15px] text-[#363637]  list-disc
@@ -876,52 +876,52 @@
   }
 
   .footer-m-p{
-    @apply font-[300]  text-[13px] text-[#363637] w-[303px] h-[27px]
+    @apply font-[300]  text-[15px] text-[#363637] font-Raleway h-[27px]
   }
   .f-center{
-    @apply flex items-start sm:gap-2  lg:gap-5 mb-[10%]
+    @apply flex flex-col items-start sm:gap-2  lg:gap-5 mb-[10%]
   }
   .social{
     @apply flex flex-col justify-center gap-3 py-5
   }
   .socialp{
-    @apply font-[700] text-[15px] text-[#04559E]
+    @apply font-[700] text-[18px] font-Raleway text-[#04559E]
   }
   .socialIcons{
     @apply flex gap-2
   }
   .linksP{
-    @apply font-[700] text-[15px] font-Raleway text-[#021A71]
+    @apply font-[700] text-[18px] font-Raleway text-[#021A71]
   }
   .footerLi-m{
-    @apply font-[300] text-[12px] font-Raleway text-[#021A71]
+    @apply font-[300] text-[15px] font-Raleway text-[#021A71]
   }
   .f-right{
     @apply flex flex-col mt-5 items-start justify-center w-[200px] gap-2
   }
   .f-sub{
-    @apply font-[700] text-[16px] text-[#021A71] uppercase
+    @apply font-[700] text-[20px] font-Raleway text-[#021A71] uppercase
   }
   .f-subP{
-    @apply font-[300] text-[13px]  text-[#363637] pr-5
+    @apply font-[300] text-[15px] font-Raleway  text-[#363637] 
   }
   .f-subPspan{
     @apply font-[700] text-[#021A71]
   }
   .emailIcon{
-    @apply absolute top-[14.5%] left-[5%] z-[5]
+    @apply absolute top-[20%] left-[5%] z-[5]
   }
   .f-input{
-    @apply w-[146px] h-[24px] rounded-md pl-6  relative z-[2] text-[#363637] outline-none border-none shadow-gray-400 shadow-md
+    @apply w-[200px] h-[30px] rounded-md pl-10  relative z-[2] text-[#363637] outline-none border-none shadow-gray-400 shadow-md
   }
   .f-input::placeholder{
-    @apply  text-[12px]
+    @apply  text-[18px]
   }
   .f-btn{
-    @apply w-[89px] h-[24px] bg-[#021A71] text-white shadow-lg text-[12px] rounded-md
+    @apply w-[89px] h-[30px] bg-[#021A71] text-white shadow-lg text-[15px] rounded-md
   }
   .f-bottom{
-    @apply flex items-center justify-between mb-[10%]
+    @apply flex items-center justify-between my-[10%]
   }
   .f-bottomL{
     @apply flex items-center justify-center gap-3

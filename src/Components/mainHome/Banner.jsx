@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
 
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <>
       <div className="bannerBg pt-[20%] lg:pt-[40%] sm:pt-[40%]">
@@ -13,8 +17,8 @@ const Banner = () => {
             to provide the best quality of candidates for your business needs.
           </p>
         <div className="bannerBtns lg:hidden">
-          <Link to='/carecentre'  ><button className="bannerBtnLeft">Proceed to care centre</button></Link>
-          <Link to='/manufacturing'><button className="bannerBtnRight">Proceed to manufacturing</button></Link>
+          <Link to='/carecentre' onClick={() => handleClick()} ><button className="bannerBtnLeft">Proceed to care centre</button></Link>
+          <Link to='/manufacturing' onClick={() => handleClick()}><button className="bannerBtnRight">Proceed to manufacturing</button></Link>
         </div>
         <div className=" hidden lg:flex bannerBtnsm">
           <Link to='/carecentre'  ><button className="bannerBtnLeftsm">Proceed to care centre</button></Link>

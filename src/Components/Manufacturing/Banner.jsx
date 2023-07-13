@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom"
 
 const Banner = () => {
+
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <div className="m-bannerBg pt-[15%]  sm:pt-[70%]">
         <div className="flex flex-col justify-center items-center">
@@ -9,8 +14,8 @@ const Banner = () => {
             Warehousing, Manufacturing, Production  Staffing
           </p>
           <div className="m-bannerBtns lg:hidden">
-          <Link to='/personal'><button className="m-bannerBtnLeft">Register as an Operative</button></Link>
-          <Link to='/company'><button className="m-bannerBtnRight">Continue as a company</button></Link>
+          <Link to='/personal' onClick={() => handleClick()}><button className="m-bannerBtnLeft">Register as an Operative</button></Link>
+          <Link to='/company' onClick={() => handleClick()}><button className="m-bannerBtnRight">Continue as a company</button></Link>
           </div>
           <div className="m-bannerBtnsm hidden lg:flex">
           <Link to='/personal'><button className="m-bannerBtnLeftsm">Register as an Operative</button></Link>

@@ -18,7 +18,7 @@ const Body = () => {
     <div className="flex flex-col bodyBg">
         <div data-aos="zoom-in" className="maxcontainer2 sm:w-full sm:gap-2 care-bodyGrid">
                 {CareHomeButtons.map((btn, i)=>(
-                    <img key={i} src={btn.button} alt="" className="cursor-pointer sm:h-[60px] sm:w-[170px]" />
+                    <img key={i} src={btn.button} alt="" className="cursor-pointer sm:h-[80px] sm:w-[170px]" />
                 ))}
         </div>
 

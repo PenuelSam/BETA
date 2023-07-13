@@ -14,13 +14,20 @@ const Navbar = () => {
 
   const handleLinkClick = (link) => {
     navigate(link);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const handleClick = (link) => {
+    navigate(link)
+    setToggleMenu(false)
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
 
   return (
     <div className="navbg">
       <nav className="maxcontainer">
         {/* Logo */}
-        <Link to="/">
+        <Link to="/" onClick={() => handleClick('/')}>
           <img src={logo} alt="logo" />
         </Link>
         {/* Links */}
@@ -62,7 +69,7 @@ const Navbar = () => {
             <ul className="navbar-smallscreen_links">
             {NavLinks.map((nav) => (
                 <>
-                  <Link to={nav.path} onClick={() => setToggleMenu(false)} >
+                  <Link to={nav.path} onClick={() => handleClick(`${nav.path}`)} >
                     <div className="flex items-center justify-between">
                     <div
                       key={nav.id}

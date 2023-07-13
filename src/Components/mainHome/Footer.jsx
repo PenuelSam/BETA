@@ -132,7 +132,7 @@ const Footer = () => {
             </div>
             <div className="gap-2 py-5">
               <p className="linksP">Quick Links</p>
-              <div className="flex items-center gap-5">
+              <div className="flex items-center gap-10">
                 <ul>
                   <li className="footerLi-m">Home</li>
                   <li className="footerLi-m">About Us</li>
@@ -151,8 +151,8 @@ const Footer = () => {
           <div className="f-right">
                 <h1 className="f-sub">Subscribe</h1>
                 <p className="f-subP">Stay up to date on new services, openings and oppotunities from BetaCare by <span className="f-subPspan">joining our mailing</span> list.</p>
-                <div className="flex flex-col gap-3 mt-2 relative">
-                    <EmailOutlinedIcon sx={{fontSize: '10px', fill: 'gray'}}  className="emailIcon"/>
+                <div className="flex  gap-3 my-3 relative">
+                    <EmailOutlinedIcon sx={{fontSize: '18px', fill: 'black'}}  className="emailIcon"/>
                     <input type="text" placeholder="Email" className="f-input" />
                     <button className="f-btn" onClick={handleOpenModal}>Subscribe</button>
                 </div>
