@@ -1,9 +1,9 @@
 import { ContactButtons } from "../../data"
 import person from "../../assets/Figma-Images/person.png"
 import call from "../../assets/Figma-Images/call.png"
-import mail from "../../assets/Figma-Images/mail.png"
+import mail from "../../assets/Figma-Images/Mail.png"
 import Wechat from "../../assets/Figma-Images/Wechat.png"
-import maps from "../../assets/Figma-Images/maps.png"
+import maps from "../../assets/Figma-Images/Maps.png"
 
 const ContactForm = () => {
   
