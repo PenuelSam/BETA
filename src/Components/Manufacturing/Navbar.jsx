@@ -64,7 +64,7 @@ const Navbar = () => {
               onClick={() => setToggleMenu(false)}
             />
             <Link to="/" onClick={() => handleClick('/')}>
-              <img src={logo2} alt="" className="w-[120px] relative top-[-15%] " />
+              <img src={logo2} alt="" className="w-[200px] relative top-[-35%]" />
             </Link>
             <ul className="navbar-smallscreen_links">
             {NavLinks.map((nav) => (
@@ -80,7 +80,7 @@ const Navbar = () => {
                         {nav.name}
                       </li>
                       </div>
-                      <ArrowRightOutlinedIcon sx={{fill: '#434445'}} className="absolute right-5" />,
+                      <ArrowRightOutlinedIcon sx={{fill: '#434445'}} className="absolute right-0" />
                     </div>
                     </div>                  
                   </Link>
