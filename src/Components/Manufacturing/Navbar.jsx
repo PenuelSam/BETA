@@ -80,7 +80,7 @@ const Navbar = () => {
                         {nav.name}
                       </li>
                       </div>
-                      <ArrowRightOutlinedIcon sx={{fill: '#434445'}} className="absolute right-0" />
+                      <ArrowRightOutlinedIcon sx={{fill: '#434445'}} className="absolute right-[-10%]" />
                     </div>
                     </div>                  
                   </Link>
