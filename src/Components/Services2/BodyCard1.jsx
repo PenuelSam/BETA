@@ -15,7 +15,7 @@ const BodyCard1 = () => {
 
   return (
     <div className="servicesBg2">
-      <div className="maxcontainer2  lg:w-full flex lg:flex-col-reverse items-center lg:items-start lg:gap-10 relative">
+      <div id='postoperative' className="maxcontainer2  lg:w-full flex lg:flex-col-reverse items-center lg:items-start lg:gap-10 relative">
           <div data-aos="zoom-in" className="s2-bodyCard1Left">
             <div>
               <h1 className="s2-bodyCard1H1">Recovery care is very important; we first seek to understand the condition of patients before make a personalized plan. However, our team is always ready to care. </h1>

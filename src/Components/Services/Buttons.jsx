@@ -2,8 +2,16 @@ import {WhatweOfferBtn } from "../../data"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 
 const Buttons = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = (url) => {
+    navigate(url)
+  }
+
   useEffect(() => {
     Aos.init({
       duration: 800,
@@ -17,7 +25,11 @@ const Buttons = () => {
     <div className="servicesBg">
       <div data-aos="zoom-in" className="maxcontainer2 sm:w-full sm:gap-2   servicesGrid">
         {WhatweOfferBtn.map((offer,i)=>(
-        <img key={i} src={offer.button} alt="" className="cursor-pointer sm:h-[60px] sm:w-[170px]" />
+        <>
+          <a href={offer.path} onClick={() => handleClick(`${offer.path}`)}>
+          <img key={i} src={offer.button} alt="" className="cursor-pointer sm:h-[60px] sm:w-[170px]" />
+          </a>
+        </>
       ))}
 
     </div>

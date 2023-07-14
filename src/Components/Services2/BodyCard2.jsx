@@ -16,7 +16,7 @@ const BodyCard2 = () => {
 
   return (
     <div className="servicesBg2">
-      <div className="maxcontainer2 lg:w-full flex lg:flex-col-reverse flex-row-reverse lg:items-start items-center lg:gap-10 relative">
+      <div id="palliative" className="maxcontainer2 lg:w-full flex lg:flex-col-reverse flex-row-reverse lg:items-start items-center lg:gap-10 relative">
           <div data-aos="zoom-in" className="s2-bodyCard2Left">
             <div>
               <h1 className="s2-bodyCard2H1">Our services are not limited to clients who needs recovery care, we are also passionate about caring for people living with life threatening illness that requires proper professional care or who has limited time to live.</h1>

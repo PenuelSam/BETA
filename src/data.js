@@ -40,27 +40,31 @@ export const OfferBtns = [
         logoBg: '#A6DBF8',
         textBg: '#021A71',
         textcolor:'#FFFFFF',
+        path: '/personalcare'
     },
     {
         title:'Beta Respite Care',
         logo: offerlogo2,
         logoBg: '#021A71',
         textBg: '#A6DBF8',
-        textcolor: '#021A71'
+        textcolor: '#021A71',
+        path: '/respitecare'
     },
     {
         title:'Beta Personal Nursing Care',
         logo: offerlogo2,
         logoBg: '#021A71',
         textBg: '#A6DBF8',
-        textcolor: '#021A71'
+        textcolor: '#021A71',
+        path: '/personalnursing'
     },
     {
-        title:'Beta afte hospital and post-operative care',
+        title:'Beta after hospital and post-operative care',
         logo: offerlogo,
         logoBg: '#A6DBF8',
         textBg: '#021A71',
         textcolor:'#FFFFFF',
+        path: '/postoperative'
     },
     {
         title:'Beta palliative care and end of life care',
@@ -68,13 +72,15 @@ export const OfferBtns = [
         logoBg: '#A6DBF8',
         textBg: '#021A71',
         textcolor:'#FFFFFF',
+        path: '/palliative'
     },
     {
         title:"Beta alzheimer's and dementia care",
         logo: offerlogo2,
         logoBg: '#021A71',
         textBg: '#A6DBF8',
-        textcolor: '#021A71'
+        textcolor: '#021A71',
+        path: '/dementia'
     },
 
 ]
@@ -146,43 +152,55 @@ export const WhatweOffer =[
 
 export const CareHomeButtons =[
     {
-        button: careImage1
+        button: careImage1,
+        path: '/carehome#careapproach'
     },
     {
-        button: careImage2
+        button: careImage2,
+        path: '/services#personalcare'
     },
     {
-        button: careImage3
+        button: careImage3,
+        path: '/services#respitecare'
     },
     {
-        button: careImage4
+        button: careImage4,
+        path: '/services2#postoperative'
     },
     {
-        button: careImage5
+        button: careImage5,
+        path: '/services2#palliative'
     },
     {
-        button: careImage6
+        button: careImage6,
+        path: '/services2#dementia'
     },
 ]
 
 export const WhatweOfferBtn = [
     {
-        button: serviceImage1
+        button: serviceImage1,
+        path: '/services#personalcare'
     },
     {
-        button: serviceImage2
+        button: serviceImage2,
+        path: '/services#respitecare'
     },
     {
-        button: serviceImage3
+        button: serviceImage3,
+        path: '/services#personalnursing'
     },
     {
-        button: serviceImage4
+        button: serviceImage4,
+        path: '/services2#postoperative'
     },
     {
-        button: serviceImage5
+        button: serviceImage5,
+        path: '/services2#palliative'
     },
     {
-        button: serviceImage6
+        button: serviceImage6,
+        path: '/services2#dementia'
     },
 ]
 

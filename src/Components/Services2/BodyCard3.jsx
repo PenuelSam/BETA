@@ -23,7 +23,7 @@ const BodyCard3 = () => {
 
   return (
     <div className="servicesBg2">
-      <div className="maxcontainer2 lg:w-full lg:flex-col-reverse lg:gap-10 flex items-center relative">
+      <div id="dementia" className="maxcontainer2 lg:w-full lg:flex-col-reverse lg:gap-10 flex items-center relative">
           <div data-aos="zoom-in" className="s2-bodyCard3Left">
             <div>
               <h1 className="s2-bodyCard3H1">Our team understands that taking care of Alzheimer&lsquo;s and dementia patients requires focus, patience and flexibility because the daily tasks increases as the disease progresses.  </h1>

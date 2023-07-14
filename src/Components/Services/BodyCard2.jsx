@@ -16,7 +16,7 @@ const BodyCard2 = () => {
 
   return (
     <div className="servicesBg2">
-      <div className="maxcontainer2 lg:w-full flex lg:flex-col-reverse flex-row-reverse lg:items-start items-center lg:gap-10 relative">
+      <div id='respitecare' className="maxcontainer2 lg:w-full flex lg:flex-col-reverse flex-row-reverse lg:items-start items-center lg:gap-10 relative">
           <div data-aos="zoom-in" className="bodyCard2Left">
             <div>
               <h1 className="bodyCard2H1">Beta Respite Care services integrates Beta Personal Care tasks in a respite view </h1>

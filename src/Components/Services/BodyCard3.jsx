@@ -23,7 +23,7 @@ const BodyCard3 = () => {
 
   return (
     <div className="servicesBg2">
-      <div className="maxcontainer2 lg:w-full lg:items-start flex lg:flex-col-reverse items-center relative">
+      <div id='personalnursing' className="maxcontainer2 lg:w-full lg:items-start flex lg:flex-col-reverse items-center relative">
           <div data-aos="zoom-in" className="bodyCard3Left">
             <div>
               <h1 className="bodyCard3H1">The family caregiver has a lot to do, but sometimes medical needs may require more attention. </h1>

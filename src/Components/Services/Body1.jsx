@@ -15,8 +15,8 @@ const BodyCard1 = () => {
   },[])
 
   return (
-    <div className="servicesBg">
-      <div className="maxcontainer2  lg:w-full flex lg:flex-col-reverse items-center  lg:items-start  relative">
+    <div id="personalcare" className="servicesBg">
+      <div className="maxcontainer2 lg:w-full flex lg:flex-col-reverse items-center  lg:items-start  relative">
           <div data-aos="zoom-in" className="bodyCard1Left">
             <div>
               <h1 className="bodyCard1H1">Building on the Beta Constructive Approach, we make sure to tailor ‘Beta Care Services’ to explicit requirements of our clients with the best private hygiene and practices. </h1>

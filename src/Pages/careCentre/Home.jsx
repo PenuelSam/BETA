@@ -4,7 +4,7 @@ import Body from "../../Components/careHome2/Body"
 
 const CareHome = () => {
   return (
-    <div>
+    <div  className="bodyBg">
         <Banner />
         <Body />
     </div>

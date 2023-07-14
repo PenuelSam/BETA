@@ -333,9 +333,14 @@
   }
 
 
+  /*.m-bannerH1{
+    @apply font-[700] text-[60px] lg:w-[500px] xsm:w-[340px]  sm:text-[30px] leading-[132px] w-[1116px] h-[70px] uppercase text-[#D6E5FA] text-center sm:leading-[50px] sm:h-[30px] sm:px-[10%]
+  }*/
+
   .m-bannerH1{
-    @apply font-[700] text-[60px] lg:w-[500px]  sm:text-[30px] leading-[132px] w-[1116px] h-[70px] uppercase text-[#D6E5FA] text-center sm:leading-[50px] sm:h-[30px] sm:px-[10%]
+    @apply font-[700] sm:w-[400px] sm:text-[25px] text-[50px] sm:h-[10px] lg:text-[45px] lg:h-[55px]  leading-[132px] sm:leading-[50px] w-[1116px] h-[65px] uppercase text-[#A0C6FC] text-center
   }
+
   .m-bannerP{
     @apply w-[1044px] lg:w-[500px] sm:w-[400px] h-[49px] font-[500] text-[20px] sm:text-[20px] leading-[35px] text-center mt-10  text-white
   }
@@ -457,7 +462,7 @@
     @apply  font-[700]
   }
   .care-approachImg{
-    @apply  absolute right-[-150px] top-[-150px] z-[2]
+    @apply  absolute right-[-150px] top-[-130px] z-[2]
   }
   .care-approachImg-p{
     @apply w-[397px] h-[210px]  font-[700] text-[50px] sm:text-[40px] leading-[66px] sm:leading-[50px] lg:text-left text-right z-[5] text-[#E4F3FB] absolute right-[-100px] lg:left-0 sm:left-[10px] lg:top-[30rem] sm:top-[20rem] top-[100px] 
