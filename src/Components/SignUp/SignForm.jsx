@@ -34,7 +34,7 @@ const SignForm = () => {
             </div>
             <div className="check">
                 <input type="checkbox" className="checkbox" />
-                <p className="inputP">I accept the Hybrid <a href="#" className="inputPa">Terms and Conditions, Product Disclosure and Settlement Statement</a> and our Financial Services System</p>
+                <p className="inputP">I accept the Betacare <a href="#" className="inputPa">Terms and Conditions, Product Disclosure and Settlement Statement</a> and our Financial Services System</p>
             </div>
             <div className="check">
                 <input type="checkbox" className="checkbox" />
