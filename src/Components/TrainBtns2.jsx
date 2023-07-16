@@ -9,6 +9,7 @@ const TrainBtns = () => {
 
     const handleTrainClick = (path) => {
         navigate(path)
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
   return (
