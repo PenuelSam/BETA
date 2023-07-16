@@ -112,7 +112,7 @@ const Form = () => {
 
           <div className={ isOpen2 ? `relative mt-[150px]` :`relative`}>
             <AddOutlinedIcon sx={{fill: 'gray', cursor: 'pointer'}} className="addicon" />
-            <input type="text" placeholder="Proof of Citizenship*" className="trainInputI" />
+            <input type="text" placeholder="Proof of Nationality*" className="trainInputI" />
           </div>
 
           <div className="trainbtnsI">

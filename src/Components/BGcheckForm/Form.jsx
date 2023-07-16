@@ -101,9 +101,9 @@ const Form = () => {
                 <ul className="dropdown-options">
                   <li
                     className="inputDropText"
-                    onClick={() => handleOptionClick("National ID")}
+                    onClick={() => handleOptionClick("BRP")}
                   >
-                    National ID
+                    BRP
                   </li>
                   <li
                     className="inputDropText"
@@ -206,7 +206,7 @@ const Form = () => {
               />
               <input
                 type="text"
-                placeholder="Proof of Citizenship*"
+                placeholder="Proof of Nationality*"
                 className="trainInputI"
               />
             </div>

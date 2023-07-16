@@ -32,8 +32,8 @@ const Form = () => {
   };
 
   const years = Array.from(
-    { length: new Date().getFullYear() - 1990 + 1 },
-    (_, index) => 1990 + index
+    { length: new Date().getFullYear() - 1970 + 1 },
+    (_, index) => 1970 + index
   );
 
   const navigate = useNavigate();
