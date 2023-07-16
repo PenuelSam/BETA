@@ -10,12 +10,10 @@ const ContactForm = () => {
   return (
     <div className=" bodyBg">
         <div className=" maxcontainer2 grid  grid-cols-2 lg:grid-cols-1 place-items-center">
-          <div className="lg:hidden">
-          <div className="relative z-[5]">
+          <div className="z-[5] lg:hidden relative">
                 {ContactButtons.map((btn, i) => (
-                  <img key={i} src={btn.button} alt="" className="mb-5  cursor-pointer" />
+                  <img key={i} src={btn.button} alt="" className="mb-5  cursor-pointer " />
                 ))}
-          </div>
           </div>
               
           <form action="" className="sm:flex sm:flex-col sm:items-center sm:justify-center ">

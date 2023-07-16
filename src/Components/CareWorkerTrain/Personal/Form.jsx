@@ -1,10 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
-
-import TrainTitle from "../TrainTitle";
-import line from "../../assets/Figma-Images/Manufacturing/Line.png";
+import line from '../../../assets/Figma-Images/Manufacturing/Line.png'
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
-import TrainBtns from "../TrainBtn";
+import TrainBtns from "../../TrainBtns2";
 import { useState } from "react";
+import TrainTitle2 from "../../TrainTitle2";
 
 const Form = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -361,7 +360,7 @@ const Form = () => {
 
   return (
     <div>
-      <TrainTitle />
+      <TrainTitle2 />
       <div className="maxcontainer2 sm:w-full flex items-center sm:justify-center pb-[25%]">
         <img
           src={line}
@@ -573,7 +572,7 @@ const Form = () => {
             <KeyboardArrowDownOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}}/>
             <input type="text" placeholder="Marital Status" className="trainInput" />
           </div>*/}
-            <Link to="/train" onClick={() => handleLinkClick("/train")}>
+            <Link to="/train2" onClick={() => handleLinkClick("/train2")}>
               <button className="trainInputBtn" type="submit">
                 Next
               </button>

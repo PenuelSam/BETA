@@ -1,9 +1,9 @@
 import { Link, useNavigate } from "react-router-dom"
-import TrainTitle from "../TrainTitle"
-import line from '../../assets/Figma-Images/Manufacturing/Line.png'
+import line from '../../../assets/Figma-Images/Manufacturing/Line.png'
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
-import TrainBtns from "../TrainBtn";
+import TrainBtns from "../../TrainBtns2";
 import { useState } from "react";
+import TrainTitle2 from "../../TrainTitle2";
 
 
 const Form = () => {
@@ -44,20 +44,20 @@ const Form = () => {
 
   return (
     <div>
-      <TrainTitle />
+      <TrainTitle2 />
       <div className="maxcontainer2 sm:w-full flex items-center sm:justify-center pb-[25%] sm:pb-[10px]">
         <img src={line} alt="" className="absolute left-[20%] z-[2] lg:hidden" />
         <TrainBtns />
         
-        <div className={isOpen ? "trainFormContainerID" :"trainFormContainerCv"}>
+        <div className={ isOpen ? "trainFormContainerID" :"trainFormContainerDEC"}>
         <form action="" className="smFormStyle">
 
-        <div className=" sm:h-[60px] sm:mt-[5%]">
+        <div className="sm:h-[60px] sm:mt-[10%]">
             <input type="text" placeholder="Name*" className="trainInputI" />
         </div>
 
-        <div className="custom-dropdown mb-[30px]">
-      <div className={ isOpen ? 'dropdown-header rounded-t-md' : 'dropdown-header rounded-md'} onClick={toggleDropdown}>
+      <div className="custom-dropdown mb-[30px]">
+      <div className="dropdown-header" onClick={toggleDropdown}>
       <span className={selectedOption ? 'text-[#434445]' : 'text-gray-400'}>{selectedOption || 'Date*'}</span>
         <KeyboardArrowDownOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
       </div>
@@ -77,13 +77,13 @@ const Form = () => {
             <input type="text" placeholder="Date*" className="trainInputI" />
           </div>*/}
 
-          <div className={ isOpen ? "w-[444px] sm:w-[300px] sm:h-[200px] h-[140px] flex  items-start p-5 shadow-md mb-10 bg-white justify-between sm:gap-5 mt-[150px]" :"w-[444px] sm:w-[300px] sm:h-[200px] h-[140px] flex  items-start p-5 shadow-md mb-10 bg-white justify-between sm:gap-5 "}>
+          <div className={ isOpen ? "w-[444px] sm:w-[300px] sm:h-[250px] h-[267px] flex  items-start p-5 shadow-md mb-10 bg-white justify-between sm:gap-5 mt-[150px]" :"w-[444px] sm:w-[300px] sm:h-[250px] h-[267px] flex  items-start p-5 shadow-md mb-10 bg-white justify-between sm:gap-5"}>
             <input type="checkbox" className="w-[27.43px] h-[29px] rounded-md outline-none cursor-pointer"/>
-            <p className="font-[300] text-[15px] leading-[30px] text-[#041E3E] w-[335px] h-[93px]">I confirm receiving the flu vaccine to prioritize health and community well-being. </p>
+            <p className="font-[300] text-[13px] leading-[30px]  text-[#3E3C38] w-[335px] ">I declare that the information provided is true and accurate to the best of my knowledge. I take full responsibility for its authenticity and understand the consequences of providing false or misleading information.</p>
           </div>
 
-          <Link to='/manufacturing' onClick={() => handleLinkClick('/manufacturing')}>
-            <button className="trainInputBtn" type="submit">Save</button>
+          <Link to='/vaccination2' onClick={() => handleLinkClick('/vaccination2')}>
+            <button className="trainInputBtn" type="submit">Next</button>
           </Link>   
 
         </form>

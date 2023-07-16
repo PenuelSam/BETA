@@ -10,7 +10,7 @@ const Banner = () => {
     <>
       <div className="bannerBg pt-[20%] lg:pt-[40%] sm:pt-[40%]">
         <div className="flex flex-col justify-center items-center">
-          <h1 className="bannerH1 sm:bannerH1sm">The Recruitment Agency You Can Trust</h1>
+          <h1 className="bannerH1 sm:bannerH1sm xsm:text-[25px]">The Recruitment Agency You Can Trust</h1>
           <p className="bannerP sm:bannerPsm">
             BetaCare Staffing is the go-to agency for manufacturing companies
             and healthcare providers in need of temporary staff. Our mission is

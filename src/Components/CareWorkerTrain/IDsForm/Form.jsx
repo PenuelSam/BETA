@@ -1,11 +1,11 @@
 import { Link, useNavigate } from "react-router-dom"
-import TrainTitle from "../TrainTitle"
-import line from '../../assets/Figma-Images/Manufacturing/Line.png'
+import line from '../../../assets/Figma-Images/Manufacturing/Line.png'
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
-import TrainBtns from "../TrainBtn";
+import TrainBtns from "../../TrainBtns2";
 import { useState } from "react";
+import TrainTitle2 from "../../TrainTitle2";
 
 const Form = () => {
 
@@ -45,7 +45,7 @@ const Form = () => {
 
   return (
     <div>
-      <TrainTitle />
+      <TrainTitle2 />
       <div className="maxcontainer2 sm:w-full flex items-center sm:justify-center pb-[25%] sm:pb-[10px]">
         <img src={line} alt="" className="absolute left-[20%] z-[2] lg:hidden" />
         <TrainBtns />
@@ -116,8 +116,8 @@ const Form = () => {
           </div>
 
           <div className="trainbtnsI">
-          <Link to='/reference' onClick={() => handleLinkClick('/reference')}><button className="trainInputBtnI">Add</button></Link>
-          <Link to='/reference' onClick={() => handleLinkClick('/reference')}><button className="trainInputBtnII">Next</button></Link>
+          <Link to='/reference2' onClick={() => handleLinkClick('/reference2')}><button className="trainInputBtnI">Add</button></Link>
+          <Link to='/reference2' onClick={() => handleLinkClick('/reference2')}><button className="trainInputBtnII">Next</button></Link>
           </div>          
           <div className="w-[444px] h-[181px] rounded-md bg-white text-gray-500 flex items-center justify-center lg:hidden">
               <div className="w-[383px] h-[142px] flex items-center justify-between">

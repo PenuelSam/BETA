@@ -1,10 +1,11 @@
 import { Link, useNavigate } from "react-router-dom";
-import TrainTitle from "../TrainTitle";
-import line from "../../assets/Figma-Images/Manufacturing/Line.png";
+import line from '../../../assets/Figma-Images/Manufacturing/Line.png'
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
-import TrainBtns from "../TrainBtn";
+import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
+import TrainBtns from "../../TrainBtns2";
 import { useState } from "react";
+import TrainTitle2 from "../../TrainTitle2";
 
 const Form = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,18 +31,10 @@ const Form = () => {
     setIsOpen2(false);
   };
 
-  const racialCategories = [
-    "White/Caucasian",
-    "Black/African",
-    "Asian",
-    "Indigenous/Native",
-    "Pacific Islander",
-    "Latino/Hispanic",
-    "Arab/Middle Eastern",
-    "Indigenous Peoples of the Americas",
-    "Multiracial/Mixed race",
-    "Other/Miscellaneous",
-  ];
+  const years = Array.from(
+    { length: new Date().getFullYear() - 1990 + 1 },
+    (_, index) => 1990 + index
+  );
 
   const navigate = useNavigate();
 
@@ -52,8 +45,8 @@ const Form = () => {
 
   return (
     <div>
-      <TrainTitle />
-      <div className="maxcontainer2 sm:w-full flex items-center sm:justify-center pb-[25%]">
+      <TrainTitle2 />
+      <div className="maxcontainer2 sm:w-full flex items-center sm:justify-center pb-[25%] sm:pb-[10%]">
         <img
           src={line}
           alt=""
@@ -61,20 +54,11 @@ const Form = () => {
         />
         <TrainBtns />
 
-        <div className="trainFormContainerBG">
+        <div className="trainFormContainer">
           <form action="" className="smFormStyle">
-            <div className="relative sm:h-[70px]">
-              <AddOutlinedIcon className="addicon" sx={{ fill: "gray" }} />
-              <input
-                type="text"
-                placeholder="Upload Passport*"
-                className="trainInputI"
-              />
-            </div>
-
             <div
               className={
-                isOpen ? `custom-dropdown` : `custom-dropdown mb-[30px]`
+                isOpen ? `custom-dropdown` : `custom-dropdown my-[30px]`
               }
             >
               <div
@@ -90,7 +74,7 @@ const Form = () => {
                     selectedOption ? "text-[#434445]" : "text-gray-400"
                   }
                 >
-                  {selectedOption || "Means of ID*"}
+                  {selectedOption || "Level of Training*"}
                 </span>
                 <KeyboardArrowDownOutlinedIcon
                   className="KeyDownI"
@@ -101,57 +85,61 @@ const Form = () => {
                 <ul className="dropdown-options">
                   <li
                     className="inputDropText"
-                    onClick={() => handleOptionClick("National ID")}
+                    onClick={() => handleOptionClick("Beginner")}
                   >
-                    National ID
+                    Beginner
                   </li>
                   <li
                     className="inputDropText"
-                    onClick={() => handleOptionClick("International Passport")}
+                    onClick={() => handleOptionClick("Intermediate")}
                   >
-                    International Passport
+                    Intermediate
                   </li>
                   <li
                     className="inputDropText"
-                    onClick={() => handleOptionClick("Other")}
+                    onClick={() => handleOptionClick("Advanced")}
                   >
-                    Other
+                    Advanced
                   </li>
                 </ul>
               )}
             </div>
-
             {/*<div className="relative">
-            <div className="relative z-[10] mb-[50px]">
+            <div className="relative z-[10] my-[50px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
-            <input type="text" placeholder="Means of ID*" className="trainInput shadow-lg " />
+            <input type="text" placeholder="Level of Training*" className="trainInput shadow-lg " />
             </div>
-            <div className="inputDrop2">
-              <p className="inputDropText">National ID</p>
-              <p className="inputDropText">International Passport</p>
-              <p className="inputDropText">Other</p>
+            <div className="inputDrop">
+              <p className="inputDropText">Beginner</p>
+              <p className="inputDropText">Intermediate</p>
+              <p className="inputDropText">Advanced</p>
             </div>
           </div>*/}
-
             <div className={isOpen ? `sm:h-[70px] mt-[150px]` : `sm:h-[70px]`}>
               <input
                 type="text"
-                placeholder="Detailed Address*"
+                placeholder="Institution Name*"
                 className="trainInputI"
               />
             </div>
-
-            <div className="relative sm:h-[70px]">
-              <AddOutlinedIcon
-                sx={{
-                  fill: "gray",
-                  cursor: "pointer",
-                }}
-                className="addicon"
-              />
+            <div className=" sm:h-[70px]">
               <input
                 type="text"
-                placeholder="Recent Utility Bill*"
+                placeholder="Course Title*"
+                className="trainInputI"
+              />
+            </div>
+            <div className=" sm:h-[70px]">
+              <input
+                type="text"
+                placeholder="Program Duration*"
+                className="trainInputI"
+              />
+            </div>
+            <div className=" sm:h-[70px]">
+              <input
+                type="text"
+                placeholder="Qualification Obtained*"
                 className="trainInputI"
               />
             </div>
@@ -174,7 +162,7 @@ const Form = () => {
                     selectedOption2 ? "text-[#434445]" : "text-gray-400"
                   }
                 >
-                  {selectedOption2 || "Race*"}
+                  {selectedOption2 || "Year*"}
                 </span>
                 <KeyboardArrowDownOutlinedIcon
                   className="KeyDownI"
@@ -183,39 +171,59 @@ const Form = () => {
               </div>
               {isOpen2 && (
                 <ul className="dropdown-optionsY">
-                  {racialCategories.map((category) => (
+                  {years.map((year) => (
                     <li
                       className="inputDropText"
-                      key={category}
-                      onClick={() => handleOptionClick2(category)}
+                      key={year}
+                      onClick={() => handleOptionClick2(year)}
                     >
-                      {category}
+                      {year}
                     </li>
                   ))}
                 </ul>
               )}
             </div>
 
-            <div className={isOpen2 ? ` mt-[150px] relative` : `relative`}>
-              <AddOutlinedIcon
-                sx={{
-                  fill: "gray",
-                  cursor: "pointer",
-                }}
-                className="addicon"
-              />
+            <div className={isOpen2 ? `sm:h-[70px] mt-[150px]` : `sm:h-[70px]`}>
+              <AddOutlinedIcon className="KeyDownI" sx={{ fill: "gray" }} />
               <input
                 type="text"
-                placeholder="Proof of Citizenship*"
+                placeholder="Upload Certification*"
                 className="trainInputI"
               />
             </div>
-
-            <Link to="/ids" onClick={() => handleLinkClick("/ids")}>
-              <button className="trainInputBtn" type="submit">
-                Next
-              </button>
-            </Link>
+            <div className="trainbtns">
+              <Link to="/bgchecks2" onClick={() => handleLinkClick("/bgchecks2")}>
+                <button className="trainInputBtnI">Add</button>
+              </Link>
+              <Link to="/bgchecks2" onClick={() => handleLinkClick("/bgchecks2")}>
+                <button className="trainInputBtnII">Next</button>
+              </Link>
+            </div>
+            <div className="w-[444px] h-[181px] rounded-md lg:hidden bg-white text-gray-500 flex items-center justify-center">
+              <div className="w-[383px] h-[142px] flex items-center justify-between">
+                <div>
+                  <h1 className="font-[700] text-[20px] leading-[30px]">
+                    Beta Medical Centre
+                  </h1>
+                  <span className="font-[300] text-[20px] leading-[28.2px]">
+                    Advanced | Elder Care <br />{" "}
+                  </span>
+                  <span className="font-[300] text-[20px] leading-[28.2px]">
+                    3 Months | 2023{" "}
+                  </span>
+                  <span className="font-[300] text-[20px] leading-[28.2px]">
+                    Certification <br />
+                  </span>
+                  <span className="font-[300] text-[20px] leading-[30px]">
+                    Elder Care Cert......pdf
+                  </span>
+                </div>
+                <CloseOutlinedIcon
+                  sx={{ fill: "gray", fontSize: "50px", cursor: "pointer" }}
+                />
+              </div>
+            </div>
           </form>
         </div>
       </div>

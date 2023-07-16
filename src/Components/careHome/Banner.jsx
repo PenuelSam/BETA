@@ -16,11 +16,11 @@ const Banner = () => {
           The Best Temporary staffing agency.
           </p>
           <div className="banner-c-Btns lg:hidden">
-          <Link to='/register' onClick={() => handleClick()}><button className="banner-c-BtnLeft">Register as care worker</button></Link>
+          <Link to='/personal2' onClick={() => handleClick()}><button className="banner-c-BtnLeft">Register as care worker</button></Link>
           <Link to='/carehome' onClick={() => handleClick()}><button className="banner-c-BtnRight">Continue as a care home</button></Link>
           </div>
           <div className="banner-c-Btnsm hidden lg:flex">
-          <Link to='/register'><button className="bannerBtnLeftsm">Register as care worker</button></Link>
+          <Link to='/personal2'><button className="bannerBtnLeftsm">Register as care worker</button></Link>
           <Link to='/carehome'><button className="bannerBtnRightsm">Continue as a care home</button></Link>
           </div>
         </div>

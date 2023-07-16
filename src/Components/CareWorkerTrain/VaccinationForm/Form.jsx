@@ -1,9 +1,9 @@
 import { Link, useNavigate } from "react-router-dom"
-import TrainTitle from "../TrainTitle"
-import line from '../../assets/Figma-Images/Manufacturing/Line.png'
+import line from '../../../assets/Figma-Images/Manufacturing/Line.png'
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
-import TrainBtns from "../TrainBtn";
+import TrainBtns from "../../TrainBtns2";
 import { useState } from "react";
+import TrainTitle2 from "../../TrainTitle2";
 
 
 const Form = () => {
@@ -44,7 +44,7 @@ const Form = () => {
 
   return (
     <div>
-      <TrainTitle />
+      <TrainTitle2 />
       <div className="maxcontainer2 sm:w-full flex items-center sm:justify-center pb-[25%] sm:pb-[10px]">
         <img src={line} alt="" className="absolute left-[20%] z-[2] lg:hidden" />
         <TrainBtns />
@@ -82,7 +82,7 @@ const Form = () => {
             <p className="font-[300] text-[15px] leading-[30px] text-[#041E3E] w-[335px] h-[93px]">I confirm receiving the flu vaccine to prioritize health and community well-being. </p>
           </div>
 
-          <Link to='/manufacturing' onClick={() => handleLinkClick('/manufacturing')}>
+          <Link to='/carehome' onClick={() => handleLinkClick('/carehome')}>
             <button className="trainInputBtn" type="submit">Save</button>
           </Link>   
 

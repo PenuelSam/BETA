@@ -286,7 +286,7 @@
     @apply font-[700] text-[40px] leading-[50px] w-[500px] uppercase text-white text-center
   }
   .bannerH1sm{
-    @apply text-[35px] text-white font-[700] uppercase text-center px-[10%] 
+    @apply text-[35px] w-[400px] text-white font-[700] uppercase text-center px-[10%] 
   }
   
   .banner-c-H1{
@@ -342,7 +342,7 @@
   }
 
   .m-bannerP{
-    @apply w-[1044px] lg:w-[500px] sm:w-[400px] h-[49px] font-[500] text-[20px] sm:text-[20px] leading-[35px] text-center mt-10  text-white
+    @apply w-[1044px] lg:w-[500px] sm:w-[400px] xsm:w-[370px] h-[49px] font-[500] text-[20px] sm:text-[20px] leading-[35px] text-center mt-10  text-white
   }
   .m-bannerp{
     @apply w-[999px] lg:w-[500px] lg:text-[25px] lg:h-[30px] lg:leading-[35px] sm:w-[340px] h-[30px] sm:h-[50px] font-[500] text-[20px] sm:text-[20px] leading-[47px] sm:leading-[30px] text-center my-10  text-white
@@ -707,7 +707,7 @@
 
 
   .signUph1{
-    @apply w-[1076px] h-[210px] font-[700] text-[60px] sm:text-[30px] lg:text-[50px] sm:leading-[50px] lg:leading-[60px] leading-[113.16px] uppercase text-center text-[#A0C6FC]
+    @apply w-[1076px] h-[210px] font-[700] text-[92px] sm:text-[30px] lg:text-[50px] sm:leading-[50px] lg:leading-[60px] leading-[113.16px] uppercase text-center text-[#A0C6FC]
   }
   .check{
     @apply flex items-center  lg:justify-center sm:items-start  w-[452.26px] h-[62.71px] gap-10 my-2 lg:gap-3 lg:w-[300px]
@@ -762,6 +762,31 @@
   .trainInputI{
     @apply w-[443.64px]  sm:w-[300px] sm:h-[40px]  h-[64.27px] rounded-md mb-10 shadow-md text-[#434445]  pl-10 border-none outline-none sm:pl-5
   }
+  .custom-dropdown{
+    @apply w-[443.64px] sm:w-[300px]  relative
+  }
+  .dropdown-header{
+    @apply flex items-center justify-between p-[8px] sm:h-[40px]  h-[64.27px]  shadow-md   sm:pl-5 pl-10 bg-white cursor-pointer
+  }
+  .dropdown-arrow{
+    @apply inline-block w-0 h-0 border-solid  border-[#888]
+  }
+
+  .dropdown-arrow.open{
+    @apply rotate-[180deg]
+  }
+  .dropdown-options{
+    @apply absolute top-[100%] left-0 w-[100%]  list-none border-[#ccc] bg-[#fff] z-[50] rounded-b-md sm:pl-5 pl-7;
+  }
+
+  .dropdown-optionsY{
+    @apply absolute top-[100%] left-0 w-[100%] h-[130px]  list-none border-[#ccc] bg-white overflow-y-scroll z-[50] rounded-b-md sm:pl-3 pl-10;
+  }
+
+  .dropdown-options li{
+    @apply p-[8px]  cursor-pointer
+  }
+  
   .trainInputBtn{
     @apply w-[444px]  sm:w-[200px] sm:h-[40px] h-[82px] rounded-md bg-[#041E3E] font-[700] text-[18px] mb-20
   }
@@ -784,13 +809,16 @@
     @apply w-[444px] sm:w-[300px] sm:h-[170px] h-[183px] shadow-sm px-10 bg-white rounded-md  flex flex-col justify-end absolute top-0  z-[2]
   }
   .inputDropText{
-    @apply text-[#bbbbbd] font-[300] border-b my-1 border-[#ebecec]
+    @apply text-[#bbbbbd] font-[300] border-b my-1 sm:pl-3  border-[#ebecec]
   }
   .KeyDown{
     @apply absolute right-[10%] top-[15%] cursor-pointer sm:top-[20%]
   }
+  .addicon{
+    @apply absolute right-[10%] top-[20%] cursor-pointer sm:top-[10%]
+  }
   .KeyDownI{
-    @apply absolute right-[10%] top-[15%] cursor-pointer sm:top-[10%]
+    @apply absolute right-[10%] top-[30%] cursor-pointer sm:top-[20%]
   }
 
 

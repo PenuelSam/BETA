@@ -1,8 +1,8 @@
 import { Link, useNavigate } from "react-router-dom"
-import TrainTitle from "../TrainTitle"
-import line from '../../assets/Figma-Images/Manufacturing/Line.png'
+import line from '../../../assets/Figma-Images/Manufacturing/Line.png'
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
-import TrainBtns from "../TrainBtn";
+import TrainBtns from "../../TrainBtns2";
+import TrainTitle2 from "../../TrainTitle2";
 
 
 const Form = () => {
@@ -16,7 +16,7 @@ const Form = () => {
 
   return (
     <div>
-      <TrainTitle />
+      <TrainTitle2 />
       <div className="maxcontainer2 sm:w-full flex items-center sm:justify-center pb-[25%] sm:pb-[10px]">
         <img src={line} alt="" className="absolute left-[20%] z-[2] lg:hidden" />
         <TrainBtns />
@@ -34,7 +34,7 @@ const Form = () => {
             <input type="text" placeholder="Upload Cover Letter*" className="trainInputI" />
           </div>
 
-          <Link to='/nextofkin' onClick={() => handleLinkClick('/nextofkin')}>
+          <Link to='/nextofkin2' onClick={() => handleLinkClick('/nextofkin2')}>
             <button className="trainInputBtn" type="submit">Next</button>
           </Link>   
 

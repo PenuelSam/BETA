@@ -466,3 +466,72 @@ export const TrainButton = [
         active: '#A0C6FC'
     },
 ]
+
+export const TrainButton2 = [
+    {
+        name: 'Personal Data',
+        img: Checked ,
+        path: '/personal2',
+        active: '#A0C6FC'
+    },
+    {
+        name: 'Training',
+        img: Checked ,
+        path: '/train2',
+        active: '#A0C6FC'
+    },
+    {
+        name: 'Background Checks',
+        img: Checked ,
+        path: '/bgchecks2',
+        active: '#A0C6FC'
+    },
+    {
+        name: 'ID Badge',
+        img: Checked ,
+        path: '/ids2',
+        active: '#A0C6FC'
+    },
+    {
+        name: 'Reference',
+        img: Checked ,
+        path: '/reference2',
+        active: '#A0C6FC'
+    },
+    {
+        name: 'Getting Paid',
+        img: Checked ,
+        path: '/payment2',
+        active: '#A0C6FC'
+    },
+    {
+        name: 'Right to Work and ID Checks',
+        img: Checked ,
+        path: '/work2',
+        active: '#A0C6FC'
+    },
+    {
+        name: 'CV',
+        img: Checked ,
+        path: '/cv2',
+        active: '#A0C6FC'
+    },
+    {
+        name: 'Next of Kin',
+        img: Checked ,
+        path: '/nextofkin2',
+        active: '#A0C6FC'
+    },
+    {
+        name: 'Self Declaration',
+        img: Checked ,    
+        path: '/declaration2',
+        active: '#A0C6FC'
+    },
+    {
+        name: 'Flu Vaccination Declaration',
+        img: Checked ,    
+        path: '/vaccination2',
+        active: '#A0C6FC'
+    },
+]

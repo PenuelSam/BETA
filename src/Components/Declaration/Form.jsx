@@ -1,11 +1,47 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import TrainTitle from "../TrainTitle"
 import line from '../../assets/Figma-Images/Manufacturing/Line.png'
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import TrainBtns from "../TrainBtn";
+import { useState } from "react";
 
 
 const Form = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  };
+
+  // Generate an array of dates (from 1 to 31)
+  const startDate = new Date(2020, 0, 1);
+  const endDate = new Date(2030, 11, 31);
+  const dates = [];
+  let currentDate = startDate;
+  while (currentDate <= endDate) {
+    const year = currentDate.getFullYear();
+    const month = currentDate.toLocaleString('default', { month: 'long' });
+    const day = currentDate.getDate();
+    const dateString = `${month} ${day}, ${year}`;
+    dates.push(dateString);
+    currentDate.setDate(currentDate.getDate() + 1);
+  }
+
+  const navigate = useNavigate();
+
+  const handleLinkClick = (link) => {
+    navigate(link);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+
   return (
     <div>
       <TrainTitle />
@@ -13,24 +49,40 @@ const Form = () => {
         <img src={line} alt="" className="absolute left-[20%] z-[2] lg:hidden" />
         <TrainBtns />
         
-        <div className="trainFormContainerDEC">
+        <div className={ isOpen ? "trainFormContainerID" :"trainFormContainerDEC"}>
         <form action="" className="smFormStyle">
 
         <div className="sm:h-[60px] sm:mt-[10%]">
             <input type="text" placeholder="Name*" className="trainInputI" />
         </div>
 
-        <div className="relative sm:h-[70px]">
+      <div className="custom-dropdown mb-[30px]">
+      <div className="dropdown-header" onClick={toggleDropdown}>
+      <span className={selectedOption ? 'text-[#434445]' : 'text-gray-400'}>{selectedOption || 'Date*'}</span>
+        <KeyboardArrowDownOutlinedIcon className="KeyDownI" sx={{fill: 'gray'}} />
+      </div>
+      {isOpen && (
+        <ul className="dropdown-optionsY">
+          {dates.map((date) => (
+            <li className="inputDropText" key={date} onClick={() => handleOptionClick(date)}>
+              {date}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+
+        {/*<div className="relative sm:h-[70px]">
             <KeyboardArrowDownOutlinedIcon className="KeyDown" sx={{fill: 'gray'}} />
             <input type="text" placeholder="Date*" className="trainInputI" />
-          </div>
+          </div>*/}
 
-          <div className="w-[444px] sm:w-[300px] sm:h-[250px] h-[267px] flex  items-start p-5 shadow-md mb-10 bg-white justify-between sm:gap-5 ">
+          <div className={ isOpen ? "w-[444px] sm:w-[300px] sm:h-[250px] h-[267px] flex  items-start p-5 shadow-md mb-10 bg-white justify-between sm:gap-5 mt-[150px]" :"w-[444px] sm:w-[300px] sm:h-[250px] h-[267px] flex  items-start p-5 shadow-md mb-10 bg-white justify-between sm:gap-5"}>
             <input type="checkbox" className="w-[27.43px] h-[29px] rounded-md outline-none cursor-pointer"/>
             <p className="font-[300] text-[13px] leading-[30px]  text-[#3E3C38] w-[335px] ">I declare that the information provided is true and accurate to the best of my knowledge. I take full responsibility for its authenticity and understand the consequences of providing false or misleading information.</p>
           </div>
 
-          <Link to='/vaccination'>
+          <Link to='/vaccination' onClick={() => handleLinkClick('/vaccination')}>
             <button className="trainInputBtn" type="submit">Next</button>
           </Link>   
 

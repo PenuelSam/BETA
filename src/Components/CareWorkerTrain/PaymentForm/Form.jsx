@@ -1,9 +1,9 @@
 import { Link, useNavigate } from "react-router-dom"
-import TrainTitle from "../TrainTitle"
-import line from '../../assets/Figma-Images/Manufacturing/Line.png'
+import line from '../../../assets/Figma-Images/Manufacturing/Line.png'
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
-import TrainBtns from "../TrainBtn";
+import TrainBtns from "../../TrainBtns2";
 import { useState } from "react";
+import TrainTitle2 from "../../TrainTitle2";
 
 const Form = () => {
 
@@ -39,7 +39,7 @@ const Form = () => {
 
   return (
     <div>
-      <TrainTitle />
+      <TrainTitle2 />
       <div className="maxcontainer2 sm:w-full flex items-center sm:justify-center pb-[25%] sm:pb-[10px]">
         <img src={line} alt="" className="absolute left-[20%] z-[2] lg:hidden" />
         <TrainBtns />
@@ -124,7 +124,7 @@ const Form = () => {
             <input type="text" placeholder="Billing Address*" className="trainInputI" />
         </div>
 
-          <Link to='/work' onClick={() => handleLinkClick('/work')}>
+          <Link to='/work2' onClick={() => handleLinkClick('/work2')}>
             <button className="trainInputBtn" type="submit">Next</button>
           </Link>   
 
