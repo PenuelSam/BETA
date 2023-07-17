@@ -1,5 +1,5 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "../../assets/Figma-Images/logo.png";
+import logo from "../../assets/Figma-Images/brandname-logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { NavLinks } from "../../data";
@@ -27,7 +27,7 @@ const Navbar = () => {
       <nav className="maxcontainer">
         {/* Logo */}
         <Link to="/" onClick={() => handleClick('/')}>
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="w-[200px] h-[50px] absolute top-3 lg:-left-3 left-5 object-cover"/>
         </Link>
         {/* Links */}
         <ul className="UL-Style">
@@ -50,10 +50,11 @@ const Navbar = () => {
 
         {/* Mobile */}
         <div className="hidden lg:flex">
-        <MenuIcon
+        {/*<MenuIcon
           onClick={() => setToggleMenu(true)}
           className="cursor-pointer"
-        />
+          
+        />*/}
 
         {toggleMenu && (
           <div className={`smallscreen_overlay flex__center slide-bottom ${toggleMenu ? 'navbar-open' : 'navbar-close'}`}>
