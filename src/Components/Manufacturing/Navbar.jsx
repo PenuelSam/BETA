@@ -50,11 +50,11 @@ const Navbar = () => {
 
         {/* Mobile */}
         <div className="hidden lg:flex">
-        {/*<MenuIcon
+        <MenuIcon
           onClick={() => setToggleMenu(true)}
           className="cursor-pointer"
           
-        />*/}
+        />
 
         {toggleMenu && (
           <div className={`smallscreen_overlay flex__center slide-bottom ${toggleMenu ? 'navbar-open' : 'navbar-close'}`}>
