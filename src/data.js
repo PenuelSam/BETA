@@ -27,7 +27,6 @@ import Train11 from '../src/assets/Figma-Images/Manufacturing/Vaccine-Train.png'
 import png1 from '../src/assets/Figma-Images/aboutpng.png'
 import png2 from '../src/assets/Figma-Images/servicespng.png'
 import png3 from '../src/assets/Figma-Images/operativepng.png'
-import png4 from '../src/assets/Figma-Images/companypng.png'
 import png5 from '../src/assets/Figma-Images/contactpng.png'
 import offerlogo from '../src/assets/Figma-Images/Offerlogo.png'
 import offerlogo2 from '../src/assets/Figma-Images/Offerlogo2.png'
@@ -90,6 +89,33 @@ export const NavLinks = [
     {
         id: 1,
         name: 'About Us',
+        path: '/about2',
+        Png: png1
+    },
+    {
+        id: 2,
+        name: 'Services',
+        path: '/company',
+        Png: png2
+    },
+    {
+        id: 3,
+        name: 'Operatives',
+        path: '/personal',
+        Png: png3
+    },
+    {
+        id: 5,
+        name: 'Contact Us',
+        path: '/contact2',
+        Png: png5
+    },
+]
+
+export  const NavLinks2 = [
+    {
+        id: 1,
+        name: 'About Us',
         path: '/about',
         Png: png1
     },
@@ -101,15 +127,9 @@ export const NavLinks = [
     },
     {
         id: 3,
-        name: 'Operatives',
-        path: '/personal',
+        name: 'Care Worker',
+        path: '/personal2',
         Png: png3
-    },
-    {
-        id: 4,
-        name: 'Company',
-        path: '/company',
-        Png: png4
     },
     {
         id: 5,

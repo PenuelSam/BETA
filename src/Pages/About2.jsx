@@ -1,9 +1,10 @@
 import Banner from "../Components/About/Banner"
 import BetaCare from "../Components/About/BetaCare"
 import Body from "../Components/About/Body"
-import Navbar from "../Components/mainHome/Navbar"
+import Navbar from "../Components/Manufacturing/Navbar"
 
-const About = () => {
+
+const About2 = () => {
   return (
     <div>
       <Navbar />
@@ -14,4 +15,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About2

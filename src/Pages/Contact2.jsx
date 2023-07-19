@@ -1,10 +1,10 @@
 import Banner from "../Components/Contact/Banner"
 import ContactBody from "../Components/Contact/Body"
 import ContactForm from "../Components/Contact/ContactForm"
+import Navbar from "../Components/Manufacturing/Navbar"
 import Title from "../Components/Title"
-import Navbar from "../Components/mainHome/Navbar"
 
-const Contact = () => {
+const Contact2 = () => {
   return (
     <div>
       <Navbar />
@@ -16,4 +16,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact2

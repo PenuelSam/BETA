@@ -1,3 +1,4 @@
+import HomeNavbar from "../Components/HomeNav"
 import Banner from "../Components/mainHome/Banner"
 import Cost from "../Components/mainHome/Cost"
 import OnBoard from "../Components/mainHome/OnBoard"
@@ -8,6 +9,7 @@ const Home = () => {
   
   return (
     <div className="">
+      <HomeNavbar />
       <Banner />
       <OnBoard />
       <TimeSaving />

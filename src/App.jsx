@@ -22,7 +22,6 @@ import Payment from "./Pages/Onboarding/Payment"
 import Reference from "./Pages/Onboarding/Reference"
 import Vaccination from "./Pages/Onboarding/Vaccination"
 import Work from "./Pages/Onboarding/Work"
-import Navbar from "./Components/Manufacturing/Navbar"
 import Personal2 from "./Pages/CareWorkerOnboard/Personal"
 import BGchecks2 from "./Pages/CareWorkerOnboard/BGchecks"
 import CV2 from "./Pages/CareWorkerOnboard/CV"
@@ -34,20 +33,23 @@ import Reference2 from "./Pages/CareWorkerOnboard/Reference"
 import Train2 from "./Pages/CareWorkerOnboard/Train"
 import Vaccination2 from "./Pages/CareWorkerOnboard/Vaccination"
 import Work2 from "./Pages/CareWorkerOnboard/Work"
+import About2 from "./Pages/About2"
+import Contact2 from "./Pages/Contact2"
 
 function App() {
 
   return (
     <div className="w-full overflow-x-hidden">
         <BrowserRouter>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about"  element={<About/>} />
+        <Route path="/about2" element={<About2 />}/>
         <Route path="/services" element={<Services />}/>
         <Route path="/services2" element={<Services2 />}/>
         <Route path="/company" element={<Company/>} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/contact2" element={<Contact2 />}/>
         <Route path="/carecentre" element={<CareLanding/>} />
         <Route path="/carehome" element={<CareHome />}/>
         <Route path="/register" element={<CreateAccount />}/>

@@ -1,23 +1,23 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "../../assets/Figma-Images/brandname-logo.png";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Link, useNavigate } from "react-router-dom";
+import logo from "../assets/Figma-Images/brandname-logo.png";
+/*import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import { NavLinks } from "../../data";
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
-import { useState } from "react";
-import { NavLinks2 } from "../../data";
-const Navbar = () => {
+import { useState } from "react";*/
+const HomeNavbar = () => {
   const navigate = useNavigate();
-  const location = useLocation();
+  /*const location = useLocation();*/
 
-  const [toggleMenu, setToggleMenu] = useState(false);
+  /*const [toggleMenu, setToggleMenu] = useState(false);
 
   const handleLinkClick = (link) => {
     navigate(link);
     window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  };*/
   const handleClick = (link) => {
     navigate(link)
-    setToggleMenu(false)
+    /*setToggleMenu(false)*/
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -30,8 +30,8 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-[200px] h-[50px] absolute top-3 lg:-left-3 left-5 object-cover"/>
         </Link>
         {/* Links */}
-        <ul className="UL-Style">
-          {NavLinks2.map((nav) => (
+        {/*<ul className="UL-Style">
+          {NavLinks.map((nav) => (
             <li key={nav.id} className="text-[15px] font-[700] ">
               <Link
                 to={nav.path}
@@ -46,10 +46,10 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul>*/}
 
         {/* Mobile */}
-        <div className="hidden lg:flex">
+        {/*<div className="hidden lg:flex">
         <MenuIcon
           onClick={() => setToggleMenu(true)}
           className="cursor-pointer"
@@ -65,7 +65,7 @@ const Navbar = () => {
             />
     
             <ul className="navbar-smallscreen_links">
-            {NavLinks2.map((nav) => (
+            {NavLinks.map((nav) => (
                 <>
                   <Link to={nav.path} onClick={() => handleClick(`${nav.path}`)} >
                     <div className="flex  items-center justify-between">
@@ -89,55 +89,12 @@ const Navbar = () => {
           </div>
         )}
         
-      </div>
+      </div>*/}
         
       </nav>
     </div>
   );
 };
 
-export default Navbar;
+export default HomeNavbar;
 
-{/*<div className="hidden fixed inset-0 justify-end  lg:flex z-50">
-          {open ? (
-            <CloseIcon
-              fontSize="large"
-              className="z-[200] cursor-pointer"
-              onClick={showMenu}
-            />
-          ) : (
-            <MenuIcon
-              fontSize="large"
-              onClick={showMenu}
-              className="z-[200] cursor-pointer"
-            />
-          )}
-          <div
-            className={
-              open
-                ? `w-60 bg-white h-screen transform translate-x-0  ease-in-out duration-300`
-                : `menuClose`
-            }
-          >
-            <Link to="/" onClick={showMenu}>
-              <img src={logo2} alt="" />
-            </Link>
-            <ul className="flex flex-col items-center justify-center gap-10">
-              {NavLinks.map((nav) => (
-                <>
-                  <Link to={nav.path} onClick={showMenu}>
-                    <div
-                      key={nav.id}
-                      className="w-[248px] h-[28px] flex items-center justify-between shadow-lg px-5"
-                    >
-                      <li key={nav.id} className={`text-[#021A71] font-[700]`}>
-                        {nav.name}
-                      </li>
-                      <img src={nav.Png} alt="" />
-                    </div>
-                  </Link>
-                </>
-              ))}
-            </ul>
-          </div>
-              </div>*/}

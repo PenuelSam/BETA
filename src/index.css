@@ -217,7 +217,7 @@
   }
 
   .m-bannerbg{
-    background-image:linear-gradient(to left, rgba(10, 27, 51, 0.849), rgba(12, 51, 105, 0.733)), url('../src/assets/Figma-Images/Manufacturing/welcome-hero.png');
+    background-image:linear-gradient(to left, rgba(10, 27, 51, 0.849), rgba(12, 51, 105, 0.733)), url('../src/assets/Figma-Images/Care/whoweare.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
