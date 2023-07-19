@@ -1,6 +1,5 @@
 import Banner from "../Components/About/Banner"
 import BetaCare from "../Components/About/BetaCare"
-import Body from "../Components/About/Body"
 import Navbar from "../Components/mainHome/Navbar"
 
 const About = () => {
@@ -9,7 +8,6 @@ const About = () => {
       <Navbar />
       <Banner />
       <BetaCare />
-      <Body />
     </div>
   )
 }

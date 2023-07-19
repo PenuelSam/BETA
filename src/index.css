@@ -486,7 +486,7 @@
   }*/
 
   .BetaCareP{
-    @apply w-[951px] lg:w-[500px] h-[234px] sm:h-[550px] lg:h-[650px] font-[300] text-[18px] lg:text-[15px] text-center  leading-[31px] mt-5 mb-32 sm:mb-20  sm:px-[25%] text-[#363637] sm:leading-[40px] sm:tracking-[0.1px]
+    @apply w-[951px] lg:w-[500px] h-[100%] font-[300] text-[18px] lg:text-[15px] text-center  leading-[31px] mt-5 mb-32 sm:mb-20  sm:px-[25%] text-[#363637] sm:leading-[40px] sm:tracking-[0.1px]
   }
 
   .aboutBodyCard{

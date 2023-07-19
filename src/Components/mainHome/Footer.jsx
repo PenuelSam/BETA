@@ -3,7 +3,6 @@ import Facebook from "../../assets/Figma-Images/Facebook.png";
 import Twitter from "../../assets/Figma-Images/Twitter.png";
 import Instagram from "../../assets/Figma-Images/Instagram.png";
 import Linkedin from "../../assets/Figma-Images/Linkedin.png";
-import Center from "../../assets/Figma-Images/footerCenter.png";
 import ArrowUp from "../../assets/Figma-Images/ArrowUp.png";
 import CloseIcon from "@mui/icons-material/Close";
 import mail from "../../assets/Figma-Images/Mail.png"
@@ -82,7 +81,7 @@ const Footer = () => {
           <div>
             <p className="footerBottomP">Quick Links</p>
             <div className="flex items-center gap-5">
-              <ul>
+              <ul className="mt-5">
                 <li className="footerLi">Home</li>
                 <li className="footerLi">About Us</li>
                 <li className="footerLi">Contact Us</li>
@@ -91,14 +90,18 @@ const Footer = () => {
               <ul>
                 <li className="footerLi">Home Care</li>
                 <li className="footerLi">Careers</li>
-                <li className="footerLi">Book Appointment</li>
                 <li className="footerLi">Blog</li>
               </ul>
             </div>
           </div>
           {/*Bottom CENTER */}
-          <div className="w-[300px]">
-            <img src={Center} alt="" />
+          <div className="flex gap-2 w-[300px]">
+          <div>
+            <img src={logo} alt="" className="w-12" />
+          </div>
+            <div className="f-b-text">
+              <p className="f-b-textp">© 2022 BetaCare. All rights reserved.</p>
+            </div>
           </div>
           {/*Bottom Right */}
           <div className="">
@@ -133,7 +136,7 @@ const Footer = () => {
             <div className="gap-2 py-5">
               <p className="linksP">Quick Links</p>
               <div className="flex items-center gap-10">
-                <ul>
+                <ul className="mt-5">
                   <li className="footerLi-m">Home</li>
                   <li className="footerLi-m">About Us</li>
                   <li className="footerLi-m">Contact Us</li>
@@ -142,7 +145,6 @@ const Footer = () => {
                 <ul>
                   <li className="footerLi-m">Home Care</li>
                   <li className="footerLi-m">Careers</li>
-                  <li className="footerLi-m">Book Appointment</li>
                   <li className="footerLi-m">Blog</li>
                 </ul>
               </div>
@@ -165,7 +167,6 @@ const Footer = () => {
             </div>
             <div className="f-b-text">
               <p className="f-b-textp">© 2022 BetaCare. All rights reserved.</p>
-              <p className="f-b-textp"><span className="f-b-textspan">1,000,500</span> patiants served.</p>
             </div>
           </div>
           <div>
