@@ -6,6 +6,7 @@ import Linkedin from "../../assets/Figma-Images/Linkedin.png";
 import ArrowUp from "../../assets/Figma-Images/ArrowUp.png";
 import CloseIcon from "@mui/icons-material/Close";
 import mail from "../../assets/Figma-Images/Mail.png"
+import PhoneIcon from '@mui/icons-material/Phone';
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 
@@ -24,7 +25,7 @@ const Footer = () => {
 
   return (
     <div className="footerBg">
-
+      
       {/*Desktop Footer */}
       <div className="maxcontainer lg:hidden flex flex-col justify-center">
         {/* TOP */}
@@ -39,11 +40,27 @@ const Footer = () => {
               BetaCare offers quality services to individuals in need of care.
               We have services are in varying dimensions.
             </p>
-            <div className="flex gap-2 my-5">
+          <div className="mt-5">
+          <h1 className="footerH1 uppercase">Contact</h1>
+          <div className="flex items-center mt-2 gap-5">
+            <div>
+            <img src={mail} alt=""/>
+            </div>
+            <p className="footer-m-p">Partnerships@betacarestaffing.co.uk</p>
+          </div>
+          <div className="flex items-center my-5 gap-5">
+            <PhoneIcon sx={{fontSize:"20px", fill: "black"}} />
+            <p className="footer-m-p">+447871322130</p>
+          </div>
+        </div>
+            <div>
+              <h1 className="footerH1">Find Us On</h1>
+            <div className="flex gap-2 my-3">
               <img src={Facebook} alt="" className="footerIcon" />
               <img src={Twitter} alt="" className="footerIcon" />
               <img src={Instagram} alt="" className="footerIcon" />
               <img src={Linkedin} alt="" className="footerIcon" />
+            </div>
             </div>
           </div>
           {/* TOP RIGHT */}
@@ -82,15 +99,16 @@ const Footer = () => {
             <p className="footerBottomP">Quick Links</p>
             <div className="flex items-center gap-5">
               <ul className="mt-5">
-                <li className="footerLi">Home</li>
-                <li className="footerLi">About Us</li>
-                <li className="footerLi">Contact Us</li>
-                <li className="footerLi">Openings</li>
+                  <li className="footerLi">
+                    <Link to="/" className="text-[#021A71]" onClick={handleClick}>Home</Link>
+                  </li>
+                  <li className="footerLi"><Link to="/about" className="text-[#021A71]" onClick={handleClick}>About Us</Link></li>
+                  <li className="footerLi"><Link to="/contact" className="text-[#021A71]" onClick={handleClick}>Contact Us</Link></li>
               </ul>
-              <ul>
-                <li className="footerLi">Home Care</li>
-                <li className="footerLi">Careers</li>
-                <li className="footerLi">Blog</li>
+              <ul className="mt-5">
+              <li className="footerLi"><Link to="/services" className="text-[#021A71]" onClick={handleClick}>Services</Link></li>
+                  <li className="footerLi"><Link to="/personal2" className="text-[#021A71]" onClick={handleClick}>Care Worker</Link></li>
+                  <li className="footerLi"><Link to="/personal" className="text-[#021A71]" onClick={handleClick}>Operatives</Link></li>
               </ul>
             </div>
           </div>
@@ -122,6 +140,19 @@ const Footer = () => {
             have services are in varying dimensions.
           </p>
         </div>
+        <div className="mt-10">
+          <h1 className="footerH1 uppercase">Contact</h1>
+          <div className="flex items-center mt-2 gap-5">
+            <div>
+            <img src={mail} alt=""/>
+            </div>
+            <p className="footer-m-p">Partnerships@betacarestaffing.co.uk</p>
+          </div>
+          <div className="flex items-center mt-5 gap-5">
+            <PhoneIcon sx={{fontSize:"20px"}} />
+            <p className="footer-m-p">+447871322130</p>
+          </div>
+        </div>
         <div className="f-center">
           <div className="f-left">
             <div className="social">
@@ -137,15 +168,16 @@ const Footer = () => {
               <p className="linksP">Quick Links</p>
               <div className="flex items-center gap-10">
                 <ul className="mt-5">
-                  <li className="footerLi-m">Home</li>
-                  <li className="footerLi-m">About Us</li>
-                  <li className="footerLi-m">Contact Us</li>
-                  <li className="footerLi-m">Openings</li>
+                  <li className="footerLi-m">
+                    <Link to="/" className="text-[#021A71]" onClick={handleClick}>Home</Link>
+                  </li>
+                  <li className="footerLi-m"><Link to="/about" className="text-[#021A71]" onClick={handleClick}>About Us</Link></li>
+                  <li className="footerLi-m"><Link to="/contact" className="text-[#021A71]" onClick={handleClick}>Contact Us</Link></li>
                 </ul>
-                <ul>
-                  <li className="footerLi-m">Home Care</li>
-                  <li className="footerLi-m">Careers</li>
-                  <li className="footerLi-m">Blog</li>
+                <ul className="mt-5">
+                  <li className="footerLi-m"><Link to="/services" className="text-[#021A71]" onClick={handleClick}>Services</Link></li>
+                  <li className="footerLi-m"><Link to="/personal2" className="text-[#021A71]" onClick={handleClick}>Care Worker</Link></li>
+                  <li className="footerLi-m"><Link to="/personal" className="text-[#021A71]" onClick={handleClick}>Operatives</Link></li>
                 </ul>
               </div>
             </div>

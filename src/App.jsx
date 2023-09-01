@@ -78,6 +78,7 @@ function App() {
         <Route path="/vaccination2" element={<Vaccination2 />}/>
         <Route path="/work2" element={<Work2 />}/> 
       </Routes>
+      <div className="w-full h-[1px] bg-gray-200"></div>
       <Footer />
       </BrowserRouter>
     </div>
